@@ -1,6 +1,6 @@
 import numpy as np
 
-from example.concentrations import calculate_hfc_conc
+from U_FaIR.concentrations import calculate_hfc_conc
 
 def test_hfc_impulse_response():
     time = np.array([0, 1, 2, 3])

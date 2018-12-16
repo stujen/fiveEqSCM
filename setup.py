@@ -18,7 +18,7 @@ setup(
     description="Description",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/znicholls/example",
+    url="https://github.com/stujen/test_repo",
     classifiers=[
         #   3 - Alpha
         #   4 - Beta
@@ -33,7 +33,7 @@ setup(
     ],
     # keywords="simple climate model",
     # license="GNU Affero General Public License v3.0 or later",
-    packages=["example"],
+    packages=["test_repo"],
     install_requires=["numpy", "scipy"],
     # project_urls={  # Optional
     #     "Bug Reports": "https://github.com/openclimatedata/openscm/issues",
