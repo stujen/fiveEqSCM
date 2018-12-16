@@ -13,3 +13,6 @@ The model uses the 5 equations to implement the behaviour from emission-to-tempe
 ## References 
 
 Millar, Richard J., Zebedee R. Nicholls, Pierre Friedlingstein, and Myles R. Allen. ‘A Modified Impulse-Response Representation of the Global near-Surface Air Temperature and Atmospheric Concentration Response to Carbon Dioxide Emissions’. Atmospheric Chemistry and Physics 17, no. 11 (16 June 2017): 7213–28. https://doi.org/10.5194/acp-17-7213-2017.
+
+Myhre, G., D. Shindell, F.-M. Bréon, W. Collins, J. Fuglestvedt, J. Huang, D. Koch, J.-F. Lamarque, D. Lee, B. Mendoza, T. Nakajima, A. Robock, G. Stephens, T. Takemura and H. Zhang, 2013: Anthropogenic and Natural Radiative Forc- ing. In: Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor, S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.
+
