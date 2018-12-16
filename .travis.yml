@@ -1,0 +1,14 @@
+language: python
+dist: trusty
+sudo: required
+python:
+  - "3.6"
+before_install:
+  - sudo apt-get update
+  - pip install --upgrade pip
+install:
+  - pip install -e .[tests]
+script:
+  - pytest --cov -rfsxEX
+after_success:
+- codecov
