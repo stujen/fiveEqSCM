@@ -1,11 +1,23 @@
 [run]
 branch = True
 source = U_FaIR
-omit = *_version.py
+omit = 
+    *_version.py
+    testFAIR.py
 
 [report]
 fail_under = 90
 exclude_lines =
+    #def __repr__
+    #def step_conc_test
+    #def step_forc_test
+    #def step_temp_test
+    #def g_1_test
+    #def g_0_test
+    #def alpha_val_test
+    #def k_q_test
+    #def oxfair_test
+    
     if self.debug:
     pragma: no cover
     raise NotImplementedError
