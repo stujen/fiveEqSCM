@@ -13,12 +13,12 @@ with open(path.join(here, "README.md"), encoding="utf-8") as f:
 # Fields marked as "Optional" may be commented out.
 
 setup(
-    name="openscm",
+    name="Universal-FaIR",
     version="v0.0.0",
-    description="Description",
+    description="5 equation simple climate model",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/stujen/test_repo",
+    url="https://github.com/stujen/Universal-FAIR",
     classifiers=[
         #   3 - Alpha
         #   4 - Beta
@@ -34,7 +34,7 @@ setup(
     # keywords="simple climate model",
     # license="GNU Affero General Public License v3.0 or later",
     packages=["U_FaIR"],
-    install_requires=["numpy", "scipy"],
+    install_requires=["numpy", "scipy", "pandas", "pickle", "statsmodels"],
     # project_urls={  # Optional
     #     "Bug Reports": "https://github.com/openclimatedata/openscm/issues",
     #     "Source": "https://github.com/openclimatedata/openscm/",
