@@ -33,7 +33,7 @@ setup(
     ],
     # keywords="simple climate model",
     # license="GNU Affero General Public License v3.0 or later",
-    packages=["test_repo"],
+    packages=["U_FaIR"],
     install_requires=["numpy", "scipy"],
     # project_urls={  # Optional
     #     "Bug Reports": "https://github.com/openclimatedata/openscm/issues",
