@@ -34,7 +34,7 @@ setup(
     # keywords="simple climate model",
     # license="GNU Affero General Public License v3.0 or later",
     packages=["U_FaIR"],
-    install_requires=["numpy", "scipy", "pandas", "pickle", "statsmodels"],
+    install_requires=["numpy", "scipy", "pandas", "statsmodels"],
     # project_urls={  # Optional
     #     "Bug Reports": "https://github.com/openclimatedata/openscm/issues",
     #     "Source": "https://github.com/openclimatedata/openscm/",
