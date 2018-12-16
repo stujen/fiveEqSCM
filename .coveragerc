@@ -1,7 +1,9 @@
 [run]
 branch = True
 source = U_FaIR
-omit = *_version.py
+omit = 
+    *_version.py
+    testFAIR.py
 
 [report]
 fail_under = 90
