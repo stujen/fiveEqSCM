@@ -59,7 +59,7 @@ def alpha_val_test(G,G_A,T,tau,a,r,h,pre_ind_C,iirf100_max = 97.0):
     
     iirf100_val = (iirf100_val>97)*97+iirf100_val*(iirf100_val<97)
         
-    alpha_val = g_0(a,tau,h) * np.sinh(iirf100_val / g_1(a,tau,h))
+    alpha_val = g_0_test(a,tau,h) * np.sinh(iirf100_val / g_1_test(a,tau,h))
     
     return alpha_val
 
@@ -91,7 +91,7 @@ def oxfair_test(emissions,
     q = np.array([0.33,0.41]),
     F_2x = 3.74):
 
-    #k , q = k_q(d=d,q=q,tcr=1.6,ecs=2.75,F_2x=F_2x)
+    #k , q = k_q_test(d=d,q=q,tcr=1.6,ecs=2.75,F_2x=F_2x)
 
     G = np.cumsum(emissions,axis=1)
     C = np.zeros(emissions.shape)
@@ -99,16 +99,16 @@ def oxfair_test(emissions,
     T = np.zeros(emissions[0].shape)
     alpha = np.zeros(emissions.shape)
 
-    alpha[...,0] = alpha_val(G=0,G_A=0,T=0,tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
-    C[...,0],R,G_A = step_conc(R = np.zeros((3,4)),alpha=alpha[...,0],E=emissions[...,0],a=a,tau=tau,pre_ind_C=PI_C,emis2conc=emis2conc)
-    RF[0] = step_forc(C=C[...,0],pre_ind_C=PI_C,F_ext=0.,f=f)
-    S,T[0] = step_temp(S=np.zeros(2),F=RF[0],q=q,d=d)
+    alpha[...,0] = alpha_val_test(G=0,G_A=0,T=0,tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
+    C[...,0],R,G_A = step_conc_test(R = np.zeros((3,4)),alpha=alpha[...,0],E=emissions[...,0],a=a,tau=tau,pre_ind_C=PI_C,emis2conc=emis2conc)
+    RF[0] = step_forc_test(C=C[...,0],pre_ind_C=PI_C,F_ext=0.,f=f)
+    S,T[0] = step_temp_test(S=np.zeros(2),F=RF[0],q=q,d=d)
 
     for t in np.arange(1,emissions[0].size):
 
-        alpha[...,t] = alpha_val(G=G[...,t-1],G_A=G_A,T=T[t-1],tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
-        C[...,t],R,G_A = step_conc(R = R,alpha=alpha[...,t],E=emissions[...,t],a=a,tau=tau,pre_ind_C=PI_C,emis2conc=emis2conc)
-        RF[t] = step_forc(C=C[...,t],pre_ind_C=PI_C,F_ext=0.,f=f)
-        S,T[t] = step_temp(S=S,F=RF[t],q=q,d=d)
+        alpha[...,t] = alpha_val_test(G=G[...,t-1],G_A=G_A,T=T[t-1],tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
+        C[...,t],R,G_A = step_conc_test(R = R,alpha=alpha[...,t],E=emissions[...,t],a=a,tau=tau,pre_ind_C=PI_C,emis2conc=emis2conc)
+        RF[t] = step_forc_test(C=C[...,t],pre_ind_C=PI_C,F_ext=0.,f=f)
+        S,T[t] = step_temp_test(S=S,F=RF[t],q=q,d=d)
         
     return C,RF,T
