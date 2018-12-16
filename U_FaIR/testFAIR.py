@@ -49,7 +49,7 @@ def g_1_test(a,tau,h):
 
 def g_0_test(a,tau,h):
     
-    g0 = ( np.sinh( np.sum( a * tau * (1. - np.exp(-h/tau)) , axis=1) / g_1(a,tau,h) ) )**(-1.)
+    g0 = ( np.sinh( np.sum( a * tau * (1. - np.exp(-h/tau)) , axis=1) / g_1_test(a,tau,h) ) )**(-1.)
     
     return g0
 
