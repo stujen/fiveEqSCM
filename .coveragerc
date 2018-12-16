@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = example
+source = U_FaIR
 omit = *_version.py
 
 [report]
