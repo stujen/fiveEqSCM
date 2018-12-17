@@ -20,3 +20,5 @@ Myhre, G., D. Shindell, F.-M. Bréon, W. Collins, J. Fuglestvedt, J. Huang, D. K
 ## Build Status
 
 [![Build Status](https://travis-ci.com/stujen/Universal-FAIR.svg?branch=master)](https://travis-ci.com/stujen/Universal-FAIR)
+
+[![codecov](https://codecov.io/gh/stujen/Universal-FAIR/branch/master/graph/badge.svg)](https://codecov.io/gh/stujen/Universal-FAIR)
