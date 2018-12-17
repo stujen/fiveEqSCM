@@ -19,5 +19,6 @@ Myhre, G., D. Shindell, F.-M. Bréon, W. Collins, J. Fuglestvedt, J. Huang, D. K
 
 ## Build Status
 
-[![Build status](https://travis-ci.org/stujen/travis-lab.svg?nicks-ufair-code)](https://travis-ci.org/stujen)
+[![Build status](https://travis-ci.com/stujen/Universal-FAIR.svg?branch=master)](https://travis-ci.org/stujen)
+
 
