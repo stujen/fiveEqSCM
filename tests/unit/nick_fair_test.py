@@ -2,7 +2,7 @@ import numpy as np
 
 from U_FaIR.fiveFAIR import *
 
-from U_FaIR.testFAIR import *
+from temp_test_fair.testFAIR import *
 
 
 def test_oxfair_impulse_response_to_carbon():
