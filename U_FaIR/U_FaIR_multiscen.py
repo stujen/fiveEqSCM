@@ -31,41 +31,41 @@ def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
             emissions = emissions[np.newaxis,...]
         elif (multigas == False and multiscen == False) or (multigas == True and multiscen == True):
             print('One flag (multigas/multiscen) must be switched True, other False')
-            return False
+            return emissions, False
     elif np.array(emissions.shape).size == 1:
         print('Emissions input is 1D (n_timesteps)')
         emissions = emissions[np.newaxis,:]
         emissions = emissions[np.newaxis,...]
     elif np.array(emissions.shape).size == 3 and ((multigas==False or multiscen==False) or (multigas==False and multiscen==False)):
         print('Both flags must be true, since emissions array is 3D')
-        return False
+        return emissions, False
     elif np.array(emissions.shape).size != 3:
         print('Emissions input is not in correct format (needs to be 1D/2D/3D with correct flags)')
-        return False
+        return emissions, False
     
     # check shape of a, r, tau and PI_C parameter arrays are the same size as the number of gases specified
     if (multigas == True) and ((emissions.shape[0] != a.shape[0]) or a.ndim != 2):
         print('multigas = True requires a to have dimensions [num_gases, num_pools], where num_pools = 4')
         print('Currently a has shape: ', a.shape)
-        return False
+        return emissions, False
     elif (multigas == True) and ((emissions.shape[0] != r.shape[0]) or r.ndim != 2):
         print('multigas = True requires r to have dimensions [num_gases, num_pools], where num_pools = 4')
         print('Currently r has shape: ', r.shape)
-        return False
+        return emissions, False
     elif (multigas == True) and ((emissions.shape[0] != tau.shape[0]) or tau.ndim != 2):
         print('multigas = True requires tau to have dimensions [num_gases, num_pools], where num_pools = 4')
         print('Currently tau has shape: ', tau.shape)
-        return False
+        return emissions, False
     elif (multigas == True) and ((emissions.shape[0] != PI_C.shape[0]) or PI_C.ndim != 1):
         print('multigas = True requires PI_C to have dimensions [num_gases]')
         print('Currently PI_C has shape: ', PI_C.shape)
-        return False
+        return emissions, False
     elif (multigas == True) and ((emissions.shape[0] != emis2conc.shape[0]) or emis2conc.ndim != 1):
         print('multigas = True requires emis2conc to have dimensions [num_gases]')
         print('Currently emis2conc has shape: ', emis2conc.shape)
-        return False
+        return emissions, False
     
-    return emissions
+    return emissions, True
 
 def g_1(a,tau,h):
     
@@ -185,9 +185,9 @@ def multiscen_oxfair(emissions,
     # ------------------
     
     # check format of inputs is correct
-    emissions = check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc)
+    emissions, flag_val = check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc)
     # if not stop run
-    if emissions == False:
+    if flag_val == False:
         print('\nRun failed')
         return
     
@@ -233,4 +233,199 @@ def multiscen_oxfair(emissions,
         
     # return C, RF and T arrays
     return C,RF,T
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ============================================================================================== 
+
+# Define functions to import, run and plot RCP CO2, CH4 and N2O emissions data
+
+def import_RCPs():
+
+    import pandas as pd
+
+    RCP85_E = pd.read_csv('./RCP_data/RCP85_EMISSIONS.csv',skiprows=36,index_col=0)
+    RCP85_C = pd.read_csv('./RCP_data/RCP85_MIDYEAR_CONCENTRATIONS.csv',skiprows=37,index_col=0)
+    RCP6_E = pd.read_csv('./RCP_data/RCP6_EMISSIONS.csv',skiprows=36,index_col=0)
+    RCP6_C = pd.read_csv('./RCP_data/RCP6_MIDYEAR_CONCENTRATIONS.csv',skiprows=37,index_col=0)
+    RCP45_E = pd.read_csv('./RCP_data/RCP45_EMISSIONS.csv',skiprows=36,index_col=0)
+    RCP45_C = pd.read_csv('./RCP_data/RCP45_MIDYEAR_CONCENTRATIONS.csv',skiprows=37,index_col=0)
+    RCP3_E = pd.read_csv('./RCP_data/RCP3PD_EMISSIONS.csv',skiprows=36,index_col=0)
+    RCP3_C = pd.read_csv('./RCP_data/RCP3PD_MIDYEAR_CONCENTRATIONS.csv',skiprows=37,index_col=0)
+
+    RCP = {'85':{},'6':{},'45':{},'3':{}}
+
+    RCP['85']['E'] = RCP85_E
+    RCP['85']['C'] = RCP85_C
+    RCP['6']['E'] = RCP6_E
+    RCP['6']['C'] = RCP6_C
+    RCP['45']['E'] = RCP45_E
+    RCP['45']['C'] = RCP45_C
+    RCP['3']['E'] = RCP3_E
+    RCP['3']['C'] = RCP3_C
+
+    return RCP
+
+def concplot(C,RCP,rcps):
+
+    import matplotlib
+    import matplotlib.gridspec as gridspec
+    from matplotlib.colors import Normalize
+    from matplotlib import collections
+    from matplotlib import pyplot as plt
+
+    plt.rcParams['figure.figsize'] = 16, 9
+    plt.rcParams['lines.linewidth'] = 1.5
+    plt.rcParams['axes.grid'] = True
+    plt.rcParams['grid.linestyle'] = ':'
+    plt.rcParams['grid.color'] = 'black'
+    plt.rcParams['grid.alpha'] = 0.3
+    plt.rcParams['font.weight'] = 'bold'
+    plt.rcParams['legend.framealpha'] = 1.0
+    plt.rcParams['legend.shadow'] = False
+    plt.rcParams['legend.edgecolor'] = 'black'
+    plt.rcParams['legend.fontsize'] = 12
+    plt.rcParams['legend.fancybox'] = False
+
+    font = {'weight' : 'normal',
+          'size'   : 12}
+
+    plt.rc('font', **font)
+
+    import seaborn as sns
+
+    # -----------------------
+
+    fig,ax=plt.subplots(2,3,figsize=(15,7))
+    
+    rcps = ['85','6','45','3']
+    colors = ['red','brown','green','blue']
+    
+    for i,rcp in enumerate(rcps):
+
+        ax[0,0].plot(RCP[rcp]['E'].FossilCO2+RCP[rcp]['E'].OtherCO2,color=colors[i],label=rcp+' emissions')
+        ax[0,0].set_ylabel('GtC')
+        ax[0,0].set_title('CO$_2$')
+
+        ax[1,0].plot(RCP[rcp]['C'].CO2,color=colors[i],label=rcp+' data')
+        ax[1,0].plot(RCP[rcp]['C'].CO2.index.values,C[0,i,:],'--',color=colors[i],label=rcp+'-5FAIR')
+        ax[1,0].legend(loc='best')
+        ax[1,0].set_ylabel('ppm')
+
+        ax[0,1].plot(RCP[rcp]['E'].CH4,color=colors[i])
+        ax[0,1].set_ylabel('MtCH$_4$')
+        ax[0,1].set_title('CH$_4$')
+
+        ax[1,1].plot(RCP[rcp]['C'].CH4,color=colors[i],label='RCP')
+        ax[1,1].plot(RCP[rcp]['C'].CH4.index.values,C[1,i,:],'--',color=colors[i],label='5FAIR')
+        ax[1,1].set_ylabel('ppb')
+
+        ax[0,2].plot(RCP[rcp]['E'].N2O,color=colors[i])
+        ax[0,2].set_ylabel('MtN$_2$O-N$_2$')
+        ax[0,2].set_title('N$_2$O')
+
+        ax[1,2].plot(RCP[rcp]['C'].N2O,color=colors[i],label='RCP')
+        ax[1,2].plot(RCP[rcp]['C'].N2O.index.values,C[2,i,:],'--',color=colors[i],label='5FAIR')
+        ax[1,2].set_ylabel('ppb')
+
+    plt.tight_layout()
+
+    return fig, ax
+
+def tempplot(T,rcps):
+
+    import matplotlib
+    import matplotlib.gridspec as gridspec
+    from matplotlib.colors import Normalize
+    from matplotlib import collections
+    from matplotlib import pyplot as plt
+
+    plt.rcParams['figure.figsize'] = 16, 9
+    plt.rcParams['lines.linewidth'] = 1.5
+    plt.rcParams['axes.grid'] = True
+    plt.rcParams['grid.linestyle'] = ':'
+    plt.rcParams['grid.color'] = 'black'
+    plt.rcParams['grid.alpha'] = 0.3
+    plt.rcParams['font.weight'] = 'bold'
+    plt.rcParams['legend.framealpha'] = 1.0
+    plt.rcParams['legend.shadow'] = False
+    plt.rcParams['legend.edgecolor'] = 'black'
+    plt.rcParams['legend.fontsize'] = 12
+    plt.rcParams['legend.fancybox'] = False
+
+    font = {'weight' : 'normal',
+          'size'   : 12}
+
+    plt.rc('font', **font)
+
+    import seaborn as sns
+
+    # -----------------------
+
+    fig,ax=plt.subplots(figsize=(8,6))
+    
+    rcps = ['85','6','45','3']
+    colors = ['red','brown','green','blue']
+    
+    for i,rcp in enumerate(rcps):
+
+        ax.plot(np.arange(1765,2501), T[i,:] - np.mean(T[i,1850-1765:1901-1765]),color=colors[i],label=rcp+' U-FaIR temperature response')
+        ax.set_ylabel('Temperature anomaly relative to 1850-1900 (K)')
+        ax.set_title('T')
+
+    plt.tight_layout()
+
+    return fig, ax
+
+def run_RCPs(rcps = ['85','6','45','3'], plot_out=True):
+    '''
+    Run RCP emissions scenarios for n gases through U-FAIR simulatneously and plot result
+    '''
+
+    import pandas as pd
+    from matplotlib import pyplot as plt
+    # ----------------------------------
+
+    RCP = import_RCPs()
+
+    emissions = np.zeros((3,4,736))
+
+    for n,rcp_val in enumerate(rcps):
+        emissions[0,n,:] = RCP[rcp_val]['E'].FossilCO2.values + RCP[rcp_val]['E'].OtherCO2.values
+        emissions[1,n,:] = RCP[rcp_val]['E'].CH4.values
+        emissions[2,n,:] = RCP[rcp_val]['E'].N2O.values
+
+    emis2conc = 1/(5.148*10**18 / 1e18 * np.array([12., 16., 28.]) / 28.97)
+    a = np.array([[0.2173,0.2240,0.2824,0.2763],[1.,0.,0.,0.],[1.,0.,0.,0.]])
+    tau = np.array([[1000000,394.4,36.54,4.304],[9.,394.4,36.54,4.304],[121.,394.4,36.54,4.304]])
+    r = np.array([[32.40,0.019,4.165,0.0],\
+                 [ 9.05942806e+00, -1.03745809e-07, -1.85711888e-01,  1.45117387e-04],\
+                 [ 4.97443512e+01,  5.87120814e-04, -2.02130466e+00,  2.07719812e-02]])
+    PI_C = np.array([278.0,722.0,273.0])
+    f = np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]])
+
+    C,RF,T = multiscen_oxfair(emissions=emissions,emis2conc=emis2conc,a=a,tau=tau,r=r,PI_C=PI_C,f=f,multigas=True,multiscen=True)
+
+    RCP_results = {'C':C, 'RF':RF, 'T':T}
+
+    if plot_out == True:
+        fig_C, ax_C = concplot(C,RCP,rcps)
+        fig_T, ax_T = tempplot(T,rcps)
+        return RCP_results, fig_C, ax_C, fig_T, ax_T
+    else:
+        return RCP_results
+
 
