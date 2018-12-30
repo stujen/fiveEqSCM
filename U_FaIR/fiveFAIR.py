@@ -73,6 +73,7 @@ def k_q(d,q,tcr,ecs,F_2x):
         
     return k, q
 
+
 # define main model code
 
 def oxfair(emissions,
