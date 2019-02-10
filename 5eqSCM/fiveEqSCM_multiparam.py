@@ -16,8 +16,57 @@
 import numpy as np
 import string
 import math
-
+import sys
+import pandas as pd
 # ==================================
+
+# returns thermal parameter dataframe of size param_num with varied params given by dictionary 'nonGas_params'
+def thermal_param_df_creator(param_num, nonGas_params=None):
+
+    standard_params = {'TCR':[1.75],'ECS':[2.6],'d_1':[4.1],'d_2':[239.0],'F_2x':[3.74]}
+    parameters_df = pd.DataFrame(standard_params)
+    parameters_df = parameters_df.reindex(range(0,param_num))
+
+    if nonGas_params != None:
+        for key in nonGas_params.keys():
+            assert param_num == len(nonGas_params[key]), 'length of parameter %s input isn\'t same as param_num: %d, %d' % (key,len(nonGas_params[key]),param_num)
+            assert key in parameters_df.keys(), 'param key "%s" isn\'t found in standard parameter name set' % (key)
+            parameters_df[key] = nonGas_params[key]
+
+    # fill NaNs with standard parameter values
+    for key in standard_params.keys():
+        parameters_df[key].fillna(standard_params[key][0], inplace=True)
+
+    return parameters_df
+
+# returns inputted parameter dataframe with columns for parameters of single gas
+def add_new_gas_to_params(full_params_df, single_gas_params):
+
+    assert full_params_df.index.values.shape == single_gas_params.index.values.shape, 'Index of two input dataframes are different'
+    joined_df = pd.concat([full_params_df, single_gas_params], axis=1, sort=False)
+
+    return joined_df
+
+# returns standard parameters for gas with name gas_name ('CO2','N2O','CH4')
+def standard_gas_param_df_creator(param_num, single_gas_name):
+
+    if single_gas_name == 'CO2':
+        standard_gas_params = {'f0_CO2':[3.74/np.log(2.0)],'f1_CO2':[0.0],'f2_CO2':[0.0],'iirf100_max_CO2':[97.0],'emis2conc_CO2':[28.97/(5.148*12.0)],'PI_C_CO2':[278.0],'r0_CO2':[32.40],'rC_CO2':[0.019],'rT_CO2':[4.165],'rA_CO2':[0.0],'a0_CO2':[0.2173],'a1_CO2':[0.2240],'a2_CO2':[0.2824],'a3_CO2':[0.2763],'tau0_CO2':[1e6],'tau1_CO2':[394.4],'tau2_CO2':[36.54],'tau3_CO2':[4.304]}
+    elif single_gas_name == 'CH4':
+        standard_gas_params = {'f0_CH4':[0.0],'f1_CH4':[0.0],'f2_CH4':[0.036],'iirf100_max_CH4':[97.0],'emis2conc_CH4':[28.97/(5.148*16.0)],'PI_C_CH4':[722.0],'r0_CH4':[9.05942806e+00],'rC_CH4':[-1.03745809e-07],'rT_CH4':[-1.85711888e-01],'rA_CH4':[1.45117387e-04],'a0_CH4':[1.0],'a1_CH4':[0.0],'a2_CH4':[0.0],'a3_CH4':[0.0],'tau0_CH4':[9.0],'tau1_CH4':[1.0],'tau2_CH4':[1.0],'tau3_CH4':[1.0]}
+    elif single_gas_name == 'N2O':
+        standard_gas_params = {'f0_N2O':[0.0],'f1_N2O':[0.0],'f2_N2O':[0.12],'iirf100_max_N2O':[97.0],'emis2conc_N2O':[28.97/(5.148*28.0)],'PI_C_N2O':[273.0],'r0_N2O':[4.97443512e+01],'rC_N2O':[5.87120814e-04],'rT_N2O':[-2.02130466e+00],'rA_N2O':[2.07719812e-02],'a0_N2O':[1.0],'a1_N2O':[0.0],'a2_N2O':[0.0],'a3_N2O':[0.0],'tau0_N2O':[121.0],'tau1_N2O':[1.0],'tau2_N2O':[1.0],'tau3_N2O':[1.0]}
+    else:
+        return 
+
+    parameters_df = pd.DataFrame(standard_gas_params)
+    parameters_df = parameters_df.reindex(range(0,param_num))
+    # fill NaNs with standard parameter values
+    for key in parameters_df.keys():
+        parameters_df[key].fillna(parameters_df[key].loc[0], inplace=True)
+
+    return parameters_df
+
 
 def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
     
@@ -132,7 +181,7 @@ def multiscen_oxfair(emissions,
                      multigas=False, 
                      multiscen=False):
     '''
-    Multiparameterized version of (OxFaIR/U-FaIR) code.
+    Multiparameterized version of 5eqSCM code
     ===================================================
 
     Inputs
@@ -190,6 +239,11 @@ def multiscen_oxfair(emissions,
     if flag_val == False:
         print('\nRun failed')
         return
+
+    # redefine q if tcr or ecs have changed from default values
+    if (tcr != 1.6) * (ecs != 2.75):
+        k = 1.0 - (d/70.0)*(1.0 - np.exp(-70.0/d))
+        q =  (1.0 / F_2x) * (1.0/(k[0]-k[1])) * np.array([tcr-k[1]*ecs,k[0]*ecs-tcr])
     
     # define empty arrays to populate
     # -------------------
@@ -233,18 +287,6 @@ def multiscen_oxfair(emissions,
         
     # return C, RF and T arrays
     return C,RF,T
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -427,5 +469,112 @@ def run_RCPs(rcps = ['85','6','45','3'], plot_out=True):
         return RCP_results, fig_C, ax_C, fig_T, ax_T
     else:
         return RCP_results
+
+
+
+
+
+
+
+
+
+
+
+if __name__=='__main__':
+    mode = sys.argv[1]
+
+    if mode == 'test':
+        import matplotlib
+        matplotlib.use("TkAgg")
+        from matplotlib import pyplot as plt
+        
+        param_num = 1000 # number of parameter sets 
+
+        TCR_vals = np.random.normal(loc=1.75,scale=0.3,size=param_num)
+        ECS_vals = np.random.normal(loc=2.6,scale=0.5,size=param_num)
+
+        params_to_vary = {'TCR':TCR_vals,'ECS':ECS_vals} # values to input into parameter dataframe
+
+
+
+        thermal_params_df = thermal_param_df_creator(param_num, nonGas_params=params_to_vary)
+
+        co2_standard_params = standard_gas_param_df_creator(param_num, 'CO2')
+        ch4_standard_params = standard_gas_param_df_creator(param_num, 'CH4')
+        n2o_standard_params = standard_gas_param_df_creator(param_num, 'N2O')
+
+        return_df = add_new_gas_to_params(thermal_params_df, co2_standard_params)
+        return_df = add_new_gas_to_params(return_df, ch4_standard_params)
+        return_df = add_new_gas_to_params(return_df, n2o_standard_params)
+
+        fig1 = return_df.TCR.hist(bins = 20)
+        plt.figure()
+        fig2 = return_df.ECS.hist(bins = 20)
+        plt.show()
+
+    if mode == 'simple_multiparam':
+        import matplotlib
+        matplotlib.use("TkAgg")
+        from matplotlib import pyplot as plt
+
+
+        fig, ax = plt.subplots()
+        ax.set_ylabel('Temperature anomaly relative to 1850-1900 (K)')
+        ax.set_title('T')
+        ax.set_xlim(1850,2500)
+        colors = ['red','brown','green','blue']
+
+        
+        param_num = 50 # number of parameter sets 
+
+        TCR_vals = np.random.normal(loc=1.75,scale=0.3,size=param_num)
+        ECS_vals = np.random.normal(loc=2.6,scale=0.5,size=param_num)
+
+        params_to_vary = {'TCR':TCR_vals,'ECS':ECS_vals} # values to input into parameter dataframe
+
+
+        thermal_params_df = thermal_param_df_creator(param_num, nonGas_params=params_to_vary)
+
+        co2_standard_params = standard_gas_param_df_creator(param_num, 'CO2')
+        ch4_standard_params = standard_gas_param_df_creator(param_num, 'CH4')
+        n2o_standard_params = standard_gas_param_df_creator(param_num, 'N2O')
+
+        return_df = add_new_gas_to_params(thermal_params_df, co2_standard_params)
+        return_df = add_new_gas_to_params(return_df, ch4_standard_params)
+        return_df = add_new_gas_to_params(return_df, n2o_standard_params)
+
+        # import RCP ems scenarios
+        rcps = ['85','6','45','3']
+        RCP = import_RCPs()
+        emissions = np.zeros((3,4,736))
+        for n,rcp_val in enumerate(rcps):
+            emissions[0,n,:] = RCP[rcp_val]['E'].FossilCO2.values + RCP[rcp_val]['E'].OtherCO2.values
+            emissions[1,n,:] = RCP[rcp_val]['E'].CH4.values
+            emissions[2,n,:] = RCP[rcp_val]['E'].N2O.values
+
+        for i in return_df.index.values:
+
+            emis2conc = np.array([return_df.emis2conc_CO2.loc[i], return_df.emis2conc_CH4.loc[i], return_df.emis2conc_N2O.loc[i]])
+            a = np.array([[return_df.a0_CO2.loc[i],return_df.a1_CO2.loc[i],return_df.a2_CO2.loc[i],return_df.a3_CO2.loc[i]],[return_df.a0_CH4.loc[i],return_df.a1_CH4.loc[i],return_df.a2_CH4.loc[i],return_df.a3_CH4.loc[i]],[return_df.a0_N2O.loc[i],return_df.a1_N2O.loc[i],return_df.a2_N2O.loc[i],return_df.a3_N2O.loc[i]]])
+            tau = np.array([[return_df.tau0_CO2.loc[i],return_df.tau1_CO2.loc[i],return_df.tau2_CO2.loc[i],return_df.tau3_CO2.loc[i]],[return_df.tau0_CH4.loc[i],return_df.tau1_CH4.loc[i],return_df.tau2_CH4.loc[i],return_df.tau3_CH4.loc[i]],[return_df.tau0_N2O.loc[i],return_df.tau1_N2O.loc[i],return_df.tau2_N2O.loc[i],return_df.tau3_N2O.loc[i]]])
+            r = np.array([[return_df.r0_CO2.loc[i],return_df.rC_CO2.loc[i],return_df.rT_CO2.loc[i],return_df.rA_CO2.loc[i]],\
+                          [return_df.r0_CH4.loc[i],return_df.rC_CH4.loc[i],return_df.rT_CH4.loc[i],return_df.rA_CH4.loc[i]],\
+                          [return_df.r0_N2O.loc[i],return_df.rC_N2O.loc[i],return_df.rT_N2O.loc[i],return_df.rA_N2O.loc[i]]])
+            PI_C = np.array([return_df.PI_C_CO2.loc[i],return_df.PI_C_CH4.loc[i],return_df.PI_C_N2O.loc[i]])
+            f = np.array([[return_df.f0_CO2.loc[i],return_df.f1_CO2.loc[i],return_df.f2_CO2.loc[i]],[return_df.f0_CH4.loc[i],return_df.f1_CH4.loc[i],return_df.f2_CH4.loc[i]],[return_df.f0_N2O.loc[i],return_df.f1_N2O.loc[i],return_df.f2_N2O.loc[i]]])
+            tcr_value = return_df.TCR.loc[i]
+            ecs_value = return_df.ECS.loc[i]
+            d = np.array([return_df.d_2.loc[i],return_df.d_1.loc[i]])
+            F_2x = return_df.F_2x.loc[i]
+
+
+            temp_C,temp_RF,temp_T = multiscen_oxfair(emissions=emissions,tcr=tcr_value,ecs=ecs_value,d=d,F_2x=F_2x,emis2conc=emis2conc,a=a,tau=tau,r=r,PI_C=PI_C,f=f,multigas=True,multiscen=True)
+
+            for j,rcp in enumerate(rcps):
+                ax.plot(np.arange(1765,2501), temp_T[j,:] - np.mean(temp_T[j,1850-1765:1901-1765]),color=colors[j],label=rcp+' 5eqSCM temperature response', linewidth=1.0)
+
+        fig.savefig('multi_param_test.pdf', dpi=300)
+        plt.show()
+
 
 
