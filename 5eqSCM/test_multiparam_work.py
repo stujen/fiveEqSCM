@@ -288,6 +288,17 @@ if __name__=='__main__':
         plt.show()
 
     if mode == 'compare_to_etminan':
+        import scipy as sp
+        from scipy.optimize import curve_fit
+        def co2_fit_func(co2_conc, a):
+            C_0 = 180.0
+            return a * np.log(co2_conc / C_0)
+        def ch4_fit_func(ch4_conc, a):
+            M_0 = 340.0
+            return a * (np.sqrt(ch4_conc) - np.sqrt(M_0))
+        def n2o_fit_func(n2o_conc, a):
+            N_0 = 200.0
+            return a * (np.sqrt(n2o_conc) - np.sqrt(N_0))
 
         fig, ax = plt.subplots(2,2,figsize=(9,7))
         ax[0,0].axhline(y=0, color='black', linewidth=1.5, linestyle='-', alpha=0.5)
@@ -323,10 +334,13 @@ if __name__=='__main__':
         ax[0,0].plot(co2_conc, etminan_simple_co2_rf - etminan_simple_co2_rf[co2_conc==co2_conc_0], color='black', label='Etminan')
         ax[0,0].set_xlabel('CO$_2$ concentration (ppmv)')
         ax[0,0].set_ylabel('Radiative forcing (Wm$^{-2}$)')
-        ax[0,0].legend(loc='lower right', edgecolor='black', framealpha=1.0, fontsize=9)
         ax[0,0].text(250,8.85,'(a) CO$_2$')
         # ax[0,0].set_xlim(0,2500)
         # ax[0,0].set_ylim(-6,10)
+
+        p1, p2 = curve_fit(co2_fit_func, co2_conc, etminan_simple_co2_rf)
+        ax[0,0].plot(co2_conc, co2_fit_func(co2_conc, p1[0]) - co2_fit_func(co2_conc, p1[0])[co2_conc==co2_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
+        ax[0,0].legend(loc='lower right', edgecolor='black', framealpha=1.0, fontsize=9)
 
         # panel b
         ch4_conc = np.arange(340,3501)
@@ -341,6 +355,9 @@ if __name__=='__main__':
         # ax[0,1].set_xlim(0,3750)
         # ax[0,1].set_ylim(-1.0,0.8)
 
+        q1, q2 = curve_fit(ch4_fit_func, ch4_conc, etminan_simple_ch4_rf)
+        ax[0,1].plot(ch4_conc, ch4_fit_func(ch4_conc, q1[0]) - ch4_fit_func(ch4_conc, q1[0])[ch4_conc==ch4_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
+
         # panel c
         n2o_conc = np.arange(200,526)
 
@@ -354,6 +371,9 @@ if __name__=='__main__':
         ax[1,0].text(210,0.5,'(c) N$_2$O')
         # ax[1,0].set_xlim(100,600)
         # ax[1,0].set_ylim(-0.45,0.65)
+
+        r1, r2 = curve_fit(n2o_fit_func, n2o_conc, etminan_simple_n2o_rf)
+        ax[1,0].plot(n2o_conc, n2o_fit_func(n2o_conc, r1[0]) - n2o_fit_func(n2o_conc, r1[0])[n2o_conc==n2o_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
 
         # panel d
         n2o_conc_0 = 525.0
@@ -415,6 +435,8 @@ if __name__=='__main__':
 
     if mode == 'check_HC134a':
 
+        import scipy as sp
+
         # import RCP ems scenarios
         rcps = ['85','6','45','3']
         RCP = import_RCPs()
@@ -424,5 +446,27 @@ if __name__=='__main__':
             emissions[n,:] = RCP[rcp_val]['E'].HFC134a.values
 
         
-        
+        ## Testing minimize based fitter (seems to work):
+        def rcpdiff(x, rcps):
+
+            diff = 0
+
+            emis2conc = 1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97),
+            a = np.array([[0.2173,0.2240,0.2824,0.2763],[1.,0.,0.,0.],[1.,0.,0.,0.]]),
+            tau = np.array([[1000000,394.4,36.54,4.304],[9.,394.4,36.54,4.304],[121.,394.4,36.54,4.304]]),
+            PI_C = np.array([278.0,722.0,273.0]),
+            iirf100_max = 97.0,
+            f = np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]])
+            
+            for i, rcp_test in enumerate(rcps):
+                # should we be fitting in isolation????
+                C = multiscen_oxfair(emissions=emissions[i,:], r=np.array([[x[0],x[1],x[2],x[3]]]), multiscen=False, multigas=False)[0]
+                
+                print(C)
+                # diff += np.sum((C - RCP[rcp_test]['C'].CH4.values)**2)
+                
+            return diff
+
+        rcpdiff((10,0.0,0.0,0.0),['3'])
+        # sp.optimize.minimize(rcpdiff,(10,0.0,0.0,0.0))
 
