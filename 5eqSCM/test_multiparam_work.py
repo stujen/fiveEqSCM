@@ -289,11 +289,15 @@ if __name__=='__main__':
 
     if mode == 'compare_to_etminan':
 
-        fig, ax = plt.subplots(2,2,figsize=(8,8))
+        fig, ax = plt.subplots(2,2,figsize=(9,7))
+        ax[0,0].axhline(y=0, color='black', linewidth=1.5, linestyle='-', alpha=0.5)
+        ax[0,1].axhline(y=0, color='black', linewidth=1.5, linestyle='-', alpha=0.5)
+        ax[1,0].axhline(y=0, color='black', linewidth=1.5,linestyle='-', alpha=0.5)
+        ax[1,1].axhline(y=0, color='black', linewidth=1.5,linestyle='-', alpha=0.5)
 
-        C_0 = 278.0
-        N_0 = 270.0
-        M_0 = 722.0
+        C_0 = 180.0
+        N_0 = 200.0
+        M_0 = 340.0
 
         n2o_conc_0 = 323.0
         ch4_conc_0 = 1800.0
@@ -310,39 +314,115 @@ if __name__=='__main__':
 
 
         # panel a
-        co2_conc = np.arange(200,2001)
+        co2_conc = np.arange(180,2001)
 
-        etminan_simple_co2_rf = (a1*((co2_conc - C_0)**2) + b1*(co2_conc - C_0) + c1*(N_0 + n2o_conc_0)/2.0 + 5.36) * np.log(co2_conc / C_0)
-
-        plus_lin_co2_rf = (b1*(co2_conc - C_0) + 5.36) * np.log(co2_conc / C_0)
-
-        plus_lin_plus_quad_co2_rf = (a1*((co2_conc - C_0)**2) + b1*(co2_conc - C_0) + 5.36) * np.log(co2_conc / C_0)
-
+        etminan_simple_co2_rf = (a1*((co2_conc - C_0)**2) + b1*np.abs(co2_conc - C_0) + c1*(N_0 + n2o_conc_0)/2.0 + 5.36) * np.log(co2_conc / C_0)
         fiveEqSCM_co2_rf = 5.36 * np.log(co2_conc / C_0)
 
-        ax[0,0].plot(co2_conc, fiveEqSCM_co2_rf - fiveEqSCM_co2_rf[co2_conc==co2_conc_0], color='red', label='5eqSCM relationship')
-        ax[0,0].plot(co2_conc, etminan_simple_co2_rf - etminan_simple_co2_rf[co2_conc==co2_conc_0], color='black', label='Etminan simple equation')
-        ax[0,0].plot(co2_conc, plus_lin_co2_rf - plus_lin_co2_rf[co2_conc==co2_conc_0], color='blue', label='Linear + log')
-        ax[0,0].plot(co2_conc, plus_lin_plus_quad_co2_rf - plus_lin_plus_quad_co2_rf[co2_conc==co2_conc_0], color='green', label='Linear + quadratic + log')
+        ax[0,0].plot(co2_conc, fiveEqSCM_co2_rf - fiveEqSCM_co2_rf[co2_conc==co2_conc_0], color='red', label='5eqSCM')
+        ax[0,0].plot(co2_conc, etminan_simple_co2_rf - etminan_simple_co2_rf[co2_conc==co2_conc_0], color='black', label='Etminan')
         ax[0,0].set_xlabel('CO$_2$ concentration (ppmv)')
         ax[0,0].set_ylabel('Radiative forcing (Wm$^{-2}$)')
-        ax[0,0].legend(loc='best', edgecolor='black', framealpha=1.0, fontsize=9)
-        ax[0,0].text(250,10,'(a) CO$_2$')
-        ax[0,0].axhline(y=0, color='black')
+        ax[0,0].legend(loc='lower right', edgecolor='black', framealpha=1.0, fontsize=9)
+        ax[0,0].text(250,8.85,'(a) CO$_2$')
+        # ax[0,0].set_xlim(0,2500)
+        # ax[0,0].set_ylim(-6,10)
 
         # panel b
-        ch4_conc = np.arange(250,3601)
+        ch4_conc = np.arange(340,3501)
 
         etminan_simple_ch4_rf = (b3*(n2o_conc_0 + N_0)/2.0 + a3*(ch4_conc + M_0)/2.0 + 0.043) * (np.sqrt(ch4_conc) - np.sqrt(M_0))
-
         fiveEqSCM_ch4_rf = 0.043 * (np.sqrt(ch4_conc) - np.sqrt(M_0))
 
-        ax[0,1].plot(ch4_conc, etminan_simple_ch4_rf - etminan_simple_ch4_rf[ch4_conc==ch4_conc_0], color = 'black')
         ax[0,1].plot(ch4_conc, fiveEqSCM_ch4_rf - fiveEqSCM_ch4_rf[ch4_conc==ch4_conc_0], color = 'red')
+        ax[0,1].plot(ch4_conc, etminan_simple_ch4_rf - etminan_simple_ch4_rf[ch4_conc==ch4_conc_0], color = 'black')
         ax[0,1].set_xlabel('CH$_4$ concentration (ppbv)')
         ax[0,1].text(500,0.6,'(b) CH$_4$')
-        ax[0,1].axhline(y=0, color='black')
+        # ax[0,1].set_xlim(0,3750)
+        # ax[0,1].set_ylim(-1.0,0.8)
+
+        # panel c
+        n2o_conc = np.arange(200,526)
+
+        etminan_simple_n2o_rf = (a2*(co2_conc_0 + C_0)/2.0 + b2*(n2o_conc + N_0)/2.0 + c2*(ch4_conc_0 + M_0)/2.0 + 0.117) * (np.sqrt(n2o_conc) - np.sqrt(N_0))
+        fiveEqSCM_n2o_rf = 0.117 * (np.sqrt(n2o_conc) - np.sqrt(N_0))
+
+        ax[1,0].plot(n2o_conc, fiveEqSCM_n2o_rf - fiveEqSCM_n2o_rf[n2o_conc==n2o_conc_0], color = 'red')
+        ax[1,0].plot(n2o_conc, etminan_simple_n2o_rf - etminan_simple_n2o_rf[n2o_conc==n2o_conc_0], color = 'black')
+        ax[1,0].set_xlabel('N$_2$O concentration (ppbv)')
+        ax[1,0].set_ylabel('Radiative forcing (Wm$^{-2}$)')
+        ax[1,0].text(210,0.5,'(c) N$_2$O')
+        # ax[1,0].set_xlim(100,600)
+        # ax[1,0].set_ylim(-0.45,0.65)
+
+        # panel d
+        n2o_conc_0 = 525.0
+        ch4_conc_0 = 3500.0
+        co2_conc_0 = 2000.0
+
+        n2o_conc_1 = 323.0
+        ch4_conc_1 = 1800.0
+        co2_conc_1 = 389.0
 
 
+        n2o_overlap_of_co2_rf = c1 * (n2o_conc_0 - N_0) * np.log(co2_conc/C_0)
+        n2o_overlap_of_ch4_rf = b3 * (n2o_conc_0 - N_0) * (np.sqrt(ch4_conc) - np.sqrt(M_0))
+        ch4_overlap_of_n2o_rf = c2 * (ch4_conc_0 - M_0) * (np.sqrt(n2o_conc) - np.sqrt(N_0))
+        co2_overlap_of_n2o_rf = a2 * (co2_conc_0 - C_0) * (np.sqrt(n2o_conc) - np.sqrt(N_0))
+
+        ax[1,1].plot(co2_conc, n2o_overlap_of_co2_rf - n2o_overlap_of_co2_rf[co2_conc==co2_conc_1], color = 'black', linestyle='--', label='N$_2$O overlap of CO$_2$')
+        ax[1,1].plot(ch4_conc, n2o_overlap_of_ch4_rf - n2o_overlap_of_ch4_rf[ch4_conc==ch4_conc_1], color = 'red', linestyle='--', label='N$_2$O overlap of CH$_4$')
+        ax[1,1].plot(n2o_conc, ch4_overlap_of_n2o_rf - ch4_overlap_of_n2o_rf[n2o_conc==n2o_conc_1], color = 'green', linestyle=':', label='CH$_4$ overlap of N$_2$O')
+        ax[1,1].plot(n2o_conc[::50], co2_overlap_of_n2o_rf[::50] - co2_overlap_of_n2o_rf[n2o_conc==n2o_conc_1], color = 'green', marker='+', linestyle='', label='CO$_2$ overlap of N$_2$O')
+        ax[1,1].set_ylim(-0.35,0.1)
+        ax[1,1].set_xlim(0,3750)
+        ax[1,1].text(1450,0.05,'(d) overlap strength')
+        ax[1,1].set_xlabel('Overlapped gas concentration (ppmv/ppbv)')
+        ax[1,1].legend(loc='lower left', edgecolor='black', framealpha=1)
+
+        # fig.savefig('etminan_reproduction_5eqSCM.pdf',dpi=300)
         plt.show()
+
+        # with plt.xkcd():
+        #     # Based on "Stove Ownership" from XKCD by Randall Monroe
+        #     # http://xkcd.com/418/
+
+        #     fig = plt.figure()
+        #     ax = fig.add_axes((0.1, 0.2, 0.8, 0.7))
+        #     ax.spines['right'].set_color('none')
+        #     ax.spines['top'].set_color('none')
+        #     plt.xticks([])
+        #     plt.yticks([])
+        #     ax.set_ylim([-30, 10])
+
+        #     data = np.ones(100)
+        #     data[70:] -= np.arange(30)
+
+        #     plt.annotate(
+        #         'THE DAY I REALIZED\nI COULD COOK BACON\nWHENEVER I WANTED',
+        #         xy=(70, 1), arrowprops=dict(arrowstyle='->'), xytext=(15, -10))
+
+        #     plt.plot(data)
+
+        #     plt.xlabel('time')
+        #     plt.ylabel('my overall health')
+        #     fig.text(
+        #         0.5, 0.05,
+        #         '"Stove Ownership" from xkcd by Randall Monroe',
+        #         ha='center')
+
+        #     plt.show()
+
+    if mode == 'check_HC134a':
+
+        # import RCP ems scenarios
+        rcps = ['85','6','45','3']
+        RCP = import_RCPs()
+        emissions = np.zeros((4,736))
+
+        for n,rcp_val in enumerate(rcps):
+            emissions[n,:] = RCP[rcp_val]['E'].HFC134a.values
+
+        
+        
 
