@@ -436,37 +436,246 @@ if __name__=='__main__':
     if mode == 'check_HC134a':
 
         import scipy as sp
+        from scipy.optimize import minimize
 
         # import RCP ems scenarios
         rcps = ['85','6','45','3']
+        colors = ['red','brown','green','blue']
         RCP = import_RCPs()
-        emissions = np.zeros((4,736))
+        emissions = np.zeros((4,4,736))
 
         for n,rcp_val in enumerate(rcps):
-            emissions[n,:] = RCP[rcp_val]['E'].HFC134a.values
+            # emissions[n,:] = RCP[rcp_val]['E'].HFC134a.values
 
-        
+            emissions[0,n,:] = RCP[rcp_val]['E'].FossilCO2.values + RCP[rcp_val]['E'].OtherCO2.values
+            emissions[1,n,:] = RCP[rcp_val]['E'].CH4.values
+            emissions[2,n,:] = RCP[rcp_val]['E'].N2O.values
+            emissions[3,n,:] = RCP[rcp_val]['E'].HFC134a.values
+
+        # gas params assumptions
+        emis2conc = 1/(5.148*10**18 / 1e18 * np.array([102.]) / 28.97)
+        a = np.array([[1.0,0.0,0.0,0.0]])
+        tau = np.array([[13.4,1.0,1.0,1.0]])
+        r = np.array([[10.0,0.0,0.0,0.0]])
+        PI_C = np.array([0.01])
+        iirf100_max = 97.0
+        f = np.array([[0.0,0.0,1.6e-4]])
+        tcr = 1.75
+        ecs = 2.6
+        d = np.array([239.0,4.1])
+        q = np.array([0.33,0.41])
+        F_2x = 3.74
+
+        # CO2 param assumptions
+        emis2conc_co2 = 1/(5.148*10**18 / 1e18 * np.array([12.]) / 28.97)
+        a_co2 = np.array([[0.2173,0.2240,0.2824,0.2763]])
+        tau_co2 = np.array([[1e6,394.4,36.54,4.304]])
+        PI_C_co2 = np.array([278.0])
+        f_co2 = np.array([[5.78,0.0,0.0]])
+
+        # CH4 param assumptions
+        emis2conc_ch4 = 1/(5.148*10**18 / 1e18 * np.array([16.0]) / 28.97)
+        a_ch4 = np.array([[1.0,0.0,0.0,0.0]])
+        tau_ch4 = np.array([[9.0,1.0,1.0,1.0]])
+        PI_C_ch4 = np.array([722.0])
+        f_ch4 = np.array([[0.0,0.0,0.036]])#0.03895942]])
+
+        # N2O param assumptions
+        emis2conc_n2o = 1/(5.148*10**18 / 1e18 * np.array([28.0]) / 28.97)
+        a_n2o = np.array([[1.0,0.0,0.0,0.0]])
+        tau_n2o = np.array([[121.0,1.0,1.0,1.0]])
+        PI_C_n2o = np.array([273.0])
+        f_n2o = np.array([[0.0,0.0,0.12]])#0.11082109]])
+
+        # HFC134a param assumptions - retune!
+        emis2conc_hfc134a = 1/(5.148*10**18 / 1e18 * np.array([102.]) / 28.97)
+        a_hfc134a = np.array([[1.,0.0,0.0,0.0]])
+        tau_hfc134a = np.array([[13.4,1.0,1.0,1.0]])
+        PI_C_hfc134a = np.array([1e-9])
+        f_hfc134a = np.array([[0.0,1.6e-4,0.0]])
+
+        # other gases param assumptions
+        emis2conc_other = 1/(5.148*10**18 / 1e18 * np.array([88.0,138.01,338.04,70.01,52.02,252.06,120.02,102.03,84.04,170.03,134.05,146.06,137.37,120.91,187.38,170.92,154.47,153.81,133.40,86.47,116.94,100.49,165.36,209.82,148.91,259.82,94.94,50.49]) / 28.97)
+        a_other = np.array([[1.,0.0,0.0,0.0]])
+        tau_other = np.array([50000.,10000.,3100.,222.,5.2,16.1,28.2,13.4,47.1,38.9,7.7,3200.,45.,100.,85.,190.,1020.,26.,5.,11.9,9.2,17.2,16.,2.9,65.,2.,0.8,1.])
+        PI_C_other = np.array([1e-9])
+        f_other = 1e-3 * np.array([0.09,0.25,0.44,0.18,0.11,0.42,0.23,0.16,0.16,0.26,0.24,0.57,0.26,0.32,0.30,0.31,0.20,0.17,0.07,0.21,0.16,0.19,0.29,0.27,0.30,0.30,0.004,0.01])
+
         ## Testing minimize based fitter (seems to work):
-        def rcpdiff(x, rcps):
+        def rcpdiff(x):
 
+            rcps = ['85','6','45','3']
             diff = 0
-
-            emis2conc = 1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97),
-            a = np.array([[0.2173,0.2240,0.2824,0.2763],[1.,0.,0.,0.],[1.,0.,0.,0.]]),
-            tau = np.array([[1000000,394.4,36.54,4.304],[9.,394.4,36.54,4.304],[121.,394.4,36.54,4.304]]),
-            PI_C = np.array([278.0,722.0,273.0]),
-            iirf100_max = 97.0,
-            f = np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]])
             
             for i, rcp_test in enumerate(rcps):
                 # should we be fitting in isolation????
-                C = multiscen_oxfair(emissions=emissions[i,:], r=np.array([[x[0],x[1],x[2],x[3]]]), multiscen=False, multigas=False)[0]
+                C = multiscen_oxfair(emissions=emissions[i,:],tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc,a=a,tau=tau,PI_C=PI_C,f=f, r=np.array([[x[0],0.0,x[1],0.0]]), multiscen=False, multigas=False)[0]
                 
-                print(C)
-                # diff += np.sum((C - RCP[rcp_test]['C'].CH4.values)**2)
+                # print(C)
+                diff += np.sum((C - RCP[rcp_test]['C'].HFC134a.values)**2)
                 
             return diff
 
-        rcpdiff((10,0.0,0.0,0.0),['3'])
-        # sp.optimize.minimize(rcpdiff,(10,0.0,0.0,0.0))
+        def fit_to_rcps():
+
+            x_vals = np.zeros((4,len(RCP['3']['C'].keys()[2:])))
+
+            print(RCP['3']['C'].keys().values[2:])
+
+            for i, gas in enumerate(RCP['3']['C'].keys()[2:]):
+
+                # if gas == 'CO2':
+                #     def rcpdiff_co2(x):
+                #         rcps = ['85','6','45','3']
+                #         diff = 0
+                #         for j, rcp_test in enumerate(rcps):
+                #             C = multiscen_oxfair(emissions=RCP[rcp_test]['E'].FossilCO2.values + RCP[rcp_test]['E'].OtherCO2.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_co2,a=a_co2,tau=tau_co2,PI_C=PI_C_co2,f=f_co2,r=np.array([[x[0],x[1],x[2],0.0]]), multiscen=False, multigas=False)[0]
+                #             diff += np.sum((C - RCP[rcp_test]['C'].CO2.values)**2)
+                #         return diff
+                #     x_val = minimize(rcpdiff_co2, (32.4,0.019,4.165), bounds=((20, 50), (0, 1), (0,15)))
+                #     x_vals[:3,0] = x_val.x
+
+                # if gas == 'CH4':
+                #     def rcpdiff_ch4(x):
+                #         rcps = ['85','6','45','3']
+                #         diff = 0
+                #         for j, rcp_test in enumerate(rcps):
+                #             C = multiscen_oxfair(emissions=RCP[rcp_test]['E'].CH4.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_ch4,a=a_ch4,tau=tau_ch4,PI_C=PI_C_ch4,f=f_ch4, r=np.array([[x[0],0.0,x[1],x[2]]]), multiscen=False, multigas=False)[0]
+                #             diff += np.sum((C - RCP[rcp_test]['C'].CH4.values)**2)
+                #         return diff
+                #     x_val = minimize(rcpdiff_ch4, (10.0,0.0,0.0))
+
+                #     x_vals[0,1] = x_val.x[0]
+                #     x_vals[2,1] = x_val.x[1]
+                #     x_vals[3,1] = x_val.x[2]
+
+                # if gas == 'N2O':
+                #     def rcpdiff_n2o(x):
+                #         rcps = ['85','6','45','3']
+                #         diff = 0
+                #         for j, rcp_test in enumerate(rcps):
+                #             C = multiscen_oxfair(emissions=RCP[rcp_test]['E'].N2O.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_n2o,a=a_n2o,tau=tau_n2o,PI_C=PI_C_n2o,f=f_n2o, r=np.array([[x[0],0.0,0.0,x[1]]]), multiscen=False, multigas=False)[0]
+                #             diff += np.sum((C - RCP[rcp_test]['C'].N2O.values)**2)
+                #         return diff
+                #     x_val = minimize(rcpdiff_n2o, (10.0,0.0))
+
+                #     x_vals[0,2] = x_val.x[0]
+                #     x_vals[2,2] = x_val.x[1]
+
+                # if gas == 'HFC134a':
+                #     def rcpdiff_hfc134a(x):
+                #         rcps = ['85','6','45','3']
+                #         diff = 0
+                #         for j, rcp_test in enumerate(rcps):
+                #             C = multiscen_oxfair(emissions=RCP[rcp_test]['E'].HFC134a.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_hfc134a,a=a_hfc134a,tau=tau_hfc134a,PI_C=PI_C_hfc134a,f=f_hfc134a, r=np.array([[x[0],0.0,0.0,0.0]]), multiscen=False, multigas=False)[0]
+                #             diff += np.sum((C - RCP[rcp_test]['C'].HFC134a.values)**2)
+                #         return diff
+                #     x_val = minimize(rcpdiff_hfc134a, (10.0))
+
+                #     x_vals[0,i] = x_val.x[0]
+
+                if gas == 'CO2' or gas == 'CH4' or gas == 'N2O' or gas == 'FGASSUMHFC134AEQ' or gas == 'MHALOSUMCFC12EQ':
+                    pass
+                else:
+                    print('fitting %s' % gas)
+                    def rcpdiff_others(x):
+                        rcps = ['85','6','45','3']
+                        diff = 0
+                        for j, rcp_test in enumerate(rcps):
+                            C = multiscen_oxfair(emissions=RCP[rcp_test]['E'][gas].values,tcr=tcr,ecs=ecs,d=d,emis2conc=np.array([emis2conc_other[i-5]]),a=a_other,tau=np.array([[tau_other[i-5],1.0,1.0,1.0]]),PI_C=PI_C_other,f=np.array([[0.0,f_other[i-5],0.0]]), r=np.array([[x[0],0.0,0.0,0.0]]), multiscen=False, multigas=False)[0]
+                            diff += np.sum((C - RCP[rcp_test]['C'][gas].values)**2)
+                        # print(diff)
+                        return diff
+                    x_val = minimize(rcpdiff_others, (10.0), method="Nelder-Mead", options={'xatol':1e-2, 'fatol':1e-3})
+
+                    x_vals[0,i] = x_val.x[0]
+
+            print(x_vals)
+
+            return x_vals
+
+        # # run fitting routine to one gas...
+        # # NOTE: I have turned off printing for size of input if it is consistent... 
+        # # NOTE: Need to build sanity checks that the parameter input dimensions are consistent with the emission input shapes
+
+
+
+        # RUN FITTING ROUTINE
+        # x_vals_return = fit_to_rcps()
+
+
+
+        # fits to gases in isolation
+        r_co2 = np.array([34.41, 5.453e-3, 7.635, 0.0])
+        r_ch4 = np.array([9.459, 0.0, -5.443, 4.63e-04])
+        r_n2o = np.array([51.48555007, 0.0, 26.22602053, 0.0])
+        r_hfc134a = np.array([14.16,0.0,0.0,0.0])
+
+        # fits with full temp feedback, but before new radiative efficiencies is added
+        r_full = np.array([[32.4, 0.019, 4.165, 0.0],[9.06, 0.0, -0.186,  1.45e-04],[49.74, 5.87e-04, -2.021,  2.077e-02]])
+
+        # fits with full temp feedback, before new radiative efficiencies added, with only 2 or 3 params used
+        _2r_ch4 = np.array([9.07873983e+00, 0.0, 0.0, -2.30741044e-05])
+        _2r_n2o = np.array([5.18627347e+01, 0.0, 0.0, 8.55112866e-03])
+        _3r_ch4 = np.array([9.05892921e+00, 0.0, -1.90921394e-01,  1.46882841e-04])
+        _3r_n2o = np.array([5.13507670e+01, 0.0, -5.63034702e-01,  1.22846293e-02])
+        r_full_2 = np.array([[32.40, 0.019, 4.165, 0.0],[_3r_ch4[0],_3r_ch4[1],_3r_ch4[2],_3r_ch4[3]],[_2r_n2o[0],_2r_n2o[1],_2r_n2o[2],_2r_n2o[3]],[21.0,0.0,0.0,0.0]])
+
+    
+        # fig, ax = plt.subplots(2,4,figsize=(15,10))
+
+        # for k, rcp_val in enumerate(rcps):
+        #     ax[0,0].plot(np.arange(1765,2501), RCP[rcp_val]['E'].FossilCO2.values + RCP[rcp_val]['E'].OtherCO2.values, color=colors[k])
+        #     ax[0,1].plot(np.arange(1765,2501), RCP[rcp_val]['E'].CH4.values, color=colors[k])
+        #     ax[0,2].plot(np.arange(1765,2501), RCP[rcp_val]['E'].N2O.values, color=colors[k])
+        #     ax[0,3].plot(np.arange(1765,2501), RCP[rcp_val]['E'].HFC134a.values, color=colors[k])
+
+        #     ax[1,0].plot(np.arange(1765,2501), RCP[rcp_val]['C'].CO2.values, color=colors[k])
+        #     # ax[1,0].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E'].FossilCO2.values + RCP[rcp_val]['E'].OtherCO2.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_co2,a=a_co2,tau=tau_co2,PI_C=PI_C_co2,f=f_co2, r=r_co2, multiscen=False, multigas=False)[0][0,0,:], color=colors[i], linestyle=':')
+
+        #     ax[1,1].plot(np.arange(1765,2501), RCP[rcp_val]['C'].CH4.values, color=colors[k])
+        #     # ax[1,1].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E'].CH4.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_ch4,a=a_ch4,tau=tau_ch4,PI_C=PI_C_ch4,f=f_ch4, r=r_ch4, multiscen=False, multigas=False)[0][0,0,:], color=colors[i], linestyle=':')
+
+        #     ax[1,2].plot(np.arange(1765,2501), RCP[rcp_val]['C'].N2O.values, color=colors[k])
+        #     # ax[1,2].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E'].N2O.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_n2o,a=a_n2o,tau=tau_n2o,PI_C=PI_C_n2o,f=f_n2o, r=r_n2o, multiscen=False, multigas=False)[0][0,0,:], color=colors[i], linestyle=':')
+
+        #     ax[1,3].plot(np.arange(1765,2501), RCP[rcp_val]['C'].HFC134a.values, color=colors[k])
+        #     ax[1,3].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E'].HFC134a.values,tcr=tcr,ecs=ecs,d=d,emis2conc=emis2conc_hfc134a,a=a_hfc134a,tau=tau_hfc134a,PI_C=PI_C_hfc134a,f=f_hfc134a, r=r_hfc134a, multiscen=False, multigas=False)[0][0,0,:], color=colors[k], linestyle=':')
+
+        #     # ax[1,3].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E']['HFC134a'].values,tcr=tcr,ecs=ecs,d=d,emis2conc=np.array([emis2conc_other[7]]),a=a_other,tau=np.array([[tau_other[7],1.0,1.0,1.0]]),PI_C=PI_C_other,f=np.array([[0.0,f_other[7],0.0]]), r=np.array([[21.0,0.0,0.0,0.0]]), multiscen=False, multigas=False)[0][0,0,:], linewidth=0.75, color=colors[k])
+
+        #     # C_full = multiscen_oxfair(emissions=emissions[:,i,:],tcr=tcr,ecs=ecs,d=d,emis2conc=1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.,102.]) / 28.97),a=np.array([[0.2173,0.2240,0.2824,0.2763],[1.,0.,0.,0.],[1.,0.,0.,0.],[1.,0.,0.,0.]]),tau=np.array([[1000000,394.4,36.54,4.304],[9.,394.4,36.54,4.304],[121.,394.4,36.54,4.304],[13.4,394.4,36.54,4.304]]),PI_C=np.array([278.0,722.0,273.0,1e-9]),f=np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12],[0,1.6e-4,0]]), r=r_full_2, multiscen=False, multigas=True)[0][:,0,:]
+        #     C_full_2 = multiscen_oxfair(emissions=emissions[:,i,:],tcr=tcr,ecs=ecs,d=d,emis2conc=1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97),a=np.array([[0.2173,0.2240,0.2824,0.2763],[1.,0.,0.,0.],[1.,0.,0.,0.]]),tau=np.array([[1000000,394.4,36.54,4.304],[9.,394.4,36.54,4.304],[121.,394.4,36.54,4.304]]),PI_C=np.array([278.0,722.0,273.0]),f=np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]]), r=r_full_2, multiscen=False, multigas=True)[0][:,0,:]
+
+        #     ax[1,0].plot(np.arange(1765,2501), C_full[0,:], color=colors[i], linestyle='--')
+        #     ax[1,1].plot(np.arange(1765,2501), C_full[1,:], color=colors[i], linestyle='--')
+        #     ax[1,2].plot(np.arange(1765,2501), C_full[2,:], color=colors[i], linestyle='--')
+        #     ax[1,3].plot(np.arange(1765,2501), C_full[3,:], color=colors[i], linestyle='--')
+
+        #     # ax[1,0].plot(np.arange(1765,2501), C_full_2[0,:], color=colors[i], linestyle='-', linewidth=1.)
+        #     # ax[1,1].plot(np.arange(1765,2501), C_full_2[1,:], color=colors[i], linestyle='-', linewidth=1.)
+        #     # ax[1,2].plot(np.arange(1765,2501), C_full_2[2,:], color=colors[i], linestyle='-', linewidth=1.)
+
+        # plt.show()
+        print(RCP['3']['C'].keys().values[8:])
+
+        r0s = np.array([10.,10.,10.,84.75390625,5.06298828,16.2734375,28.84802246,14.16342163,45.19213867,34.9140625,7.83251953,10.,40.03320312,60.69543457,56.82421875,82.96484375,105.5,26.53613281,5.4453125,12.74243164,9.83300781,18.24804688,16.8359375,3.140625,48.5546875,6.4921875,0.67590332,1.25929832])
+
+        print(r0s.size)
+
+        fig1, ax1 = plt.subplots(4,7,figsize=(28,13))
+
+        # print(RCP['3']['C'].keys().values)
+
+        for count, gas in enumerate(RCP['3']['C'].keys().values[8:]):
+            print(count, gas, r0s[count])
+            for k, rcp_val in enumerate(rcps):
+                ax1[int(count/7),count%7].plot(np.arange(1765,2501), multiscen_oxfair(emissions=RCP[rcp_val]['E'][gas].values,tcr=tcr,ecs=ecs,d=d,emis2conc=np.array([emis2conc_other[count]]),a=a_other,tau=np.array([[tau_other[count],1.0,1.0,1.0]]),PI_C=PI_C_other,f=np.array([[0.0,f_other[count],0.0]]), r=np.array([[r0s[count],0.0,0.0,0.0]]), multiscen=False, multigas=False)[0][0,0,:], linewidth=0.75, color=colors[k])
+                ax1[int(count/7),count%7].plot(np.arange(1765,2501), RCP[rcp_val]['C'][gas].values, linewidth=0.75, linestyle='--', color=colors[k])
+
+        fig1.savefig('test.pdf', dpi=300)
+        # plt.show()
+
+
+
 
