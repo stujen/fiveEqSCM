@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Things Nick Hates
+*.aux
+*.log
+*.out
+*.pdf
+./5eqSCM/CMIP5_Prather_data/*
+./5eqSCM/Other_gas_data/*
