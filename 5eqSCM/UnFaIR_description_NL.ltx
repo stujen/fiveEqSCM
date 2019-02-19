@@ -59,31 +59,10 @@ We apply these equations in a manner that reproduces the carbon cycle of FaIR v1
 \frac{\text{d}R_{i}(t)}{\text{d}t} = a_{i}E(t) - \frac{R_{i}(t)}{\alpha \tau_{i}}, \text{~~and~~}C(t) = C_0 + \sum_{i=0}^{3}{R_{i}(t)}, \text{~~} i \in {1..4}
 \end{equation}.
 
-We simplify 
+The numerical solution for $\alpha$ and our analytic approximation given in \ref{eq3} are shown in figure 1a. This demonstrates that our expression provides a good representation within the physical range of $\alpha$ as discussed in Millar et al, and hence should be able to emulate the gas cycle within FaIR accurately.
 
-%The basis for much of this model is taken from FaIR v1.0 \cite{Millar2017}, which is itself based on the IPCC 5th Assessment Report's impulse-response model (AR5-IR \cite{Myhre2012}). This makes use of a 4-pool carbon cycle, with the pools nominally representing: rapid biospheric and ocean mixed-layer, biopsheric and ocean thermocline, deep-ocean, and geological uptake of CO$_2$ (in order of fastest to slowest uptake timescale). Millar and co-authors modified this highly simplified representation with the inclusion of a state-dependent variable, $\alpha$, which alters the pool timescales from $\tau \rightarrow \alpha \tau$, resulting in
-
-%\begin{equation} \label{eq1}
-%\frac{\text{d}R_{i}(t)}{\text{d}t} = a_{i}E(t) - \frac{R_{i}(t)}{\alpha \tau_{i}}, \text{~~and~~}C(t) = C_0 + \sum_{i=0}^{3}{R_{i}(t)}, \text{~~} i \in {1..4}
-%\end{equation}
-
-%with $R_i, a_i$ and $\tau_i$ representing the concentration, fraction of emissions and decay time constant for the $i^{th}$ CO$_2$ pool. They identified the 100-year integrated impulse response as a suitable state-dependence, itself being a non-linear function of $\alpha$, and also a linear function of the accumulated carbon stock (the quantity of emitted carbon that no longer resides in the atmosphere) and global mean temperature anomaly in an adequte aproximation to the behaviour of ESMs and EMICs, as follows:
-
-%\begin{equation} \label{eq2}
-%iIRF_{100} = \sum_i \alpha a_i \tau_i (1-e^{\frac{-100}{\alpha \tau_i}}) = r_0 + r_c C_{acc} + r_T T.
-%\end{equation}
-
-%FaIR v1.0 solved this equation numerically at each timestep for $\alpha$, using $C_{acc}$ and $T$ from the previous timestep. We propose that this implicit equation can be approximated by the following explicit form for $\alpha$:
-
-%\begin{align*} \label{eq3}
-%\alpha(t) &= g_0 \text{sinh}\Big(\frac{r_0 + r_CC_{acc}(t) + r_TT(t)}{g_1}\Big),\\
-%\text{~~where~~}g_1 &= \sum_{i=0}^{3}{a_i\tau_i\big[1 - \big(1 + h/\tau_i\big)\text{e}^{-h/\tau_i}\big]},\\
-%\text{~~and~~}g_0 &= \Big[ \text{sinh} \Big( \frac{ \sum_{i=0}^{3}{a_i \tau_i [1 - \text{e}^{-h/ \tau_i}]}}{g_1} \Big) \Big] ^{-1}.
-%\end{align*} 
-
-%[comment] Do we use up fig 1 showing that this function give a similar response for a range of parameters/ pathways as the fair model?
-
-Figure 1 displays the behaviour of $\alpha$ within FaIR v1.0 and UnFaIR for a range of different $C_{acc}$ and $T$ pathways. We find that the results from our explicit approximation very closely resemble the original implicit equation for optimal parameters. As the remaining equations in the carbon cycle are identical to FaIR v1.0, we can conclude that UnFaIR is virtually indistinguishble from FaIR v1.0 in terms of the CO$_2$ emissions to concentrations pathway. 
+\subsection{CH$_4$}
+For the gas cycle of methane, we follow the atmospheric chemistry model of Holmes et al (2012). 
 
 \subsection{Methane}
 Our aim is find an equation set with a similar functional form to the carbon cycle that can reproduce the behaviour of current atmospheric models of methane. Since the predominant mechanism for the removal of methane is oxidation by the OH radical within the troposphere, we employ a single (state dependent) decay timescale by setting $a_1 = 1$ and $a_{2,3,4} = 0$ in \ref{eq1}. The state dependence of our carbon cycle model can be applied almost identically to methane, resulting in a parametric model for methane atmospheric lifetime similar to Holmes et al. (2012). However, we find that a term proportional to atmospheric concentration is required in \ref{eq3} to well-reproduce the results found by Holmes et al. due to the negative feedback between methane abundance and tropospheric OH. This results in our final formulation for the universal alpha variable,

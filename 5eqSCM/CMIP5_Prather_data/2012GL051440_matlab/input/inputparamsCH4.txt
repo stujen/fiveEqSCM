@@ -1,0 +1,27 @@
+1          Number of gas species in file
+CH4        Species name      
+Name       Value     Uncertainty   Unit       Notes
+Year       2010      0             a          Year for present day
+Mass       16        0             dalton     molecular weight of CH4
+Xair       0.1765    0             1E9mol/ppb Teramoles per ppb of dry air
+cPD        1795      18            ppb        CH4 present-day concentration
+dcdt       5         1             ppb/a      CH4 present-day growth rate
+cPI        700       25            ppb        CH4 pre-industrial concentration
+kCl        5.00d-3   2.5d-3        1/a        CH4 loss frequency due to trop Cl
+kStrat     8.33d-3   1.7d-3        1/a        CH4 loss frequency due to stratosphere
+kSurf      6.67d-3   2.22d-3       1/a        CH4 loss frequency due to surface uptake
+anPI       1.00      0.1           unitless   PI/PD ratio for natural emissions
+aPI        0.95      0.1           unitless   PI/PD ratio for kOH
+a2100      1         0.15          unitless   y2100/PD ratio for kOH
+aPIstrat   1         0             unitless   PI/PD ratio for kStrat
+a2100strat 1         0             unitless   y2100/PD ratio for kStrat
+sOH        -0.32     5.0d-2        unitless   OH feedback dln(OH)/dln(CH4)
+sStrat     0         0             unitless   stratosphere feedback dln(kStrat)/dln(CH4)		
+b          2.75      2.75d-2       Tg/ppb     conversion between CH4 burden and tropospheric abundance
+RFe        3.7d-4    2.22d-5       W/m2/ppb   Radiative forcing efficiency
+kMCF       0.181     0.005         1/a        present-day observed decay of MCF
+kMCFstrat  2.35d-2   3.31d-3       1/a        MCF loss frequency due to stratosphere
+kMCFocean  0         7.1d-3        1/a        MCF loss frequency due to ocean uptake
+fillMCF    0.92      0.01          unitless   global/troposphere mean mixing ratios for MCF   
+fill       0.973     0.01          unitless   global/troposphere mean mixing ratios for CH4
+r272       0.601     6.1d-2        unitless   k(CH4+OH)/k(MCF+OH) at 272 K (includes uncertainty in temperature)
