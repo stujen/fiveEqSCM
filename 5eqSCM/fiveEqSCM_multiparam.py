@@ -73,16 +73,16 @@ def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
     # check if emissions is 3D, if not make it 3D, complying with shape requirements
     if np.array(emissions.shape).size == 2:
         if multigas == True and multiscen == False:
-            print('Emissions input is 2D (n_gases, n_timesteps)')
+            # print('Emissions input is 2D (n_gases, n_timesteps)')
             emissions = emissions[:,np.newaxis,:]
         elif multigas == False and multiscen == True:
-            print('Emissions input is 2D (n_scenarios, n_timesteps)')
+            # print('Emissions input is 2D (n_scenarios, n_timesteps)')
             emissions = emissions[np.newaxis,...]
         elif (multigas == False and multiscen == False) or (multigas == True and multiscen == True):
             print('One flag (multigas/multiscen) must be switched True, other False')
             return emissions, False
     elif np.array(emissions.shape).size == 1:
-        print('Emissions input is 1D (n_timesteps)')
+        # print('Emissions input is 1D (n_timesteps)')
         emissions = emissions[np.newaxis,:]
         emissions = emissions[np.newaxis,...]
     elif np.array(emissions.shape).size == 3 and ((multigas==False or multiscen==False) or (multigas==False and multiscen==False)):
@@ -173,8 +173,8 @@ def multiscen_oxfair(emissions,
                      PI_C = np.array([278.0,722.0,273.0]),
                      iirf100_max = 97.0,
                      f = np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]]),
-                     tcr = 1.6,
-                     ecs = 2.75,
+                     tcr = 1.75,
+                     ecs = 2.6,
                      d = np.array([239.0,4.1]),
                      q = np.array([0.33,0.41]),
                      F_2x = 3.74,
