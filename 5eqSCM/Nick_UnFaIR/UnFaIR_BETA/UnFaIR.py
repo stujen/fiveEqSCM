@@ -125,7 +125,7 @@ def default_gas_params():
     gas_cycle_parameters.loc['a1':'a4'] = np.array([[0.2173,0.2240,0.2824,0.2763],[1,0,0.,0.],[1,0,0.,0.]]).T
     gas_cycle_parameters.loc['tau1':'tau4'] = np.array([[1000000,394.4,36.54,4.304],[9.15,1,1,1],[116.,1,1,1]]).T
     gas_cycle_parameters.loc['r0':'rA'] = np.array([[37.493303,0.001909,3.616153,0.0],\
-                  [ 8.540000, 0, -0.360000,  0.000310],\
+                  [ 8.54, 0, -0.36,  0.00031],\
                   [ 67.231092,  0, 0,  -0.000906]]).T
     gas_cycle_parameters.loc['PI_conc'] = np.array([278.0,700.0,273.0])
     gas_cycle_parameters.loc['emis2conc'] = 1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97)
@@ -233,53 +233,66 @@ def UnFaIR(emissions_in, \
 
     return result
 
-def fit_gas_cycles(x, \
-                   emissions_in, \
-                   desired_concs, \
-                   temp_input, \
-                   species_to_fit, \
-                   gas_params = default_gas_params()):
 
+def plot_all(emissions,output,gas_params):
+    from matplotlib import pyplot as plt
+    import matplotlib
+    color_dict = {'CO2':'r','CH4':'b','N2O':'g','Total':'k','F_ext':'brown'}
+    spec_list = ['CO2','CH4','N2O','Total','F_ext']
+    unit_dict = {'E': {'CO2':'GtC','CH4':'GtCH$_4$','N2O':'GtN'},\
+                 'C': {'CO2':'ppm','CH4':'ppb','N2O':'ppb'},\
+                 'alpha': {'CO2':'-','CH4':'yrs','N2O':'yrs'},\
+                 'All':{'RF':'Wm$^{-2}$'} ,'Total':{'T':'Deg C'}}
+    fig = plt.figure(figsize=(15,15))
+    gs = matplotlib.gridspec.GridSpec(4,6)
+    ax={}
+    ax['CO2'] = {}
+    ax['CH4'] = {}
+    ax['N2O'] = {}
+    ax['RF'] = {}
+    ax['T'] = {}
+    ax['CO2']['E'] = plt.subplot(gs[0,:2])
+    ax['CH4']['E'] = plt.subplot(gs[0,2:4])
+    ax['N2O']['E'] = plt.subplot(gs[0,4:])
+    ax['CO2']['C'] = plt.subplot(gs[1,:2])
+    ax['CH4']['C'] = plt.subplot(gs[1,2:4])
+    ax['N2O']['C'] = plt.subplot(gs[1,4:])
+    ax['CO2']['alpha'] = plt.subplot(gs[2,:2])
+    ax['CH4']['alpha'] = plt.subplot(gs[2,2:4])
+    ax['N2O']['alpha'] = plt.subplot(gs[2,4:])
+    ax['RF']['All'] = plt.subplot(gs[3,:3])
+    ax['T']['Total'] = plt.subplot(gs[3,3:])
 
-    a = gas_params.loc['a1':'a4'].values.T
-    tau = gas_params.loc['tau1':'tau4'].values.T
-    r = gas_params.loc['r0':'rA'].values.T
-    PI_conc = gas_params.loc['PI_conc'].values
-    emis2conc = gas_params.loc['emis2conc'].values
+    # Plot emissions:
 
-    if species_to_fit == 'CO2':
-        r[0,0]= x[0]
-        r[0,1]= x[1]
-        r[0,2]= x[2]
-        r[0,3]= 0
-    elif species_to_fit == 'CH4':
-        r[1,0]= x[0]
-        r[1,1]= 0
-        r[1,2]= x[1]
-        r[1,3]= x[2]
-        tau[1,0] = x[3]
-    elif species_to_fit == 'N2O':
-        r[2,0]= x[0]
-        r[2,1]= 0
-        r[2,2]= 0
-        r[2,3]= x[1]
+    for s in spec_list[:3]:
+        emissions[s].plot(ax=ax[s]['E'],color = color_dict[s])
 
-    emissions=emissions_in.values.T
+    # Plot concentrations:
+    for s in spec_list[:3]:
+        output['C'][s].plot(ax=ax[s]['C'],color = color_dict[s])
 
-    G = np.cumsum(emissions,axis=1)
-    C = np.zeros(emissions.shape)
-    alpha = np.zeros(emissions.shape)
+    # Plot alpha for CO2 / tau value for CH4/N2O:
+    output['alpha']['CO2'].plot(ax=ax['CO2']['alpha'],color=color_dict['CO2'])
+    for s in spec_list[1:3]:
+        (output['alpha'][s]*gas_params.loc['tau1'][s]).plot(ax=ax[s]['alpha'],color = color_dict[s])
 
-    T = temp_input.values.flatten()
+    # Plot RFs:
+    for s in spec_list:
+        output['RF'][s].plot(ax=ax['RF']['All'],color=color_dict[s],label=s)
 
-    alpha[...,0] = alpha_val(G=0,G_A=0,T=0,tau=tau,a=a,r=r)
-    C[...,0],R,G_A = step_conc(R = np.zeros((3,4)),alpha=alpha[...,0],E=emissions[...,0],a=a,tau=tau,PI_conc=PI_conc,emis2conc=emis2conc)
+    #Plot Temp
+    output['T'].plot(ax=ax['T']['Total'],color='k',label='')
 
-    for t in np.arange(1,emissions[0].size):
+    #Label
+    for key1 in ax.keys():
+        for key2 in ax[key1].keys():
+            ax[key1][key2].set_title(key1 + '_' + key2)
+            ax[key1][key2].set_xlabel('Year')
+            ax[key1][key2].set_ylabel(unit_dict[key2][key1])
+            ax[key1][key2].legend()
 
-        alpha[...,t] = alpha_val(G=G[...,t-1],G_A=G_A,T=T[t-1],tau=tau,a=a,r=r)
-        C[...,t],R,G_A = step_conc(R = R,alpha=alpha[...,t],E=emissions[...,t],a=a,tau=tau,PI_conc=PI_conc,emis2conc=emis2conc)
+    ax['CH4']['alpha'].set_title('lifetime')
+    ax['N2O']['alpha'].set_title('lifetime')
 
-    results = pd.DataFrame(C.T, index = emissions_in.index, columns = emissions_in.columns)
-
-    return np.sum((results.loc[desired_concs.index][species_to_fit].values - desired_concs[species_to_fit])**2)
+    plt.tight_layout()
