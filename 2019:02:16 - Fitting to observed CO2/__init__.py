@@ -1,1 +1,0 @@
-# init file for U-FAIR folder

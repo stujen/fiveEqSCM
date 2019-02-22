@@ -339,6 +339,7 @@ if __name__=='__main__':
         # ax[0,0].set_ylim(-6,10)
 
         p1, p2 = curve_fit(co2_fit_func, co2_conc, etminan_simple_co2_rf)
+        print(p1)
         ax[0,0].plot(co2_conc, co2_fit_func(co2_conc, p1[0]) - co2_fit_func(co2_conc, p1[0])[co2_conc==co2_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
         ax[0,0].legend(loc='lower right', edgecolor='black', framealpha=1.0, fontsize=9)
 
@@ -356,6 +357,7 @@ if __name__=='__main__':
         # ax[0,1].set_ylim(-1.0,0.8)
 
         q1, q2 = curve_fit(ch4_fit_func, ch4_conc, etminan_simple_ch4_rf)
+        print(q1)
         ax[0,1].plot(ch4_conc, ch4_fit_func(ch4_conc, q1[0]) - ch4_fit_func(ch4_conc, q1[0])[ch4_conc==ch4_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
 
         # panel c
@@ -373,6 +375,7 @@ if __name__=='__main__':
         # ax[1,0].set_ylim(-0.45,0.65)
 
         r1, r2 = curve_fit(n2o_fit_func, n2o_conc, etminan_simple_n2o_rf)
+        print(r1)
         ax[1,0].plot(n2o_conc, n2o_fit_func(n2o_conc, r1[0]) - n2o_fit_func(n2o_conc, r1[0])[n2o_conc==n2o_conc_0], color='green', label='5eqSCM fit to Etminan', linestyle='-.')
 
         # panel d
