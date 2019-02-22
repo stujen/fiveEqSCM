@@ -1,0 +1,23 @@
+1          Number of gas species in file
+N2O  
+Name       Value     Uncertainty   Unit       Notes
+Year       2010      0             a          Year for present day
+Mass       28        0             dalton     molecular weight of N2O, g(N)/mol
+Xair       0.1765    0             1E9mol/ppb Teramoles per ppb of dry air
+cPD        323       3.2           ppb        N2O present-day concentration
+dcdt       0.8       0.10          ppb/a      N2O present-day growth rate
+cPI        270       7             ppb        N2O pre-industrial concentration
+kOH        0         0             1/a        N2O loss frequency due to trop OH
+kCl        0         0             1/a        N2O loss frequency due to trop Cl
+kStrat     7.63d-3   5.80d-4       1/a        N2O loss frequency due to stratosphere
+kSurf      0         0             1/a        N2O loss frequency due to surface uptake
+anPI       1.00      0.1           unitless   PI/PD ratio for natural emissions
+aPI        1         0             unitless   PI/PD ratio for kOH
+a2100      1         0             unitless   y2100/PD ratio for kOH
+aPIstrat   0.9225    0.0650        unitless   PI/PD ratio for kStrat
+a2100strat 1.0155    0.0472        unitless   y2100/PD ratio for kStrat
+sOH        0         0             unitless   OH feedback dln(OH)/dln(N2O)
+sStrat     0.08      0.02          unitless   stratosphere feedback dln(kStrat)/dln(N2O)		
+b          4.79      4.79d-2       Tg/ppb     conversion between N2O burden and tropospheric abundance
+RFe        3.03d-3   1.82d-4       W/m2/ppb   Radiative forcing efficiency
+fill       0.970     0.01          unitless   global/troposphere mean mixing ratios for N2O

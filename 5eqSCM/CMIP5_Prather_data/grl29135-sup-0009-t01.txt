@@ -1,0 +1,14 @@
+Table 1. Key Data for Pre-industrial and Present-Day Budgets of CH4 and N2Oa
+
+
+	CH4	CH4	N2O	N2O
+Quantity	PI	PD	PI	PD
+
+abundance (ppb)	700 +/- 25 (d2)	1795 +/- 18 (e2)	270 +/- 7 (d1)	323 +/- 3.2 (e1)
+growth (ppb/y)		5 +/- 1 (f2)		0.8 +/- 0.1 (f1)
+lifetime (y)	9.5 +/- 1.3 (P2)	9.1 +/- 0.9 (H1)	142 +/- 14 (P1)	131 +/- 10 (t1)
+emissions - total (Tg/y)	202 +/- 28 (Q2)	554 +/- 56 (K2)	9.1 +/- 1.0 (Q1)	15.7 +/- 1.1 (K1)
+- natural (Tg/y)	202 +/- 28 (Q2)	202 +/- 35 (R2)	9.1 +/- 1.0 (Q1)	9.1 +/- 1.3 (R1)
+- anthropogenic (Tg/y)		352 +/- 45 (S2)		6.5 +/- 1.3 (S1)
+
+aPre-industrial (PI) is year 1750. Present-day (PD) is year 2010. Abundances are tropospheric-mean mole fraction (ppb = 1 part in 109). PI CH4 abundance does not include bias correction for different PI vs. PD standard scales [Dlugokencky et al., 2005]. Emissions are Tg-CH4 (1012 g) for CH4, and Tg-N for N2O. Uncertainties are denoted as +/- one standard deviation (16%-to-84% = 68% confidence interval, see text). Quantities are selected from the larger list in Tables S1 and S2, with their location in those tables denoted in parentheses. Emissions sums may not balance due to the MC derived values.

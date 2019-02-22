@@ -1,0 +1,12 @@
+1          Number of HFC Species in file
+HFC134a
+Name       Value     Uncertainty   Unit       Notes
+Year       2010      0             a          Year for present day
+Mass       102       0             dalton     molecular weight of HFC
+Xair       0.1765    0             1E9mol/ppb Teramoles per ppb of dry air
+cPD        0.058     0.0029        ppb        present-day concentration
+fill       0.97      0.02          unitless   global/troposphere mean mixing ratios for Species
+r272       0.427     4.27d-2       unitless   k(HFC+OH)/k(MCF+OH) at 272 K (neglects uncertainty in temperature)
+r225       0.816     0.082         unitless   k(HFC+OH)/k(CH4+OH) at 225 K (ratio of stratospheric losses)
+b          17.5      0.367         Tg/ppb     conversion between burden and tropospheric abundance
+RFe        0.16      9.6d-3        W/m2/ppb   Radiative forcing efficiency

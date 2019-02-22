@@ -1,7 +1,7 @@
 # Universal-FaIR code written so it can take multiple gas inputs and multiple scenario inputs
 
 # Date - 30/12/18
-# Written by Stuart Jenkins (stuart.jenkins@wadham.ox.ac.uk) and Nicholas Leach (nicholas.leach@stx.ox.ac.uk) 
+# Written by Stuart Jenkins (stuart.jenkins@wadham.ox.ac.uk) and Nicholas Leach (nicholas.leach@stx.ox.ac.uk)
 
 # ===========================================================================================================
 
@@ -20,7 +20,7 @@ import math
 # ==================================
 
 def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
-    
+
     # check if emissions is 3D, if not make it 3D, complying with shape requirements
     if np.array(emissions.shape).size == 2:
         if multigas == True and multiscen == False:
@@ -42,7 +42,7 @@ def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
     elif np.array(emissions.shape).size != 3:
         print('Emissions input is not in correct format (needs to be 1D/2D/3D with correct flags)')
         return emissions, False
-    
+
     # check shape of a, r, tau and PI_C parameter arrays are the same size as the number of gases specified
     if (multigas == True) and ((emissions.shape[0] != a.shape[0]) or a.ndim != 2):
         print('multigas = True requires a to have dimensions [num_gases, num_pools], where num_pools = 4')
@@ -64,54 +64,54 @@ def check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc):
         print('multigas = True requires emis2conc to have dimensions [num_gases]')
         print('Currently emis2conc has shape: ', emis2conc.shape)
         return emissions, False
-    
+
     return emissions, True
 
 def g_1(a,tau,h):
-    
+
     g1 = np.sum( a*tau*(1. - (1.+h/tau)*np.exp(-h/tau)), axis=1)
-    
+
     return g1
 
 def g_0(a,tau,h):
-    
+
     g0 = (np.sinh( np.sum( a*tau*(1. - np.exp(-h/tau)), axis=1) / g_1(a,tau,h)) )**(-1.)
-    
+
     return g0
 
 def alpha_val(G,G_A,T,tau,a,r,pre_ind_C,h=100,iirf100_max=97.0):
-    
+
     iirf100_val = r[...,np.newaxis,0] + r[...,np.newaxis,1]*(G-G_A) + r[...,np.newaxis,2]*T + r[...,np.newaxis,3]*G_A
-    
-    # if iirf100 value larger than max value, set to max value 
+
+    # if iirf100 value larger than max value, set to max value
     iirf100_val = (iirf100_val>iirf100_max)*iirf100_max + iirf100_val*(iirf100_val<iirf100_max)
-    
+
     alpha_val = g_0(a,tau,h)[...,np.newaxis] * np.sinh(iirf100_val / g_1(a,tau,h)[...,np.newaxis])
-    
+
     return alpha_val
 
 def step_conc(R,alpha,E,a,tau,pre_ind_C,emis2conc):
-    
+
     R = E[...,np.newaxis] * emis2conc[:,np.newaxis,np.newaxis]*a[:,np.newaxis,:]*alpha[...,np.newaxis]*tau[:,np.newaxis,:] * (1. - np.exp(-1./(alpha[...,np.newaxis]*tau[:,np.newaxis,:]))) + R*np.exp(-1./(alpha[...,np.newaxis]*tau[:,np.newaxis,:]))
-    
+
     C = pre_ind_C[:,np.newaxis] + np.sum(R,axis=2)
-    
+
     G_A = (C - pre_ind_C[:,np.newaxis]) / emis2conc[:,np.newaxis]
-    
+
     return C,R,G_A
 
 def step_forc(C,pre_ind_C,F_ext,f):
-    
+
     F = np.sum(f[...,np.newaxis,0]*np.log(C/pre_ind_C[:,np.newaxis]) + f[...,np.newaxis,1]*(C - pre_ind_C[:,np.newaxis]) + f[...,np.newaxis,2] * (np.sqrt(C) - np.sqrt(pre_ind_C[:,np.newaxis])), axis=0) + F_ext
-    
+
     return F
 
 def step_temp(S,F,q,d):
-    
+
     S = q[np.newaxis,:]*F[:,np.newaxis]*(1-np.exp(-1/d[np.newaxis,:])) + S*np.exp(-1/d[np.newaxis,:])
-    
+
     T = np.sum(S, axis=1)
-    
+
     return S,T
 
 def multiscen_oxfair(emissions,
@@ -129,7 +129,7 @@ def multiscen_oxfair(emissions,
                      d = np.array([239.0,4.1]),
                      q = np.array([0.33,0.41]),
                      F_2x = 3.74,
-                     multigas=False, 
+                     multigas=False,
                      multiscen=False):
     '''
     Multiparameterized version of (OxFaIR/U-FaIR) code.
@@ -148,22 +148,22 @@ def multiscen_oxfair(emissions,
 
     emis2conc : conversion factor between emissions and concentrations units. Size = [n_gases]
 
-    a :         pool splits for concentrations. Maximum is 4 pool model for gases. 
+    a :         pool splits for concentrations. Maximum is 4 pool model for gases.
                 CH4 and N2O have one pool model [1.,0.,0.,0.], CO2 has 4 pool model [0.2173,0.2240,0.2824,0.2763].
                 Size = [n_gases, 4]
 
-    tau :       Time constants for the decay rates of the 4 pools with splits given by a. 
+    tau :       Time constants for the decay rates of the 4 pools with splits given by a.
                 Size = [n_gases, 4].
 
     r :         iIRF100 estimation parameter values (r0, rC, rT, rA). e.g. standard values for CO2 are [32.4, 0.019, 4.165, 0.0]
                 Size = [n_gases, 4].
 
-    PI_C :      Pre-Industrial Concentrations (PI_C) for the n_gases in model. 
+    PI_C :      Pre-Industrial Concentrations (PI_C) for the n_gases in model.
                 Size = [n_gases].
 
     iirf100_max : Max allowed value of integrated impulse response function (h=100yrs) before saturation. Default = 97.0
 
-    f :         Contributions from log, linear and sqrt forcingfor each gas in n_gases. 
+    f :         Contributions from log, linear and sqrt forcingfor each gas in n_gases.
                 Size = [n_gases, 3].
 
     tcr :       TCR value for run. (Default = 1.6).
@@ -181,16 +181,16 @@ def multiscen_oxfair(emissions,
     multiscen :  Flag for multiscen run. True if run includes multiple emissions scnearios, False otherwise. (Default = False).
 
     '''
-    
+
     # ------------------
-    
+
     # check format of inputs is correct
     emissions, flag_val = check_format(emissions, multigas, multiscen, a, tau, r, PI_C, emis2conc)
     # if not stop run
     if flag_val == False:
         print('\nRun failed')
         return
-    
+
     # define empty arrays to populate
     # -------------------
     G = np.cumsum(emissions,axis=2) # cumulative emissions array
@@ -200,7 +200,7 @@ def multiscen_oxfair(emissions,
 #######
     T = np.zeros(emissions[0].shape) # total temperature response array
     alpha = np.zeros(emissions.shape) # alpha array
-    
+
     # calculate zeroth step values
     # -------------------
     # calculate alpha values for all gases and all scenarios for zeroth timestep
@@ -208,7 +208,7 @@ def multiscen_oxfair(emissions,
                             G_A=np.zeros((emissions.shape[0],emissions.shape[1])),
                             T=np.zeros((emissions.shape[0],emissions.shape[1])),
                             tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
-    # calculate concentrations (C), concentration split betwenn pools (R), 
+    # calculate concentrations (C), concentration split betwenn pools (R),
     #    and cumulative emissions remaining in atmosphere (G_A) for zeroth timestep
     C[...,0],R,G_A = step_conc(R=np.zeros((emissions.shape[0],emissions.shape[1],4)),
                             alpha=alpha[...,0],E=emissions[...,0],a=a,tau=tau,
@@ -217,20 +217,20 @@ def multiscen_oxfair(emissions,
     RF[...,0] = step_forc(C=C[...,0],pre_ind_C=PI_C,F_ext=0.,f=f)
     # calculate temperature response (T) and split between boxes (S) for zeroth timestep
     S,T[...,0] = step_temp(S=np.zeros((emissions.shape[1],2)),F=RF[...,0],q=q,d=d)
-    
+
     # run over all other timesteps...
     for t in np.arange(1,emissions.shape[2]):
-        
+
         # calculate alpha values for all gases and all scenarios for t'th timestep
         alpha[...,t] = alpha_val(G=G[...,t-1],G_A=G_A,T=T[...,t-1],tau=tau,a=a,r=r,h=100.,pre_ind_C=PI_C,iirf100_max = 97.0)
-        # calculate concentrations (C), concentration split betwenn pools (R), 
+        # calculate concentrations (C), concentration split betwenn pools (R),
         #    and cumulative emissions remaining in atmosphere (G_A) for t'th timestep
         C[...,t],R,G_A = step_conc(R = R,alpha=alpha[...,t],E=emissions[...,t],a=a,tau=tau,pre_ind_C=PI_C,emis2conc=emis2conc)
         # calculate RF array for t'th timestep
         RF[...,t] = step_forc(C=C[...,t],pre_ind_C=PI_C,F_ext=0.,f=f)
         # calculate temperature response (T) and split between boxes (S) for t'th timestep
         S,T[...,t] = step_temp(S=S,F=RF[...,t],q=q,d=d)
-        
+
     # return C, RF and T arrays
     return C,RF,T
 
@@ -249,7 +249,7 @@ def multiscen_oxfair(emissions,
 
 
 
-# ============================================================================================== 
+# ==============================================================================================
 
 # Define functions to import, run and plot RCP CO2, CH4 and N2O emissions data
 
@@ -310,10 +310,10 @@ def concplot(C,RCP,rcps):
     # -----------------------
 
     fig,ax=plt.subplots(2,3,figsize=(15,7))
-    
+
     rcps = ['85','6','45','3']
     colors = ['red','brown','green','blue']
-    
+
     for i,rcp in enumerate(rcps):
 
         ax[0,0].plot(RCP[rcp]['E'].FossilCO2+RCP[rcp]['E'].OtherCO2,color=colors[i],label=rcp+' emissions')
@@ -376,10 +376,10 @@ def tempplot(T,rcps):
     # -----------------------
 
     fig,ax=plt.subplots(figsize=(8,6))
-    
+
     rcps = ['85','6','45','3']
     colors = ['red','brown','green','blue']
-    
+
     for i,rcp in enumerate(rcps):
 
         ax.plot(np.arange(1765,2501), T[i,:] - np.mean(T[i,1850-1765:1901-1765]),color=colors[i],label=rcp+' U-FaIR temperature response')
@@ -427,5 +427,3 @@ def run_RCPs(rcps = ['85','6','45','3'], plot_out=True):
         return RCP_results, fig_C, ax_C, fig_T, ax_T
     else:
         return RCP_results
-
-
