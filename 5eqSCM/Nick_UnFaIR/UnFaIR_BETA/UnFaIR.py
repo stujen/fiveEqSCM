@@ -227,14 +227,18 @@ def UnFaIR(emissions_in, \
     result = {'C': pd.DataFrame(C.T, index = emissions_in.index, columns = emissions_in.columns), \
               'RF': pd.DataFrame(np.concatenate((RF.T,F_ext[:,np.newaxis]),axis=1), index = emissions_in.index, columns = list(emissions_in.columns)+['F_ext']), \
               'T': pd.DataFrame(T.T, index = emissions_in.index, columns = ['Total']), \
-              'alpha': pd.DataFrame(alpha.T, index = emissions_in.index, columns = emissions_in.columns)}
+              'alpha': pd.DataFrame(alpha.T, index = emissions_in.index, columns = emissions_in.columns), \
+              'E':emissions_in, \
+              'gas_params':gas_params, \
+              'forcing_params':forcing_params, \
+              'thermal_params':thermal_params}
 
     result['RF']['Total'] = result['RF'].sum(axis=1)
 
     return result
 
 
-def plot_all(emissions,output,gas_params):
+def plot_all(outputs):
     from matplotlib import pyplot as plt
     import matplotlib
     color_dict = {'CO2':'r','CH4':'b','N2O':'g','Total':'k','F_ext':'brown'}

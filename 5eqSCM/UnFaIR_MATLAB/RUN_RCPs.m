@@ -1,0 +1,3 @@
+m = csvread('/home/nleach/Documents/UnFaIR/5eqSCM/RCP_data/RCP6_EMISSIONS.csv', 37);
+emissions = zeros(3,length(m));
+emissions(
