@@ -1,0 +1,283 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_006.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_006.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and NSF/DOE NCAR (National Center for Atmospheric Research) Boulder, CO, USA
+# references :: TBD n See also http://www.cesm.ucar.edu/publications
+# acknowledgements :: The CESM project is supported by the National Science Foundation and the Office of Science (BER) of the U.S. Department of Energy. NCAR is sponsored by the National Science Foundation. Computing resources were provided by the Climate Simulation Laboratory at the NCAR Computational and Information Systems Laboratory (CISL), sponsored by the National Science Foundation and other agencies.
+# cesm_casename :: b40.20th.1deg.bdrd.001
+# forcing_note :: Additional information on the external forcings used in this experiment can be found at http://www.cesm.ucar.edu/CMIP5/forcing_information
+# processed_by :: strandwg on silver.cgd.ucar.edu at 20120516  -113148.887
+# institute_id :: NSF-DOE-NCAR
+# experiment_id :: historical+rcp85
+# model_id :: CESM1-BGC
+# forcing :: Sl GHG SS Ds SA BC MD OC Oz AA
+# parent_experiment_id :: piControl
+# parent_experiment_rip :: r1i1p1
+# branch_time ::      1.0
+# contact :: cesm_data@ucar.edu
+# comment ::  nCESM home page: http://www.cesm.ucar.edu
+# initialization_method ::        1
+# physics_version ::        1
+# tracking_id :: 38a55c1f-dfcd-44e4-b406-baa94589bd93
+# cesm_repotag :: unknown
+# cesm_compset :: unknown
+# resolution :: f09_g16 (0.9x1.25_gx1v6)
+# processing_code_information :: Last Changed Rev: 757 Last Changed Date: 2012-05-09 13:01:12 -0600 (Wed, 09 May 2012) Repository UUID: d2181dbe-5796-6825-dc7f-cbd98591f93d
+# product :: output
+# experiment :: RCP8.5
+# frequency :: mon
+# creation_date :: 2012-05-11T18:02:06Z
+# project_id :: CMIP5
+# table_id :: Table Amon (12 January 2012) 4996d487f7a65749098d9cc0dccb4f8d
+# parent_experiment :: pre-industrial control
+# modeling_realm :: atmos
+# realization ::        1
+# cmor_version :: 2.8.1
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# title :: spatial statistic of CESM1-BGC model output prepared for CMIP5 RCP8.5 r1i1p1
+# history ::  2019-03-05 14:51:54 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_006.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:43 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_006.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_006.nc n 2019-03-05 14:47:31 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_006.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:15:59 2013: ncks -v tas tas/tas_Amon_CESM1-BGC_rcp85_r1i1p1_144.nc aap_9883.nc nThu Mar 28 15:15:46 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_CESM1-BGC_rcp85_r1i1p1_144.nc nThu Mar 28 15:15:10 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_CESM1-BGC_rcp85_r1i1p1.nc aap_9883.nc nThu Mar 28 14:34:22 2013: cdo -f nc4 -z zip copy tas/tas_Amon_CESM1-BGC_historical_r1i1p1.nc ethz/cmip5/rcp85/Amon/tas/CESM1-BGC/r1i1p1/tas_Amon_CESM1-BGC_rcp85_r1i1p1_200601-210012.nc tas/tas_Amon_CESM1-BGC_rcp85_r1i1p1.nc nWed Mar 27 11:23:14 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/CESM1-BGC/r1i1p1/tas_Amon_CESM1-BGC_historical_r1i1p1_185001-200512.nc tas/tas_Amon_CESM1-BGC_historical_r1i1p1.nc n2012-05-16T17:32:00Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.
+ 1861   13.56995    
+ 1862   13.48930    
+ 1863   13.42936    
+ 1864   13.47835    
+ 1865   13.50226    
+ 1866   13.45149    
+ 1867   13.43742    
+ 1868   13.59026    
+ 1869   13.56071    
+ 1870   13.30405    
+ 1871   13.45980    
+ 1872   13.60495    
+ 1873   13.35251    
+ 1874   13.44104    
+ 1875   13.55678    
+ 1876   13.67394    
+ 1877   13.62197    
+ 1878   13.56511    
+ 1879   13.57607    
+ 1880   13.43360    
+ 1881   13.54516    
+ 1882   13.57722    
+ 1883   13.39818    
+ 1884   12.92166    
+ 1885   13.14241    
+ 1886   13.36389    
+ 1887   13.31407    
+ 1888   13.30795    
+ 1889   13.38976    
+ 1890   13.42073    
+ 1891   13.42695    
+ 1892   13.40143    
+ 1893   13.47541    
+ 1894   13.41566    
+ 1895   13.47765    
+ 1896   13.39758    
+ 1897   13.56240    
+ 1898   13.54154    
+ 1899   13.53954    
+ 1900   13.52419    
+ 1901   13.46832    
+ 1902   13.49227    
+ 1903   13.08028    
+ 1904   13.19499    
+ 1905   13.26885    
+ 1906   13.15695    
+ 1907   13.29394    
+ 1908   13.42415    
+ 1909   13.48945    
+ 1910   13.72420    
+ 1911   13.69414    
+ 1912   13.36096    
+ 1913   13.21535    
+ 1914   13.45578    
+ 1915   13.54058    
+ 1916   13.55685    
+ 1917   13.59986    
+ 1918   13.54985    
+ 1919   13.42841    
+ 1920   13.49126    
+ 1921   13.48731    
+ 1922   13.35275    
+ 1923   13.60629    
+ 1924   13.60016    
+ 1925   13.48767    
+ 1926   13.53593    
+ 1927   13.50888    
+ 1928   13.62765    
+ 1929   13.52010    
+ 1930   13.39326    
+ 1931   13.59408    
+ 1932   13.58008    
+ 1933   13.66347    
+ 1934   13.75434    
+ 1935   13.59453    
+ 1936   13.60818    
+ 1937   13.65839    
+ 1938   13.66781    
+ 1939   13.59705    
+ 1940   13.70118    
+ 1941   13.81132    
+ 1942   13.73031    
+ 1943   13.71905    
+ 1944   13.76045    
+ 1945   13.62232    
+ 1946   13.66499    
+ 1947   13.71889    
+ 1948   13.72516    
+ 1949   13.90256    
+ 1950   13.91746    
+ 1951   13.73021    
+ 1952   13.52471    
+ 1953   13.63492    
+ 1954   13.65593    
+ 1955   13.76711    
+ 1956   13.64559    
+ 1957   13.68289    
+ 1958   13.72282    
+ 1959   13.86666    
+ 1960   13.80214    
+ 1961   13.79101    
+ 1962   13.64284    
+ 1963   13.52000    
+ 1964   13.41042    
+ 1965   13.73188    
+ 1966   13.67099    
+ 1967   13.65360    
+ 1968   13.74041    
+ 1969   13.85892    
+ 1970   14.05818    
+ 1971   13.98926    
+ 1972   13.93659    
+ 1973   13.92141    
+ 1974   13.87366    
+ 1975   13.97694    
+ 1976   13.78414    
+ 1977   13.96603    
+ 1978   14.10250    
+ 1979   14.03395    
+ 1980   14.02897    
+ 1981   14.33789    
+ 1982   14.26316    
+ 1983   13.89778    
+ 1984   14.00488    
+ 1985   14.02804    
+ 1986   14.05921    
+ 1987   14.08900    
+ 1988   14.30685    
+ 1989   14.30230    
+ 1990   14.26536    
+ 1991   14.14630    
+ 1992   13.88782    
+ 1993   13.99029    
+ 1994   14.14005    
+ 1995   14.32468    
+ 1996   14.34447    
+ 1997   14.55643    
+ 1998   14.48628    
+ 1999   14.56215    
+ 2000   14.55469    
+ 2001   14.47623    
+ 2002   14.44105    
+ 2003   14.52228    
+ 2004   14.61768    
+ 2005   14.85663    
+ 2006   14.67778    
+ 2007   14.65267    
+ 2008   14.77929    
+ 2009   14.90820    
+ 2010   14.81351    
+ 2011   14.87060    
+ 2012   14.78094    
+ 2013   14.70593    
+ 2014   14.84530    
+ 2015   14.95667    
+ 2016   14.90923    
+ 2017   14.95693    
+ 2018   15.06591    
+ 2019   15.09948    
+ 2020   14.96307    
+ 2021   15.12969    
+ 2022   15.04910    
+ 2023   14.92713    
+ 2024   15.03956    
+ 2025   15.05636    
+ 2026   15.11116    
+ 2027   15.35094    
+ 2028   15.40927    
+ 2029   15.20670    
+ 2030   15.33079    
+ 2031   15.41949    
+ 2032   15.31210    
+ 2033   15.46395    
+ 2034   15.65508    
+ 2035   15.51237    
+ 2036   15.51270    
+ 2037   15.56837    
+ 2038   15.60020    
+ 2039   15.76348    
+ 2040   15.77610    
+ 2041   15.71425    
+ 2042   15.70061    
+ 2043   15.72725    
+ 2044   15.85289    
+ 2045   15.97849    
+ 2046   15.85225    
+ 2047   15.78483    
+ 2048   15.86046    
+ 2049   16.06910    
+ 2050   16.08766    
+ 2051   15.99162    
+ 2052   16.03745    
+ 2053   16.21461    
+ 2054   16.27601    
+ 2055   16.31340    
+ 2056   16.27501    
+ 2057   16.47332    
+ 2058   16.53346    
+ 2059   16.42751    
+ 2060   16.50764    
+ 2061   16.51811    
+ 2062   16.54823    
+ 2063   16.58139    
+ 2064   16.64625    
+ 2065   16.83881    
+ 2066   16.86438    
+ 2067   16.77601    
+ 2068   16.76140    
+ 2069   16.86656    
+ 2070   16.98649    
+ 2071   17.05838    
+ 2072   17.02448    
+ 2073   17.09851    
+ 2074   17.12729    
+ 2075   17.24521    
+ 2076   17.13893    
+ 2077   17.21717    
+ 2078   17.32745    
+ 2079   17.31905    
+ 2080   17.53569    
+ 2081   17.59164    
+ 2082   17.60768    
+ 2083   17.54303    
+ 2084   17.51417    
+ 2085   17.62050    
+ 2086   17.65990    
+ 2087   17.80200    
+ 2088   17.87541    
+ 2089   17.82909    
+ 2090   17.83019    
+ 2091   17.99881    
+ 2092   18.06265    
+ 2093   17.98548    
+ 2094   18.00475    
+ 2095   18.13070    
+ 2096   18.17418    
+ 2097   18.13551    
+ 2098   18.18923    
+ 2099   18.23707    
+ 2100   18.31468    

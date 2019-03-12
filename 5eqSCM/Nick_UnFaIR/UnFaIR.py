@@ -124,10 +124,10 @@ def default_gas_params():
     gas_cycle_parameters = pd.DataFrame(columns=['CO2','CH4','N2O'],index=gas_param_list)
     gas_cycle_parameters.loc['a1':'a4'] = np.array([[0.2173,0.2240,0.2824,0.2763],[1,0,0.,0.],[1,0,0.,0.]]).T
     gas_cycle_parameters.loc['tau1':'tau4'] = np.array([[1000000,394.4,36.54,4.304],[9.15,1,1,1],[116.,1,1,1]]).T
-    gas_cycle_parameters.loc['r0':'rA'] = np.array([[37.493303,0.01909,3.616153,0.0],\
-                  [ 8.540000, 0, -0.360000,  0.000310],\
-                  [ 67.231092,  0, 0,  -0.000906]]).T
-    gas_cycle_parameters.loc['PI_conc'] = np.array([278.0,700.0,273.0])
+    gas_cycle_parameters.loc['r0':'rA'] = np.array([[29.5,0.018,0.018*4.165/0.019,0.0],\
+                  [ 9.110000, 0, -0.2080000,  0.000259],\
+                  [ 62.8,  0, 0,  -0.000771]]).T
+    gas_cycle_parameters.loc['PI_conc'] = np.array([278.0,700.0,276.0])
     gas_cycle_parameters.loc['emis2conc'] = 1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97)
 
     return gas_cycle_parameters.apply(pd.to_numeric)
@@ -138,7 +138,7 @@ def default_forcing_params():
 
     forcing_param_list = ['f1','f2','f3']
     forcing_params = pd.DataFrame(columns=['CO2','CH4','N2O'],index=forcing_param_list)
-    forcing_params.loc['f1':'f3'] = np.array([[3.74/np.log(2.),0.,0.],[0,0.,0.036],[0,0,0.12]]).T
+    forcing_params.loc['f1':'f3'] = np.array([[5.78188211,0.,0.],[0,0.,0.03895942],[0,0,0.11082109]]).T
 
     return forcing_params.apply(pd.to_numeric)
 
@@ -439,3 +439,9 @@ def UnUnFaIR(T, F_ext= 0 , gas_params = default_gas_params(), thermal_params= de
     E = Unstep_concs(C, T, gas_params=gas_params)['CO2-fe_E']
 
     return {'RF': RF, 'CO2-fe_C':C, 'CO2-fe_E':E}
+
+def empty_emissions(start_year,end_year):
+
+## Function that creates an empty emission dataframe
+
+    return pd.DataFrame(index = np.arange(start_year,end_year+1),columns=['CO2','CH4','N2O']).fillna(0.0)

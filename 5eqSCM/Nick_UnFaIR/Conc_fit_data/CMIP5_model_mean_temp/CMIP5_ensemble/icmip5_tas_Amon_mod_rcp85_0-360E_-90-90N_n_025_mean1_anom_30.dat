@@ -1,0 +1,276 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_025.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_025.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and Met Office Hadley Centre, Fitzroy Road, Exeter, Devon, EX1 3PB, UK, (http://www.metoffice.gov.uk)
+# references :: Jones, C.D. et al. (2011) The HadGEM2-ES implementation of CMIP5 centennial simulations. Geosci. Model Dev., 4, 543-570, http://www.geosci-model-dev.net/4/543/2011/gmd-4-543-2011.html; Martin G.M. et al. (2011) The HadGEM2 family of Met Office Unified Model climate configurations, Geosci. Model Dev., 4, 723-757, http://www.geosci-model-dev.net/4/723/2011/gmd-4-723-2011.html; Collins, W.J. et al. (2011) Development and evaluation of an Earth-system model - HadGEM2, Geosci. Model Dev. Discuss., 4, 997-1062, http://www.geosci-model-dev-discuss.net/4/997/2011/gmdd-4-997-2011.html
+# institute_id :: MOHC
+# experiment_id :: historical+rcp85
+# model_id :: HadGEM2-CC
+# forcing :: GHG, Oz, SA, LU, Sl, Vl, BC, OC, (GHG,global,o,s,CO2, N2O, CH4, CFCs)
+# parent_experiment_id :: historical
+# parent_experiment_rip :: r1i1p1
+# branch_time ::  52560.0
+# contact :: chris.d.jones@metoffice.gov.uk, steven.hardiman@metoffice.gov.uk
+# initialization_method ::        1
+# physics_version ::        1
+# tracking_id :: 0dd2a394-fe6e-40b3-ab7e-c5c5225ac819
+# mo_runid :: akgig
+# product :: output
+# experiment :: RCP8.5
+# frequency :: mon
+# creation_date :: 2011-09-27T09:55:38Z
+# project_id :: CMIP5
+# table_id :: Table Amon (26 July 2011) 976b7fd1d9e1be31dddd28f5dc79b7a1
+# parent_experiment :: historical
+# modeling_realm :: atmos
+# realization ::        1
+# cmor_version :: 2.7.1
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# comment :: 
+# title :: spatial statistic of HadGEM2-CC model output prepared for CMIP5 RCP8.5 r1i1p1
+# history ::  2019-03-05 14:51:59 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_025.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:44 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_025.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_025.nc n 2019-03-05 14:49:28 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_025.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:40:36 2013: ncks -v tas tas/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_144.nc aap_9883.nc nThu Mar 28 15:40:27 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_144.nc nThu Mar 28 15:40:01 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_HadGEM2-CC_rcp85_r1i1p1.nc aap_9883.nc nThu Mar 28 14:49:42 2013: cdo -f nc4 -z zip copy tas/tas_Amon_HadGEM2-CC_historical_r1i1p1.nc ethz/cmip5/rcp85/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_200512-203011.nc ethz/cmip5/rcp85/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_203012-205511.nc ethz/cmip5/rcp85/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_205512-208011.nc ethz/cmip5/rcp85/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_208012-209912.nc ethz/cmip5/rcp85/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_rcp85_r1i1p1_210001-210012.nc tas/tas_Amon_HadGEM2-CC_rcp85_r1i1p1.nc nWed Mar 27 13:47:46 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_185912-188411.nc ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_188412-190911.nc ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_190912-193411.nc ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_193412-195911.nc ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_195912-198411.nc ethz/cmip5/historical/Amon/tas/HadGEM2-CC/r1i1p1/tas_Amon_HadGEM2-CC_historical_r1i1p1_198412-200511.nc tas/tas_Amon_HadGEM2-CC_historical_r1i1p1.nc nMOHC pp to CMOR/NetCDF convertor (version 1.10.1) 2011-09-12T09:20:24Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.
+ 1861   13.60936    
+ 1862   13.55433    
+ 1863   13.44647    
+ 1864   13.42811    
+ 1865   13.52483    
+ 1866   13.29033    
+ 1867   13.35091    
+ 1868   13.48995    
+ 1869   13.43653    
+ 1870   13.58125    
+ 1871   13.61057    
+ 1872   13.43374    
+ 1873   13.59140    
+ 1874   13.59747    
+ 1875   13.34258    
+ 1876   13.31320    
+ 1877   13.24189    
+ 1878   13.35446    
+ 1879   13.46883    
+ 1880   13.28549    
+ 1881   13.36372    
+ 1882   13.40245    
+ 1883   13.25439    
+ 1884   13.15375    
+ 1885   13.15102    
+ 1886   13.15397    
+ 1887   13.04958    
+ 1888   13.21652    
+ 1889   13.07236    
+ 1890   13.08396    
+ 1891   13.02680    
+ 1892   13.27657    
+ 1893   13.38500    
+ 1894   13.40996    
+ 1895   13.42883    
+ 1896   13.30724    
+ 1897   13.31090    
+ 1898   13.28804    
+ 1899   13.26688    
+ 1900   13.34145    
+ 1901   13.49510    
+ 1902   13.37255    
+ 1903   13.16422    
+ 1904   13.31015    
+ 1905   13.46824    
+ 1906   13.40113    
+ 1907   13.45041    
+ 1908   13.21620    
+ 1909   13.20957    
+ 1910   13.28564    
+ 1911   13.22831    
+ 1912   13.17331    
+ 1913   13.00801    
+ 1914   13.16285    
+ 1915   13.19307    
+ 1916   12.97511    
+ 1917   12.96916    
+ 1918   13.12547    
+ 1919   13.18799    
+ 1920   13.27876    
+ 1921   13.31657    
+ 1922   13.29849    
+ 1923   13.22713    
+ 1924   13.15846    
+ 1925   13.32440    
+ 1926   13.35843    
+ 1927   13.49259    
+ 1928   13.49935    
+ 1929   13.37901    
+ 1930   13.16795    
+ 1931   13.15407    
+ 1932   13.24314    
+ 1933   13.20208    
+ 1934   13.17940    
+ 1935   13.32938    
+ 1936   13.47278    
+ 1937   13.21681    
+ 1938   13.27987    
+ 1939   13.41376    
+ 1940   13.47405    
+ 1941   13.42670    
+ 1942   13.51884    
+ 1943   13.38244    
+ 1944   13.41057    
+ 1945   13.45970    
+ 1946   13.31995    
+ 1947   13.22868    
+ 1948   13.24001    
+ 1949   13.38732    
+ 1950   13.43423    
+ 1951   13.45181    
+ 1952   13.37856    
+ 1953   13.50362    
+ 1954   13.57583    
+ 1955   13.29827    
+ 1956   13.14192    
+ 1957   13.21869    
+ 1958   13.32559    
+ 1959   13.34955    
+ 1960   13.43811    
+ 1961   13.24352    
+ 1962   13.37399    
+ 1963   13.44925    
+ 1964   13.16669    
+ 1965   13.11291    
+ 1966   13.17756    
+ 1967   13.17502    
+ 1968   13.07327    
+ 1969   13.13004    
+ 1970   13.27414    
+ 1971   13.34286    
+ 1972   13.23937    
+ 1973   13.12956    
+ 1974   13.12785    
+ 1975   13.18344    
+ 1976   13.14650    
+ 1977   13.05844    
+ 1978   13.28251    
+ 1979   13.30153    
+ 1980   13.31531    
+ 1981   13.47208    
+ 1982   13.38979    
+ 1983   13.19381    
+ 1984   13.26015    
+ 1985   13.39309    
+ 1986   13.54213    
+ 1987   13.44101    
+ 1988   13.36368    
+ 1989   13.58468    
+ 1990   13.69441    
+ 1991   13.60707    
+ 1992   13.48871    
+ 1993   13.47562    
+ 1994   13.57218    
+ 1995   13.54477    
+ 1996   13.60252    
+ 1997   13.61471    
+ 1998   13.68116    
+ 1999   13.72959    
+ 2000   13.81478    
+ 2001   13.82082    
+ 2002   13.76105    
+ 2003   13.77019    
+ 2004   13.71685    
+ 2005   13.63454    
+ 2006   13.74254    
+ 2007   13.61099    
+ 2008   13.68549    
+ 2009   13.87535    
+ 2010   13.99689    
+ 2011   13.95375    
+ 2012   14.08060    
+ 2013   14.24594    
+ 2014   14.43557    
+ 2015   14.48757    
+ 2016   14.53417    
+ 2017   14.39227    
+ 2018   14.31850    
+ 2019   14.41498    
+ 2020   14.47333    
+ 2021   14.55262    
+ 2022   14.70703    
+ 2023   14.96135    
+ 2024   14.90487    
+ 2025   14.83841    
+ 2026   14.85180    
+ 2027   14.81758    
+ 2028   14.80542    
+ 2029   14.87824    
+ 2030   14.85130    
+ 2031   15.02400    
+ 2032   15.01991    
+ 2033   15.02206    
+ 2034   14.97619    
+ 2035   15.05211    
+ 2036   15.10179    
+ 2037   15.21181    
+ 2038   15.23377    
+ 2039   15.35610    
+ 2040   15.40634    
+ 2041   15.32217    
+ 2042   15.48534    
+ 2043   15.48476    
+ 2044   15.44786    
+ 2045   15.53780    
+ 2046   15.53905    
+ 2047   15.59593    
+ 2048   15.74098    
+ 2049   15.77718    
+ 2050   15.90024    
+ 2051   15.89524    
+ 2052   16.05914    
+ 2053   16.11212    
+ 2054   15.98984    
+ 2055   15.94415    
+ 2056   16.12297    
+ 2057   16.22025    
+ 2058   16.40482    
+ 2059   16.52162    
+ 2060   16.63781    
+ 2061   16.78313    
+ 2062   16.89507    
+ 2063   17.03101    
+ 2064   16.98540    
+ 2065   17.00523    
+ 2066   17.21229    
+ 2067   17.06469    
+ 2068   16.92444    
+ 2069   16.91194    
+ 2070   17.00591    
+ 2071   17.25811    
+ 2072   17.52967    
+ 2073   17.50737    
+ 2074   17.44207    
+ 2075   17.49385    
+ 2076   17.48753    
+ 2077   17.55604    
+ 2078   17.42937    
+ 2079   17.60364    
+ 2080   17.68633    
+ 2081   17.78321    
+ 2082   17.67037    
+ 2083   17.80481    
+ 2084   17.90023    
+ 2085   17.84361    
+ 2086   17.77426    
+ 2087   17.97419    
+ 2088   18.17900    
+ 2089   18.03805    
+ 2090   18.23186    
+ 2091   18.34949    
+ 2092   18.31424    
+ 2093   18.48361    
+ 2094   18.65315    
+ 2095   18.63455    
+ 2096   18.59449    
+ 2097   18.56420    
+ 2098   18.59608    
+ 2099   18.66767    
+ 2100   18.87661    

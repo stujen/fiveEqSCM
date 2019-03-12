@@ -1,0 +1,274 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_015.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_015.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and NOAA GFDL(201 Forrestal Rd, Princeton, NJ, 08540)
+# references :: The GFDL Data Portal (http://nomads.gfdl.noaa.gov/) provides access to NOAA/GFDL's publicly available model input and output data sets. From this web site one can view and download data sets and documentation, including those related to the GFDL coupled models experiments run for the IPCC's 5th Assessment Report and the US CCSP.
+# comment ::  nGFDL experiment name: CM3Z_D1_1860-2005_AllForc_H1 nGFDL parent experiment name: CM3Z_Control-1860_D1 nCMIP5 experiment ID: historical nInitial conditions from this experiment (CMIP5 expt. 3.2 Core) were taken from 01Jan0001 of the 1860 control model experiment CM3Z_Control-1860_D1. nForcing agents (7 WMGGs, tropospheric and stratospheric ozone, land use, volcanoes, solar, sulfate, black carbon, norganic carbon, dust, and sea salt) vary historically from 1860-2005 following prescribed emission or concentration ntimeseries or internally calculated emissions. This model includes direct and indirect aerosol ef
+# parent_experiment_rip :: r1i1p1
+# institute_id :: NOAA GFDL
+# contact :: gfdl.climate.model.info@noaa.gov
+# project_id :: CMIP5
+# table_id :: Table Amon (31 Jan 2011)
+# experiment_id :: historical+rcp85
+# realization ::        1
+# modeling_realm :: atmos
+# tracking_id :: c907228d-9aeb-4457-b72d-7986c050c563
+# gfdl_experiment_name :: CM3Z_H1_2006-2100_RCP85_Z1
+# creation_date :: 2012-01-12T21:25:44Z
+# model_id :: GFDL-CM3
+# branch_time :: 53290
+# experiment :: RCP8.5
+# forcing :: GHG,SA,Oz,LU,Sl,SS,BC,MD,OC (GHG includes CO2, CH4, N2O, CFC11, CFC12, HCFC22, CFC113)
+# frequency :: mon
+# initialization_method ::        1
+# parent_experiment_id :: historical
+# physics_version ::        1
+# product :: output1
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# title :: spatial statistic of NOAA GFDL GFDL-CM3, RCP8.5 (run 1) experiment output for CMIP5 AR5 r1i1p1
+# history ::  2019-03-05 14:51:56 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_015.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:43 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_015.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_015.nc n 2019-03-05 14:48:29 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_015.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:36:53 2013: ncks -v tas tas/tas_Amon_GFDL-CM3_rcp85_r1i1p1_144.nc aap_9883.nc nThu Mar 28 15:36:48 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_GFDL-CM3_rcp85_r1i1p1_144.nc nThu Mar 28 15:36:32 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_GFDL-CM3_rcp85_r1i1p1.nc aap_9883.nc nThu Mar 28 14:47:27 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_186001-186412.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_186501-186912.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_187001-187412.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_187501-187912.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_188001-188412.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_188501-188912.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_189001-189412.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_189501-189912.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_190001-190412.nc ethz/cmip5/historical/Amon/tas/GFDL-CM3/r1i1p1/tas_Amon_GFDL-CM3_historical_r1i1p1_190501-190912.nc nFile was processed by fremetar (GFDL analog of CMOR). TripleID: [exper_id_1XhP9uft45,realiz_id_4e0zLckGg3,run_id_HhaU8NYVBh]
+ 1861   13.45758    
+ 1862   13.46719    
+ 1863   13.24712    
+ 1864   13.39015    
+ 1865   13.50622    
+ 1866   13.29801    
+ 1867   13.37062    
+ 1868   13.49982    
+ 1869   13.57417    
+ 1870   13.46007    
+ 1871   13.62704    
+ 1872   13.53026    
+ 1873   13.60226    
+ 1874   13.62309    
+ 1875   13.77650    
+ 1876   13.70859    
+ 1877   13.39745    
+ 1878   13.57286    
+ 1879   13.66963    
+ 1880   13.61196    
+ 1881   13.55238    
+ 1882   13.70425    
+ 1883   13.67492    
+ 1884   13.33119    
+ 1885   13.05929    
+ 1886   13.18010    
+ 1887   13.16444    
+ 1888   13.38403    
+ 1889   13.25898    
+ 1890   13.06078    
+ 1891   13.06922    
+ 1892   13.13381    
+ 1893   13.34090    
+ 1894   13.24423    
+ 1895   13.40844    
+ 1896   13.40626    
+ 1897   13.24421    
+ 1898   13.36922    
+ 1899   13.42966    
+ 1900   13.49870    
+ 1901   13.36096    
+ 1902   13.28968    
+ 1903   13.18175    
+ 1904   13.23332    
+ 1905   13.27411    
+ 1906   13.22857    
+ 1907   13.37150    
+ 1908   13.52147    
+ 1909   13.36871    
+ 1910   13.44895    
+ 1911   13.60436    
+ 1912   13.27524    
+ 1913   13.18157    
+ 1914   13.21731    
+ 1915   13.43165    
+ 1916   13.32868    
+ 1917   13.36220    
+ 1918   13.32948    
+ 1919   13.18882    
+ 1920   13.50359    
+ 1921   13.54478    
+ 1922   13.50400    
+ 1923   13.59058    
+ 1924   13.56937    
+ 1925   13.66017    
+ 1926   13.47362    
+ 1927   13.46922    
+ 1928   13.55061    
+ 1929   13.41579    
+ 1930   13.40955    
+ 1931   13.54063    
+ 1932   13.53602    
+ 1933   13.43899    
+ 1934   13.59053    
+ 1935   13.70013    
+ 1936   13.53461    
+ 1937   13.55334    
+ 1938   13.78629    
+ 1939   13.51746    
+ 1940   13.53834    
+ 1941   13.61349    
+ 1942   13.73213    
+ 1943   13.61795    
+ 1944   13.70654    
+ 1945   13.83631    
+ 1946   13.66894    
+ 1947   13.73871    
+ 1948   13.58624    
+ 1949   13.72222    
+ 1950   13.51277    
+ 1951   13.70844    
+ 1952   13.66853    
+ 1953   13.59951    
+ 1954   13.72991    
+ 1955   13.71244    
+ 1956   13.94326    
+ 1957   13.88158    
+ 1958   13.59102    
+ 1959   13.60717    
+ 1960   13.54677    
+ 1961   13.55536    
+ 1962   13.46134    
+ 1963   13.34941    
+ 1964   13.07492    
+ 1965   13.08673    
+ 1966   12.98946    
+ 1967   13.09204    
+ 1968   13.14366    
+ 1969   13.10207    
+ 1970   13.17587    
+ 1971   13.20676    
+ 1972   13.26414    
+ 1973   13.32403    
+ 1974   13.41792    
+ 1975   13.42284    
+ 1976   13.22835    
+ 1977   13.30517    
+ 1978   13.53328    
+ 1979   13.78667    
+ 1980   13.70638    
+ 1981   13.56450    
+ 1982   13.62746    
+ 1983   13.30759    
+ 1984   13.50834    
+ 1985   13.52332    
+ 1986   13.47691    
+ 1987   13.72330    
+ 1988   13.73224    
+ 1989   13.77195    
+ 1990   13.75894    
+ 1991   13.69551    
+ 1992   13.52178    
+ 1993   13.45695    
+ 1994   13.50385    
+ 1995   13.59328    
+ 1996   13.77815    
+ 1997   13.96703    
+ 1998   13.83492    
+ 1999   13.99598    
+ 2000   13.98921    
+ 2001   14.05717    
+ 2002   14.17878    
+ 2003   14.18260    
+ 2004   14.06317    
+ 2005   14.16416    
+ 2006   14.47702    
+ 2007   14.35048    
+ 2008   14.47312    
+ 2009   14.50541    
+ 2010   14.34415    
+ 2011   14.32836    
+ 2012   14.60048    
+ 2013   14.74839    
+ 2014   14.45742    
+ 2015   14.43409    
+ 2016   14.67145    
+ 2017   14.73765    
+ 2018   14.73101    
+ 2019   14.78829    
+ 2020   14.83466    
+ 2021   14.72389    
+ 2022   14.89810    
+ 2023   14.93832    
+ 2024   14.78047    
+ 2025   14.95967    
+ 2026   15.15171    
+ 2027   15.15631    
+ 2028   15.04654    
+ 2029   15.33694    
+ 2030   15.48154    
+ 2031   15.29679    
+ 2032   15.46353    
+ 2033   15.35598    
+ 2034   15.30598    
+ 2035   15.57668    
+ 2036   15.44661    
+ 2037   15.50487    
+ 2038   15.55027    
+ 2039   15.54662    
+ 2040   15.58737    
+ 2041   15.68899    
+ 2042   15.58454    
+ 2043   15.86431    
+ 2044   15.87908    
+ 2045   15.81501    
+ 2046   15.91735    
+ 2047   15.96358    
+ 2048   16.14503    
+ 2049   15.87249    
+ 2050   16.10630    
+ 2051   16.28262    
+ 2052   16.27550    
+ 2053   16.41945    
+ 2054   16.25783    
+ 2055   16.68234    
+ 2056   16.61437    
+ 2057   16.59111    
+ 2058   16.72110    
+ 2059   16.63900    
+ 2060   16.66075    
+ 2061   16.87210    
+ 2062   16.96187    
+ 2063   16.99494    
+ 2064   16.90967    
+ 2065   17.13730    
+ 2066   17.09994    
+ 2067   17.42853    
+ 2068   17.41192    
+ 2069   17.25896    
+ 2070   17.45415    
+ 2071   17.63008    
+ 2072   17.45440    
+ 2073   17.56344    
+ 2074   17.65757    
+ 2075   17.60265    
+ 2076   17.75586    
+ 2077   17.90591    
+ 2078   17.70287    
+ 2079   17.91345    
+ 2080   17.97453    
+ 2081   17.79683    
+ 2082   18.12070    
+ 2083   18.21101    
+ 2084   18.13846    
+ 2085   18.33812    
+ 2086   18.38893    
+ 2087   18.25148    
+ 2088   18.40165    
+ 2089   18.57428    
+ 2090   18.42015    
+ 2091   18.53066    
+ 2092   18.57910    
+ 2093   18.65921    
+ 2094   18.69231    
+ 2095   18.87955    
+ 2096   18.80713    
+ 2097   18.85899    
+ 2098   19.05135    
+ 2099   19.03384    
+ 2100   19.06009    

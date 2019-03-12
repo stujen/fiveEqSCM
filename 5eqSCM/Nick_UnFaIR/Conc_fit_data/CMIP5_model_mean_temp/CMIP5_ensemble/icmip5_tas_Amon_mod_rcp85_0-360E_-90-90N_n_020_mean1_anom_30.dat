@@ -1,0 +1,275 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_020.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_020.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and NASA/GISS (Goddard Institute for Space Studies) New York, NY
+# references :: http://data.giss.nasa.gov/modelE/ar5
+# initialization_method ::                1
+# institute_id :: NASA-GISS
+# experiment_id :: historical+rcp85
+# model_id :: GISS-E2-H
+# forcing :: GHG, LU, Sl, Vl, BC, OC, SA, Oz (also includes orbital change - BC on snow - Nitrate aerosols - interactive CH4)
+# parent_experiment_id :: historical
+# parent_experiment_rip :: r1i1p3
+# branch_time ::   2006.0
+# contact :: Kenneth Lo (cdkkl@giss.nasa.gov)
+# physics_version ::        3
+# tracking_id :: 3d4c9d05-e016-48e1-b9b6-3e18e60f846e
+# product :: output
+# experiment :: RCP8.5
+# frequency :: mon
+# creation_date :: 2012-08-29T12:31:48Z
+# project_id :: CMIP5
+# table_id :: Table Amon (31 January 2011) 2515019193f1c55327ceb0119627a708
+# parent_experiment :: historical
+# modeling_realm :: atmos
+# realization ::        1
+# cmor_version :: 2.5.7
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# comment :: 
+# title :: spatial statistic of GISS-E2-H model output prepared for CMIP5 RCP8.5 r1i1p3
+# history ::  2019-03-05 14:51:57 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_020.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:44 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_020.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_020.nc n 2019-03-05 14:49:04 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_020.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:38:52 2013: ncks -v tas tas/tas_Amon_GISS-E2-H_rcp85_r1i1p3_144.nc aap_9883.nc nThu Mar 28 15:38:46 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_GISS-E2-H_rcp85_r1i1p3_144.nc nThu Mar 28 15:38:32 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_GISS-E2-H_rcp85_r1i1p3.nc aap_9883.nc nThu Mar 28 14:48:33 2013: cdo -f nc4 -z zip copy tas/tas_Amon_GISS-E2-H_historical_r1i1p3.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_200601-205012.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_205101-210012.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_210101-215012.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_215101-220012.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_220101-225012.nc ethz/cmip5/rcp85/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_rcp85_r1i1p3_225101-230012.nc tas/tas_Amon_GISS-E2-H_rcp85_r1i1p3.nc nWed Mar 27 13:45:05 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_historical_r1i1p3_185001-190012.nc ethz/cmip5/historical/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_historical_r1i1p3_190101-195012.nc ethz/cmip5/historical/Amon/tas/GISS-E2-H/r1i1p3/tas_Amon_GISS-E2-H_historical_r1i1p3_195101-200512.nc tas/tas_Amon_GISS-E2-H_historical_r1i1p3.nc n2012-03-10T18:37:02Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.
+ 1861   15.06469    
+ 1862   14.95515    
+ 1863   15.03193    
+ 1864   15.17553    
+ 1865   15.19905    
+ 1866   15.12143    
+ 1867   15.14153    
+ 1868   15.19940    
+ 1869   15.20557    
+ 1870   15.16799    
+ 1871   15.22879    
+ 1872   15.20023    
+ 1873   15.26382    
+ 1874   15.26758    
+ 1875   15.22591    
+ 1876   15.18259    
+ 1877   15.09356    
+ 1878   15.07246    
+ 1879   15.12124    
+ 1880   15.09907    
+ 1881   15.18577    
+ 1882   15.15084    
+ 1883   14.96494    
+ 1884   14.69450    
+ 1885   14.62888    
+ 1886   14.86735    
+ 1887   14.75324    
+ 1888   14.89486    
+ 1889   14.93631    
+ 1890   14.90636    
+ 1891   14.81776    
+ 1892   14.98328    
+ 1893   15.08525    
+ 1894   15.03573    
+ 1895   15.09938    
+ 1896   15.08296    
+ 1897   15.16794    
+ 1898   15.10623    
+ 1899   15.12631    
+ 1900   15.09379    
+ 1901   15.09310    
+ 1902   15.16040    
+ 1903   14.85487    
+ 1904   14.88612    
+ 1905   15.01496    
+ 1906   15.08205    
+ 1907   15.13233    
+ 1908   15.19599    
+ 1909   15.12403    
+ 1910   15.14365    
+ 1911   15.23974    
+ 1912   15.24546    
+ 1913   15.10999    
+ 1914   15.20414    
+ 1915   15.22151    
+ 1916   15.24366    
+ 1917   15.19323    
+ 1918   15.33917    
+ 1919   15.39027    
+ 1920   15.25257    
+ 1921   15.33755    
+ 1922   15.46766    
+ 1923   15.42437    
+ 1924   15.28096    
+ 1925   15.21841    
+ 1926   15.28059    
+ 1927   15.38242    
+ 1928   15.31868    
+ 1929   15.40117    
+ 1930   15.43239    
+ 1931   15.41775    
+ 1932   15.44376    
+ 1933   15.53058    
+ 1934   15.33220    
+ 1935   15.29557    
+ 1936   15.47883    
+ 1937   15.45937    
+ 1938   15.43574    
+ 1939   15.50775    
+ 1940   15.51074    
+ 1941   15.45340    
+ 1942   15.49466    
+ 1943   15.50312    
+ 1944   15.39130    
+ 1945   15.54333    
+ 1946   15.49784    
+ 1947   15.40045    
+ 1948   15.53880    
+ 1949   15.57442    
+ 1950   15.45527    
+ 1951   15.50843    
+ 1952   15.61405    
+ 1953   15.47478    
+ 1954   15.60347    
+ 1955   15.53604    
+ 1956   15.44371    
+ 1957   15.51853    
+ 1958   15.46380    
+ 1959   15.51523    
+ 1960   15.58455    
+ 1961   15.62635    
+ 1962   15.52234    
+ 1963   15.50413    
+ 1964   15.38706    
+ 1965   15.35856    
+ 1966   15.39175    
+ 1967   15.39046    
+ 1968   15.49409    
+ 1969   15.45681    
+ 1970   15.46275    
+ 1971   15.48080    
+ 1972   15.67852    
+ 1973   15.60810    
+ 1974   15.73629    
+ 1975   15.50415    
+ 1976   15.47992    
+ 1977   15.63079    
+ 1978   15.71883    
+ 1979   15.76281    
+ 1980   15.77094    
+ 1981   15.79568    
+ 1982   15.65849    
+ 1983   15.58559    
+ 1984   15.55634    
+ 1985   15.66330    
+ 1986   15.72027    
+ 1987   15.66486    
+ 1988   15.61505    
+ 1989   15.78019    
+ 1990   15.77520    
+ 1991   15.78656    
+ 1992   15.52009    
+ 1993   15.53074    
+ 1994   15.76988    
+ 1995   15.83361    
+ 1996   15.84450    
+ 1997   15.93314    
+ 1998   15.97762    
+ 1999   16.01847    
+ 2000   16.01912    
+ 2001   16.07752    
+ 2002   16.17251    
+ 2003   16.24614    
+ 2004   16.22650    
+ 2005   16.17295    
+ 2006   16.23832    
+ 2007   16.29625    
+ 2008   16.22445    
+ 2009   16.23688    
+ 2010   16.27310    
+ 2011   16.26700    
+ 2012   16.39389    
+ 2013   16.34965    
+ 2014   16.44736    
+ 2015   16.45791    
+ 2016   16.49337    
+ 2017   16.54483    
+ 2018   16.59731    
+ 2019   16.49966    
+ 2020   16.63324    
+ 2021   16.67602    
+ 2022   16.64809    
+ 2023   16.57786    
+ 2024   16.67047    
+ 2025   16.75054    
+ 2026   16.82825    
+ 2027   16.71875    
+ 2028   16.84379    
+ 2029   16.89336    
+ 2030   16.83202    
+ 2031   17.02238    
+ 2032   16.98066    
+ 2033   17.00250    
+ 2034   17.00447    
+ 2035   17.06524    
+ 2036   17.20971    
+ 2037   17.14636    
+ 2038   17.21138    
+ 2039   17.26790    
+ 2040   17.33205    
+ 2041   17.33776    
+ 2042   17.38554    
+ 2043   17.46484    
+ 2044   17.47841    
+ 2045   17.44086    
+ 2046   17.49696    
+ 2047   17.61082    
+ 2048   17.61507    
+ 2049   17.78424    
+ 2050   17.77817    
+ 2051   17.77590    
+ 2052   17.84377    
+ 2053   17.78273    
+ 2054   17.85181    
+ 2055   17.90871    
+ 2056   17.86126    
+ 2057   17.99361    
+ 2058   18.02048    
+ 2059   18.04942    
+ 2060   18.15096    
+ 2061   18.14724    
+ 2062   18.19230    
+ 2063   18.21819    
+ 2064   18.25855    
+ 2065   18.34580    
+ 2066   18.36461    
+ 2067   18.38461    
+ 2068   18.40372    
+ 2069   18.38539    
+ 2070   18.42153    
+ 2071   18.43140    
+ 2072   18.60022    
+ 2073   18.55400    
+ 2074   18.68785    
+ 2075   18.65309    
+ 2076   18.62362    
+ 2077   18.70654    
+ 2078   18.72826    
+ 2079   18.77167    
+ 2080   18.74908    
+ 2081   18.76916    
+ 2082   18.83754    
+ 2083   18.89030    
+ 2084   18.97986    
+ 2085   19.05131    
+ 2086   18.99161    
+ 2087   18.99841    
+ 2088   19.08570    
+ 2089   19.11690    
+ 2090   19.17187    
+ 2091   19.15268    
+ 2092   19.17908    
+ 2093   19.22009    
+ 2094   19.35525    
+ 2095   19.32650    
+ 2096   19.44014    
+ 2097   19.46312    
+ 2098   19.52159    
+ 2099   19.50896    
+ 2100   19.51844    

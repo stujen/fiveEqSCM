@@ -1,0 +1,275 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_009.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_009.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and CMCC - Centro Euro-Mediterraneo per i Cambiamenti Climatici, Bologna, Italy
+# comment ::  nEquilibrium reached after more than 1500-year spin-up at pre-industrial GHG concentrations after which data were output with nominal date of January 1850. The starting point was the same as that of the piControl experiment (r1i1p1).
+# references :: model described in the documentation at http://www.cmcc.it/data-models/models
+# initialization_method ::                1
+# institute_id :: CMCC
+# experiment_id :: historical+rcp85
+# model_id :: CMCC-CMS
+# forcing :: Nat,Ant,GHG,SA,Oz,Sl
+# parent_experiment_id :: historical
+# parent_experiment_rip :: r1i1p1
+# branch_time ::  56978.0
+# contact :: Chiara Cagnazzo (chiara.cagnazzo@cmcc.it)
+# physics_version ::        1
+# tracking_id :: abcf6508-ac44-479c-861f-dc3328fae3f4
+# product :: output
+# experiment :: RCP8.5
+# frequency :: mon
+# creation_date :: 2011-12-05T01:37:35Z
+# project_id :: CMIP5
+# table_id :: Table Amon (27 April 2011) a5a1c518f52ae340313ba0aada03f862
+# parent_experiment :: historical
+# modeling_realm :: atmos
+# realization ::        1
+# cmor_version :: 2.7.1
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# title :: spatial statistic of CMCC-CMS model output prepared for CMIP5 RCP8.5 r1i1p1
+# history ::  2019-03-05 14:51:54 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_009.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:43 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_009.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_009.nc n 2019-03-05 14:47:48 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_009.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:21:26 2013: ncks -v tas tas/tas_Amon_CMCC-CMS_rcp85_r1i1p1_144.nc aap_9883.nc nThu Mar 28 15:21:19 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_CMCC-CMS_rcp85_r1i1p1_144.nc nThu Mar 28 15:21:05 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_CMCC-CMS_rcp85_r1i1p1.nc aap_9883.nc nThu Mar 28 14:38:10 2013: cdo -f nc4 -z zip copy tas/tas_Amon_CMCC-CMS_historical_r1i1p1.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_200601-200912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_201001-201912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_202001-202912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_203001-203912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_204001-204912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_205001-205912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_206001-206912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_207001-207912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_208001-208912.nc ethz/cmip5/rcp85/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_rcp85_r1i1p1_209001-210012.nc tas/tas_Amon_CMCC-CMS_rcp85_r1i1p1.nc nWed Mar 27 11:25:42 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_185001-185912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_186001-186912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_187001-187912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_188001-188912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_189001-189912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_190001-190912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_191001-191912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_192001-192912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_193001-193912.nc ethz/cmip5/historical/Amon/tas/CMCC-CMS/r1i1p1/tas_Amon_CMCC-CMS_historical_r1i1p1_194001-194912.nc nModel output postprocessed with Afterburner and CDO (https://code.zmaw.de/projects) 2011-10-18T19:19:42Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.
+ 1861   14.04822    
+ 1862   13.72248    
+ 1863   13.80507    
+ 1864   13.69380    
+ 1865   13.68770    
+ 1866   14.05765    
+ 1867   13.89386    
+ 1868   13.81845    
+ 1869   13.83645    
+ 1870   13.73741    
+ 1871   13.82098    
+ 1872   13.81615    
+ 1873   13.64051    
+ 1874   13.73947    
+ 1875   13.71008    
+ 1876   13.77423    
+ 1877   13.87634    
+ 1878   13.97301    
+ 1879   13.82202    
+ 1880   13.97844    
+ 1881   13.81097    
+ 1882   13.74818    
+ 1883   13.91125    
+ 1884   13.93201    
+ 1885   13.99489    
+ 1886   13.93971    
+ 1887   13.83406    
+ 1888   13.85316    
+ 1889   13.97932    
+ 1890   13.95682    
+ 1891   13.89624    
+ 1892   13.86869    
+ 1893   13.91206    
+ 1894   13.94421    
+ 1895   13.96169    
+ 1896   13.84367    
+ 1897   14.01566    
+ 1898   14.08254    
+ 1899   13.93174    
+ 1900   13.88244    
+ 1901   13.79530    
+ 1902   13.75773    
+ 1903   13.74615    
+ 1904   13.70561    
+ 1905   13.85094    
+ 1906   13.79627    
+ 1907   13.78355    
+ 1908   13.87692    
+ 1909   13.99811    
+ 1910   13.85772    
+ 1911   13.89611    
+ 1912   13.96933    
+ 1913   13.89529    
+ 1914   13.73820    
+ 1915   13.74692    
+ 1916   13.79053    
+ 1917   13.82040    
+ 1918   13.94987    
+ 1919   13.96590    
+ 1920   13.84906    
+ 1921   13.84041    
+ 1922   13.86127    
+ 1923   13.86109    
+ 1924   13.81225    
+ 1925   13.83403    
+ 1926   13.90311    
+ 1927   13.77147    
+ 1928   13.69582    
+ 1929   13.79955    
+ 1930   13.65512    
+ 1931   13.74210    
+ 1932   13.84348    
+ 1933   13.81220    
+ 1934   13.72520    
+ 1935   13.67664    
+ 1936   13.76510    
+ 1937   13.62631    
+ 1938   13.64415    
+ 1939   13.78978    
+ 1940   13.79653    
+ 1941   13.90211    
+ 1942   13.83225    
+ 1943   13.75731    
+ 1944   13.68958    
+ 1945   13.63737    
+ 1946   13.77426    
+ 1947   13.75887    
+ 1948   13.73571    
+ 1949   13.82088    
+ 1950   13.85628    
+ 1951   13.88831    
+ 1952   13.77398    
+ 1953   13.81763    
+ 1954   13.97151    
+ 1955   13.90680    
+ 1956   13.98728    
+ 1957   13.91476    
+ 1958   13.71676    
+ 1959   13.90331    
+ 1960   14.05648    
+ 1961   13.77415    
+ 1962   13.78724    
+ 1963   13.72589    
+ 1964   13.80829    
+ 1965   13.93153    
+ 1966   13.76680    
+ 1967   13.80032    
+ 1968   13.89226    
+ 1969   13.67447    
+ 1970   13.51118    
+ 1971   13.87353    
+ 1972   13.84693    
+ 1973   13.70505    
+ 1974   13.72276    
+ 1975   13.87376    
+ 1976   13.97331    
+ 1977   13.91102    
+ 1978   14.03209    
+ 1979   13.98887    
+ 1980   13.87201    
+ 1981   13.90244    
+ 1982   13.83069    
+ 1983   13.82848    
+ 1984   14.17735    
+ 1985   14.25326    
+ 1986   14.03096    
+ 1987   13.88297    
+ 1988   14.05633    
+ 1989   14.21010    
+ 1990   14.23681    
+ 1991   14.33477    
+ 1992   14.46390    
+ 1993   14.42052    
+ 1994   14.41216    
+ 1995   14.20771    
+ 1996   14.25492    
+ 1997   14.53708    
+ 1998   14.45572    
+ 1999   14.28476    
+ 2000   14.38127    
+ 2001   14.69154    
+ 2002   14.69799    
+ 2003   14.39487    
+ 2004   14.34657    
+ 2005   14.50275    
+ 2006   14.51590    
+ 2007   14.46398    
+ 2008   14.56021    
+ 2009   14.74091    
+ 2010   14.78265    
+ 2011   14.67811    
+ 2012   14.66396    
+ 2013   14.67631    
+ 2014   14.97694    
+ 2015   14.80459    
+ 2016   14.71138    
+ 2017   14.82853    
+ 2018   14.94042    
+ 2019   14.67757    
+ 2020   14.86398    
+ 2021   15.10084    
+ 2022   15.02890    
+ 2023   14.84847    
+ 2024   15.01426    
+ 2025   15.14073    
+ 2026   15.34217    
+ 2027   15.33744    
+ 2028   15.48652    
+ 2029   15.29205    
+ 2030   15.15668    
+ 2031   15.46809    
+ 2032   15.59832    
+ 2033   15.44509    
+ 2034   15.56675    
+ 2035   15.72740    
+ 2036   15.76852    
+ 2037   15.54577    
+ 2038   15.50108    
+ 2039   15.76973    
+ 2040   15.73925    
+ 2041   15.79407    
+ 2042   15.67375    
+ 2043   15.96167    
+ 2044   16.11669    
+ 2045   15.98234    
+ 2046   16.15602    
+ 2047   16.33568    
+ 2048   16.08083    
+ 2049   16.20883    
+ 2050   16.26081    
+ 2051   16.21300    
+ 2052   16.63972    
+ 2053   16.55400    
+ 2054   16.12948    
+ 2055   16.47465    
+ 2056   16.70883    
+ 2057   16.51147    
+ 2058   16.71277    
+ 2059   16.47437    
+ 2060   16.57076    
+ 2061   16.91026    
+ 2062   16.79394    
+ 2063   16.78760    
+ 2064   17.01308    
+ 2065   17.43247    
+ 2066   17.30006    
+ 2067   17.04327    
+ 2068   17.12240    
+ 2069   17.40086    
+ 2070   17.32907    
+ 2071   17.40182    
+ 2072   17.61578    
+ 2073   17.54031    
+ 2074   17.65465    
+ 2075   17.83642    
+ 2076   17.75343    
+ 2077   17.79658    
+ 2078   17.90352    
+ 2079   18.04789    
+ 2080   18.08373    
+ 2081   18.01201    
+ 2082   18.19971    
+ 2083   18.37363    
+ 2084   18.20065    
+ 2085   18.47073    
+ 2086   18.60934    
+ 2087   18.29952    
+ 2088   18.47288    
+ 2089   18.65939    
+ 2090   18.51372    
+ 2091   18.72903    
+ 2092   18.70358    
+ 2093   18.67025    
+ 2094   18.88440    
+ 2095   18.86287    
+ 2096   18.91232    
+ 2097   19.11554    
+ 2098   19.17429    
+ 2099   19.00249    
+ 2100   19.33069    

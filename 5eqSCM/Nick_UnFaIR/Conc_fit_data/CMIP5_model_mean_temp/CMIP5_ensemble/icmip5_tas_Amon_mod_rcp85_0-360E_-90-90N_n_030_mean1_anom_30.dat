@@ -1,0 +1,275 @@
+# tas [Celsius] annual mean of Near-Surface Air Temperature
+# file :: /data/storage/climexp/data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_030.dat
+# description :: mod39 rcp85 tas 0-360E -90-90N ensemble
+# minimal_valid_fraction ::  30.00
+# olderfile :: CMIP5/monthly/tas/tas_Amon_mod_rcp85_030.nc
+# cdi :: Climate Data Interface version 1.5.9 (http://code.zmaw.de/projects/cdi)
+# institution :: KNMI Climate Explorer and IPSL (Institut Pierre Simon Laplace, Paris, France)
+# references :: Model documentation and further reference available here : http://icmc.ipsl.fr
+# initialization_method ::                1
+# institute_id :: IPSL
+# experiment_id :: historical+rcp85
+# model_id :: IPSL-CM5B-LR
+# forcing :: Nat,Ant,GHG,SA,Oz,LU,SS,Ds,BC,MD,OC,AA
+# parent_experiment_id :: historical
+# parent_experiment_rip :: r1i1p1
+# branch_time ::   2005.0
+# contact :: ipsl-cmip5 _at_ ipsl.jussieu.fr Data manager : Sebastien Denvil
+# comment ::  nThis 21th century simulation has been forced by prescribed concentration following the rcp 8.5 scenario.
+# physics_version ::        1
+# tracking_id :: c2c19ebf-295a-4b5d-acdc-0955105cf994
+# product :: output
+# experiment :: RCP8.5
+# frequency :: mon
+# creation_date :: 2012-04-15T12:25:08Z
+# project_id :: CMIP5
+# table_id :: Table Amon (31 January 2011) 53b766a395ac41696af40aab76a49ae5
+# parent_experiment :: historical
+# modeling_realm :: atmos
+# realization ::        1
+# cmor_version :: 2.7.1
+# cdo :: Climate Data Operators version 1.5.9 (http://code.zmaw.de/projects/cdo)
+# nco :: 4.0.8
+# ave_region :: lon=    0.000  360.000, lat=  -90.000   90.000
+# title :: spatial statistic of IPSL-CM5B-LR model output prepared for CMIP5 RCP8.5 r1i1p1
+# history ::  2019-03-05 14:52:00 bin/daily2longer data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_030.dat 1 mean add_anom minfac 30 cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++_mean1_anom_30\n 2019-03-05 14:50:44 dat2nc ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_030.dat i mod39_rcp85_tas_0-360E_-90-90N_ensemble ./data/icmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_030.nc n 2019-03-05 14:49:55 bin/get_index CMIP5/monthly/tas/tas_Amon_mod_rcp85_030.nc 0 360 -90 90 dipole no minfac 30 nearest lsmask CMIP5/monthly/lsmask_cmip3_144.nc all nomissing cmip5_tas_Amon_mod_rcp85_0-360E_-90-90N_n_+++ nThu Mar 28 15:45:37 2013: ncks -v tas tas/tas_Amon_IPSL-CM5B-LR_rcp85_r1i1p1_144.nc aap_9883.nc nThu Mar 28 15:45:32 2013: cdo -f nc4 -z zip -r -remapbil,144x72grid.txt aap_9883.nc tas/tas_Amon_IPSL-CM5B-LR_rcp85_r1i1p1_144.nc nThu Mar 28 15:45:22 2013: cdo -f nc4 -z zip -r -seldate,1861-01-01,2100-12-31 tas/tas_Amon_IPSL-CM5B-LR_rcp85_r1i1p1.nc aap_9883.nc nThu Mar 28 14:52:23 2013: cdo -f nc4 -z zip copy tas/tas_Amon_IPSL-CM5B-LR_historical_r1i1p1.nc ethz/cmip5/rcp85/Amon/tas/IPSL-CM5B-LR/r1i1p1/tas_Amon_IPSL-CM5B-LR_rcp85_r1i1p1_200601-210012.nc tas/tas_Amon_IPSL-CM5B-LR_rcp85_r1i1p1.nc nWed Mar 27 13:49:05 2013: cdo -f nc4 -z zip copy ethz/cmip5/historical/Amon/tas/IPSL-CM5B-LR/r1i1p1/tas_Amon_IPSL-CM5B-LR_historical_r1i1p1_185001-200512.nc tas/tas_Amon_IPSL-CM5B-LR_historical_r1i1p1.nc n2012-01-28T12:26:16Z CMOR rewrote data to comply with CF standards and CMIP5 requirements.
+ 1861   12.90396    
+ 1862   12.88035    
+ 1863   12.81912    
+ 1864   12.88365    
+ 1865   12.77090    
+ 1866   12.86080    
+ 1867   12.80510    
+ 1868   12.88548    
+ 1869   12.90457    
+ 1870   12.92227    
+ 1871   13.02333    
+ 1872   12.80338    
+ 1873   12.87372    
+ 1874   12.73701    
+ 1875   12.77073    
+ 1876   12.73656    
+ 1877   12.79619    
+ 1878   12.95228    
+ 1879   12.93569    
+ 1880   12.72975    
+ 1881   12.85088    
+ 1882   12.95868    
+ 1883   12.95425    
+ 1884   12.42489    
+ 1885   12.61130    
+ 1886   12.68264    
+ 1887   12.56059    
+ 1888   12.65820    
+ 1889   12.56975    
+ 1890   12.83016    
+ 1891   12.86178    
+ 1892   12.74441    
+ 1893   12.79382    
+ 1894   12.70761    
+ 1895   12.74143    
+ 1896   12.73351    
+ 1897   12.72313    
+ 1898   12.68681    
+ 1899   12.86488    
+ 1900   12.93822    
+ 1901   12.85217    
+ 1902   12.79841    
+ 1903   12.57810    
+ 1904   12.80659    
+ 1905   13.04253    
+ 1906   12.93892    
+ 1907   12.89222    
+ 1908   12.96454    
+ 1909   13.14064    
+ 1910   13.22925    
+ 1911   13.10478    
+ 1912   12.99766    
+ 1913   12.90040    
+ 1914   12.99548    
+ 1915   12.95228    
+ 1916   13.03921    
+ 1917   13.19417    
+ 1918   13.13612    
+ 1919   13.16724    
+ 1920   13.14561    
+ 1921   13.16665    
+ 1922   13.23103    
+ 1923   13.18891    
+ 1924   13.03968    
+ 1925   13.09490    
+ 1926   13.09779    
+ 1927   13.11913    
+ 1928   13.03794    
+ 1929   13.16605    
+ 1930   13.28342    
+ 1931   13.16414    
+ 1932   13.04995    
+ 1933   13.04751    
+ 1934   13.06258    
+ 1935   12.99580    
+ 1936   13.08928    
+ 1937   13.34413    
+ 1938   13.25693    
+ 1939   13.25791    
+ 1940   13.20920    
+ 1941   13.32104    
+ 1942   13.09305    
+ 1943   13.19217    
+ 1944   13.13631    
+ 1945   13.20713    
+ 1946   13.27479    
+ 1947   13.20764    
+ 1948   13.27862    
+ 1949   13.26617    
+ 1950   13.34174    
+ 1951   13.19196    
+ 1952   13.28983    
+ 1953   13.37523    
+ 1954   13.37828    
+ 1955   13.24567    
+ 1956   13.28938    
+ 1957   13.42277    
+ 1958   13.35049    
+ 1959   13.26847    
+ 1960   13.27682    
+ 1961   13.26754    
+ 1962   13.18088    
+ 1963   13.08638    
+ 1964   12.92448    
+ 1965   13.00091    
+ 1966   13.07811    
+ 1967   13.08823    
+ 1968   13.20492    
+ 1969   13.27920    
+ 1970   13.26319    
+ 1971   13.48740    
+ 1972   13.39321    
+ 1973   13.49327    
+ 1974   13.57522    
+ 1975   13.48368    
+ 1976   13.28900    
+ 1977   13.37716    
+ 1978   13.44674    
+ 1979   13.57951    
+ 1980   13.60109    
+ 1981   13.57215    
+ 1982   13.37157    
+ 1983   13.42864    
+ 1984   13.66740    
+ 1985   13.45110    
+ 1986   13.47667    
+ 1987   13.68828    
+ 1988   13.52188    
+ 1989   13.66817    
+ 1990   13.86589    
+ 1991   13.62962    
+ 1992   13.36384    
+ 1993   13.27250    
+ 1994   13.59711    
+ 1995   13.56754    
+ 1996   13.62522    
+ 1997   13.82168    
+ 1998   13.70786    
+ 1999   13.64846    
+ 2000   13.81504    
+ 2001   13.92997    
+ 2002   13.72861    
+ 2003   13.86737    
+ 2004   13.91546    
+ 2005   13.87648    
+ 2006   13.82527    
+ 2007   13.86980    
+ 2008   13.91946    
+ 2009   13.99839    
+ 2010   13.96589    
+ 2011   13.91446    
+ 2012   13.95140    
+ 2013   14.16336    
+ 2014   14.05610    
+ 2015   14.12870    
+ 2016   14.21159    
+ 2017   14.02946    
+ 2018   14.13740    
+ 2019   14.12379    
+ 2020   14.15867    
+ 2021   14.11374    
+ 2022   14.38343    
+ 2023   14.32601    
+ 2024   14.24347    
+ 2025   14.36215    
+ 2026   14.47832    
+ 2027   14.51801    
+ 2028   14.33320    
+ 2029   14.53008    
+ 2030   14.76223    
+ 2031   14.33291    
+ 2032   14.51610    
+ 2033   14.55182    
+ 2034   14.55564    
+ 2035   14.70009    
+ 2036   14.84682    
+ 2037   14.84299    
+ 2038   14.79959    
+ 2039   14.91671    
+ 2040   14.89564    
+ 2041   14.99771    
+ 2042   14.95001    
+ 2043   15.04725    
+ 2044   15.10044    
+ 2045   14.97459    
+ 2046   15.00591    
+ 2047   15.35114    
+ 2048   15.25477    
+ 2049   15.15393    
+ 2050   15.33117    
+ 2051   15.36805    
+ 2052   15.54684    
+ 2053   15.48416    
+ 2054   15.33995    
+ 2055   15.44283    
+ 2056   15.35880    
+ 2057   15.57013    
+ 2058   15.80437    
+ 2059   15.79419    
+ 2060   15.83781    
+ 2061   15.89482    
+ 2062   15.94806    
+ 2063   15.78150    
+ 2064   15.90475    
+ 2065   15.94010    
+ 2066   15.99457    
+ 2067   16.19783    
+ 2068   16.09198    
+ 2069   15.91929    
+ 2070   16.04448    
+ 2071   16.25608    
+ 2072   16.13800    
+ 2073   16.04311    
+ 2074   16.34161    
+ 2075   16.32474    
+ 2076   16.29727    
+ 2077   16.49854    
+ 2078   16.50158    
+ 2079   16.70167    
+ 2080   16.57730    
+ 2081   16.71479    
+ 2082   16.60069    
+ 2083   16.60959    
+ 2084   16.66089    
+ 2085   16.84063    
+ 2086   16.72817    
+ 2087   17.02258    
+ 2088   16.99372    
+ 2089   16.75446    
+ 2090   17.09326    
+ 2091   17.19455    
+ 2092   17.08311    
+ 2093   17.18154    
+ 2094   17.36644    
+ 2095   16.98562    
+ 2096   17.39840    
+ 2097   17.55916    
+ 2098   17.28795    
+ 2099   17.41385    
+ 2100   17.64356    
