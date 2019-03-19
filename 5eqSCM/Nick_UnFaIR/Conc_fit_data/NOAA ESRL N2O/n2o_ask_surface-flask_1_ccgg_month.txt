@@ -1,0 +1,318 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Office National de la Meteorologie [ONM]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: ask
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:11:36
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+ASK 1996 12   312.87
+ASK 1997  1   312.87
+ASK 1997  2   313.02
+ASK 1997  3   313.19
+ASK 1997  4   313.19
+ASK 1997  5   313.11
+ASK 1997  6   313.19
+ASK 1997  7   313.30
+ASK 1997  8   313.30
+ASK 1997  9   313.38
+ASK 1997 10   313.67
+ASK 1997 11   313.91
+ASK 1997 12   313.92
+ASK 1998  1   313.92
+ASK 1998  2   314.01
+ASK 1998  3   314.07
+ASK 1998  4   314.13
+ASK 1998  5   314.29
+ASK 1998  6   314.36
+ASK 1998  7   314.25
+ASK 1998  8   314.20
+ASK 1998  9   314.22
+ASK 1998 10   314.24
+ASK 1998 11   314.42
+ASK 1998 12   314.69
+ASK 1999  1   314.78
+ASK 1999  2   314.81
+ASK 1999  3   314.85
+ASK 1999  4   314.84
+ASK 1999  5   314.82
+ASK 1999  6   314.69
+ASK 1999  7   314.47
+ASK 1999  8   314.59
+ASK 1999  9   315.18
+ASK 1999 10   315.65
+ASK 1999 11   315.69
+ASK 1999 12   315.60
+ASK 2000  1   315.57
+ASK 2000  2   315.59
+ASK 2000  3   315.67
+ASK 2000  4   315.82
+ASK 2000  5   316.05
+ASK 2000  6   316.26
+ASK 2000  7   316.38
+ASK 2000  8   316.42
+ASK 2000  9   316.49
+ASK 2000 10   316.60
+ASK 2000 11   316.63
+ASK 2000 12   316.63
+ASK 2001  1   316.77
+ASK 2001  2   316.94
+ASK 2001  3   316.97
+ASK 2001  4   316.91
+ASK 2001  5   316.86
+ASK 2001  6   317.00
+ASK 2001  7   317.27
+ASK 2001  8   317.47
+ASK 2001  9   317.36
+ASK 2001 10   317.22
+ASK 2001 11   317.27
+ASK 2001 12   317.37
+ASK 2002  1   317.49
+ASK 2002  2   317.64
+ASK 2002  3   317.70
+ASK 2002  4   317.68
+ASK 2002  5   317.67
+ASK 2002  6   317.66
+ASK 2002  7   317.67
+ASK 2002  8   317.68
+ASK 2002  9   317.63
+ASK 2002 10   317.62
+ASK 2002 11   317.76
+ASK 2002 12   317.89
+ASK 2003  1   317.91
+ASK 2003  2   317.96
+ASK 2003  3   318.04
+ASK 2003  4   318.08
+ASK 2003  5   318.19
+ASK 2003  6   318.36
+ASK 2003  7   318.45
+ASK 2003  8   318.40
+ASK 2003  9   318.40
+ASK 2003 10   318.49
+ASK 2003 11   318.54
+ASK 2003 12   318.54
+ASK 2004  1   318.67
+ASK 2004  2   318.78
+ASK 2004  3   318.79
+ASK 2004  4   318.82
+ASK 2004  5   318.87
+ASK 2004  6   318.83
+ASK 2004  7   318.81
+ASK 2004  8   318.83
+ASK 2004  9   318.80
+ASK 2004 10   318.86
+ASK 2004 11   319.03
+ASK 2004 12   319.17
+ASK 2005  1   319.31
+ASK 2005  2   319.51
+ASK 2005  3   319.52
+ASK 2005  4   319.31
+ASK 2005  5   319.41
+ASK 2005  6   319.79
+ASK 2005  7   319.86
+ASK 2005  8   319.77
+ASK 2005  9   319.86
+ASK 2005 10   319.91
+ASK 2005 11   319.94
+ASK 2005 12   320.21
+ASK 2006  1   320.45
+ASK 2006  2   320.42
+ASK 2006  3   320.27
+ASK 2006  4   320.28
+ASK 2006  5   320.39
+ASK 2006  6   320.48
+ASK 2006  7   320.56
+ASK 2006  8   320.70
+ASK 2006  9   320.83
+ASK 2006 10   320.84
+ASK 2006 11   320.80
+ASK 2006 12   320.80
+ASK 2007  1   320.95
+ASK 2007  2   321.11
+ASK 2007  3   321.08
+ASK 2007  4   321.04
+ASK 2007  5   321.15
+ASK 2007  6   321.17
+ASK 2007  7   321.17
+ASK 2007  8   321.29
+ASK 2007  9   321.44
+ASK 2007 10   321.69
+ASK 2007 11   321.94
+ASK 2007 12   321.94
+ASK 2008  1   321.88
+ASK 2008  2   321.96
+ASK 2008  3   322.04
+ASK 2008  4   322.10
+ASK 2008  5   322.16
+ASK 2008  6   322.17
+ASK 2008  7   322.10
+ASK 2008  8   322.08
+ASK 2008  9   322.15
+ASK 2008 10   322.27
+ASK 2008 11   322.33
+ASK 2008 12   322.44
+ASK 2009  1   322.65
+ASK 2009  2   322.71
+ASK 2009  3   322.62
+ASK 2009  4   322.59
+ASK 2009  5   322.76
+ASK 2009  6   322.94
+ASK 2009  7   322.93
+ASK 2009  8   322.87
+ASK 2009  9   323.05
+ASK 2009 10   323.20
+ASK 2009 11   323.17
+ASK 2009 12   323.11
+ASK 2010  1   323.18
+ASK 2010  2   323.30
+ASK 2010  3   323.40
+ASK 2010  4   323.47
+ASK 2010  5   323.56
+ASK 2010  6   323.60
+ASK 2010  7   323.55
+ASK 2010  8   323.54
+ASK 2010  9   323.55
+ASK 2010 10   323.64
+ASK 2010 11   323.87
+ASK 2010 12   324.11
+ASK 2011  1   324.27
+ASK 2011  2   324.45
+ASK 2011  3   324.54
+ASK 2011  4   324.51
+ASK 2011  5   324.60
+ASK 2011  6   324.77
+ASK 2011  7   324.75
+ASK 2011  8   324.69
+ASK 2011  9   324.73
+ASK 2011 10   324.90
+ASK 2011 11   325.17
+ASK 2011 12   325.32
+ASK 2012  1   325.29
+ASK 2012  2   325.29
+ASK 2012  3   325.43
+ASK 2012  4   325.54
+ASK 2012  5   325.50
+ASK 2012  6   325.43
+ASK 2012  7   325.38
+ASK 2012  8   325.30
+ASK 2012  9   325.38
+ASK 2012 10   325.66
+ASK 2012 11   325.82
+ASK 2012 12   325.82
+ASK 2013  4   326.30
+ASK 2013  5   326.42
+ASK 2013  6   326.59
+ASK 2013  7   326.58
+ASK 2013  8   326.56
+ASK 2013  9   326.70
+ASK 2013 10   326.77
+ASK 2013 11   326.74
+ASK 2013 12   326.86
+ASK 2014  1   327.00
+ASK 2014  2   326.90
+ASK 2014  3   326.88
+ASK 2014  4   327.22
+ASK 2014  5   327.56
+ASK 2014  6   327.63
+ASK 2014  7   327.68
+ASK 2014  8   327.89
+ASK 2014  9   328.09
+ASK 2014 10   328.18
+ASK 2014 11   328.24
+ASK 2014 12   328.37
+ASK 2015  1   328.42
+ASK 2015  2   328.40
+ASK 2015  3   328.43
+ASK 2015  4   328.52
+ASK 2015  5   328.57
+ASK 2015  6   328.62
+ASK 2015  7   328.72
+ASK 2015  8   328.85
+ASK 2015  9   328.95
+ASK 2015 10   329.04
+ASK 2015 11   329.12
+ASK 2015 12   329.20
+ASK 2016  1   329.31
+ASK 2016  2   329.38
+ASK 2016  3   329.39
+ASK 2016  4   329.51
+ASK 2016  5   329.72
+ASK 2016  6   329.77
+ASK 2016  7   329.57
+ASK 2016  8   329.40
+ASK 2016  9   329.51
+ASK 2016 10   329.75
+ASK 2016 11   329.90
+ASK 2016 12   329.90
+ASK 2017  1   329.94
+ASK 2017  2   330.03
+ASK 2017  3   330.07
+ASK 2017  4   330.10
+ASK 2017  5   330.27
+ASK 2017  6   330.43
+ASK 2017  7   330.45
+ASK 2017  8   330.56
+ASK 2017  9   330.73
+ASK 2017 10   330.67
+ASK 2017 11   330.48
+ASK 2017 12   330.50

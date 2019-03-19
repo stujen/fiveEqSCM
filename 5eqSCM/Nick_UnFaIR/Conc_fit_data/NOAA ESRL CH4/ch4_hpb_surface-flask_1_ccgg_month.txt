@@ -1,0 +1,209 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Deutscher Wetterdienst  [DWD]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: hpb
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:58:50
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+HPB 2006  4  1886.18
+HPB 2006  5  1866.01
+HPB 2006  6  1876.59
+HPB 2006  7  1884.82
+HPB 2006  8  1881.40
+HPB 2006  9  1901.85
+HPB 2006 10  1900.85
+HPB 2006 11  1883.70
+HPB 2006 12  1881.49
+HPB 2007  1  1885.16
+HPB 2007  2  1901.68
+HPB 2007  3  1913.35
+HPB 2007  4  1899.67
+HPB 2007  5  1884.64
+HPB 2007  6  1863.07
+HPB 2007  7  1873.36
+HPB 2007  8  1912.28
+HPB 2007  9  1926.69
+HPB 2007 10  1931.33
+HPB 2007 11  1907.45
+HPB 2007 12  1898.19
+HPB 2008  1  1916.21
+HPB 2008  2  1919.53
+HPB 2008  3  1915.33
+HPB 2008  4  1905.40
+HPB 2008  5  1884.68
+HPB 2008  6  1879.59
+HPB 2008  7  1883.24
+HPB 2008  8  1895.91
+HPB 2008  9  1908.10
+HPB 2008 10  1887.15
+HPB 2008 11  1915.42
+HPB 2008 12  1950.60
+HPB 2009  1  1933.30
+HPB 2009  2  1917.33
+HPB 2009  3  1911.08
+HPB 2009  4  1920.24
+HPB 2009  5  1904.28
+HPB 2009  6  1883.60
+HPB 2009  7  1878.00
+HPB 2009  8  1900.82
+HPB 2009  9  1943.86
+HPB 2009 10  1932.23
+HPB 2009 11  1908.77
+HPB 2009 12  1915.60
+HPB 2010  1  1952.81
+HPB 2010  2  1960.18
+HPB 2010  3  1915.22
+HPB 2010  4  1901.56
+HPB 2010  5  1921.41
+HPB 2010  6  1930.73
+HPB 2010  7  1904.39
+HPB 2010  8  1888.64
+HPB 2010  9  1918.16
+HPB 2010 10  1952.98
+HPB 2010 11  1965.18
+HPB 2010 12  1927.70
+HPB 2011  1  1957.83
+HPB 2011  2  2011.14
+HPB 2011  3  1947.00
+HPB 2011  4  1908.78
+HPB 2011  5  1912.36
+HPB 2011  6  1899.62
+HPB 2011  7  1915.56
+HPB 2011  8  1910.34
+HPB 2011  9  1912.11
+HPB 2011 10  1991.51
+HPB 2011 11  2008.32
+HPB 2011 12  1931.33
+HPB 2012  1  1963.14
+HPB 2012  2  1984.91
+HPB 2012  3  1926.15
+HPB 2012  4  1906.46
+HPB 2012  5  1894.69
+HPB 2012  6  1894.75
+HPB 2012  7  1901.55
+HPB 2012  8  1907.68
+HPB 2012  9  1927.94
+HPB 2012 10  1938.57
+HPB 2012 11  1936.12
+HPB 2012 12  1927.68
+HPB 2013  1  1959.11
+HPB 2013  2  1991.40
+HPB 2013  3  1990.43
+HPB 2013  4  1976.54
+HPB 2013  5  1931.60
+HPB 2013  6  1905.23
+HPB 2013  7  1915.04
+HPB 2013  8  1915.64
+HPB 2013  9  1932.43
+HPB 2013 10  1942.69
+HPB 2013 11  1931.85
+HPB 2013 12  1924.82
+HPB 2014  1  1915.32
+HPB 2014  2  1928.34
+HPB 2014  3  1944.25
+HPB 2014  4  1937.71
+HPB 2014  5  1930.22
+HPB 2014  6  1922.20
+HPB 2014  7  1913.53
+HPB 2014  8  1932.53
+HPB 2014  9  1960.57
+HPB 2014 10  1959.86
+HPB 2014 11  1975.37
+HPB 2014 12  1973.43
+HPB 2015  1  1938.67
+HPB 2015  2  1944.19
+HPB 2015  3  1950.69
+HPB 2015  4  1936.44
+HPB 2015  5  1935.57
+HPB 2015  6  1931.24
+HPB 2015  7  1926.48
+HPB 2015  8  1942.24
+HPB 2015  9  1954.00
+HPB 2015 10  1948.51
+HPB 2015 11  1929.44
+HPB 2015 12  1942.49
+HPB 2016  1  1952.25
+HPB 2016  2  1954.51
+HPB 2016  3  1974.66
+HPB 2016  4  1975.27
+HPB 2016  5  1961.39
+HPB 2016  6  1948.32
+HPB 2016  7  1955.54
+HPB 2016  8  1962.09
+HPB 2016  9  1967.22
+HPB 2016 10  1985.71
+HPB 2016 11  1974.45
+HPB 2016 12  1969.97
+HPB 2017  1  1984.19
+HPB 2017  2  1971.19
+HPB 2017  3  1956.75
+HPB 2017  4  1959.42
+HPB 2017  5  1956.36
+HPB 2017  6  1937.43
+HPB 2017  7  1938.86
+HPB 2017  8  1970.62
+HPB 2017  9  1981.35
+HPB 2017 10  1968.26
+HPB 2017 11  1967.70
+HPB 2017 12  1976.78

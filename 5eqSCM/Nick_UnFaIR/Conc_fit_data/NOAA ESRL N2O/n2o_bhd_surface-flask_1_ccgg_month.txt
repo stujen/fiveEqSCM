@@ -1,0 +1,275 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Institute of Water and Atmospheric
+# collaborator_name: Research [NIWA]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: bhd
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:11:40
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BHD 2000  3   313.92
+BHD 2000  4   313.52
+BHD 2000  5   313.17
+BHD 2000  6   313.32
+BHD 2000  7   313.85
+BHD 2000  8   314.48
+BHD 2000  9   314.72
+BHD 2000 10   314.62
+BHD 2000 11   314.57
+BHD 2000 12   314.52
+BHD 2001  1   314.29
+BHD 2001  2   314.11
+BHD 2001  3   314.11
+BHD 2001  4   314.17
+BHD 2001  5   314.29
+BHD 2001  6   314.29
+BHD 2001  7   314.04
+BHD 2001  8   313.88
+BHD 2001  9   314.01
+BHD 2001 10   314.21
+BHD 2001 11   314.41
+BHD 2001 12   314.64
+BHD 2002  1   314.76
+BHD 2002  2   314.64
+BHD 2002  3   314.49
+BHD 2002  4   314.53
+BHD 2002  5   314.85
+BHD 2002  6   315.24
+BHD 2002  7   315.58
+BHD 2002  8   315.77
+BHD 2002  9   315.86
+BHD 2002 10   315.97
+BHD 2002 11   316.12
+BHD 2002 12   316.27
+BHD 2003  1   316.33
+BHD 2003  2   316.31
+BHD 2003  3   316.20
+BHD 2003  4   316.01
+BHD 2003  5   316.12
+BHD 2003  6   316.55
+BHD 2003  7   316.86
+BHD 2003  8   316.75
+BHD 2003  9   316.58
+BHD 2003 10   316.78
+BHD 2003 11   317.29
+BHD 2003 12   317.56
+BHD 2004  1   317.23
+BHD 2004  2   316.98
+BHD 2004  3   317.00
+BHD 2004  4   317.05
+BHD 2004  5   317.09
+BHD 2004  6   317.21
+BHD 2004  7   317.53
+BHD 2004  8   317.87
+BHD 2004  9   317.81
+BHD 2004 10   317.64
+BHD 2004 11   317.73
+BHD 2004 12   317.75
+BHD 2005  1   317.56
+BHD 2005  2   317.44
+BHD 2005  3   317.34
+BHD 2005  4   317.33
+BHD 2005  5   317.61
+BHD 2005  6   317.92
+BHD 2005  7   318.07
+BHD 2005  8   318.26
+BHD 2005  9   318.47
+BHD 2005 10   318.71
+BHD 2005 11   319.16
+BHD 2005 12   319.49
+BHD 2006  1   319.37
+BHD 2006  2   319.21
+BHD 2006  3   319.39
+BHD 2006  4   319.61
+BHD 2006  5   319.59
+BHD 2006  6   319.64
+BHD 2006  7   319.80
+BHD 2006  8   319.76
+BHD 2006  9   319.68
+BHD 2006 10   319.74
+BHD 2006 11   319.89
+BHD 2006 12   320.21
+BHD 2007  1   320.52
+BHD 2007  2   320.33
+BHD 2007  3   319.92
+BHD 2007  4   319.54
+BHD 2007  5   319.14
+BHD 2007  6   319.14
+BHD 2007  7   319.67
+BHD 2007  8   320.00
+BHD 2007  9   319.93
+BHD 2007 10   319.96
+BHD 2007 11   320.32
+BHD 2007 12   320.70
+BHD 2008  1   320.93
+BHD 2008  2   320.92
+BHD 2008  3   320.88
+BHD 2008  4   321.08
+BHD 2008  5   321.33
+BHD 2008  6   321.32
+BHD 2008  7   321.23
+BHD 2008  8   321.35
+BHD 2008  9   321.64
+BHD 2008 10   321.82
+BHD 2008 11   321.85
+BHD 2008 12   321.94
+BHD 2009  1   321.99
+BHD 2009  2   321.77
+BHD 2009  3   321.28
+BHD 2009  4   320.89
+BHD 2009  5   320.84
+BHD 2009  6   321.14
+BHD 2009  7   321.56
+BHD 2009  8   321.76
+BHD 2009  9   321.92
+BHD 2009 10   322.18
+BHD 2010  3   321.92
+BHD 2010  4   322.20
+BHD 2010  5   322.44
+BHD 2010  6   322.57
+BHD 2010  7   322.85
+BHD 2010  8   323.14
+BHD 2010  9   323.14
+BHD 2010 10   323.07
+BHD 2010 11   323.02
+BHD 2010 12   322.92
+BHD 2011  1   323.13
+BHD 2011  2   323.54
+BHD 2011  3   323.54
+BHD 2011  4   323.16
+BHD 2011  5   323.22
+BHD 2011  6   323.47
+BHD 2011  7   323.35
+BHD 2011  8   323.11
+BHD 2011  9   323.24
+BHD 2011 10   323.61
+BHD 2011 11   323.98
+BHD 2011 12   324.26
+BHD 2012  1   324.44
+BHD 2012  2   324.42
+BHD 2012  3   324.26
+BHD 2012  4   324.08
+BHD 2012  5   324.00
+BHD 2012  6   324.12
+BHD 2012  7   324.34
+BHD 2012  8   324.51
+BHD 2012  9   324.68
+BHD 2012 10   324.88
+BHD 2012 11   325.17
+BHD 2012 12   325.41
+BHD 2013  1   325.35
+BHD 2013  2   325.18
+BHD 2013  3   325.20
+BHD 2013  4   325.17
+BHD 2013  5   325.11
+BHD 2013  6   325.23
+BHD 2013  7   325.48
+BHD 2013  8   325.69
+BHD 2013  9   325.70
+BHD 2013 10   325.72
+BHD 2013 11   325.95
+BHD 2013 12   326.09
+BHD 2014  1   326.06
+BHD 2014  2   326.10
+BHD 2014  3   326.16
+BHD 2014  4   326.12
+BHD 2014  5   326.11
+BHD 2014  6   326.33
+BHD 2014  7   326.59
+BHD 2014  8   326.57
+BHD 2014  9   326.54
+BHD 2014 10   326.83
+BHD 2014 11   327.24
+BHD 2014 12   327.48
+BHD 2015  1   327.43
+BHD 2015  2   327.32
+BHD 2015  3   327.40
+BHD 2015  4   327.54
+BHD 2015  5   327.38
+BHD 2015  6   327.22
+BHD 2015  7   327.54
+BHD 2015  8   327.88
+BHD 2015  9   327.93
+BHD 2015 10   327.94
+BHD 2015 11   328.00
+BHD 2015 12   328.05
+BHD 2016  1   328.13
+BHD 2016  2   327.98
+BHD 2016  3   327.37
+BHD 2016  4   326.97
+BHD 2016  5   327.22
+BHD 2016  6   327.57
+BHD 2016  7   327.62
+BHD 2016  8   327.78
+BHD 2016  9   328.12
+BHD 2017  2   328.44
+BHD 2017  3   328.35
+BHD 2017  4   328.35
+BHD 2017  5   328.52
+BHD 2017  6   328.85
+BHD 2017  7   329.11
+BHD 2017  8   329.23
+BHD 2017  9   329.28
+BHD 2017 10   329.25
+BHD 2017 11   329.15
+BHD 2017 12   329.22

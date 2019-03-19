@@ -1,0 +1,256 @@
+# number_of_header_lines: 61
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: pocn20
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:12:35
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+N20 1997  6   312.14
+N20 1997  7   312.30
+N20 1997  8   312.47
+N20 1997  9   312.32
+N20 1997 10   312.11
+N20 1997 11   312.26
+N20 1997 12   312.63
+N20 1998  1   313.04
+N20 1998  2   313.32
+N20 1998  3   313.53
+N20 1998  4   313.83
+N20 1998  5   314.12
+N20 1998  6   314.10
+N20 1998  7   313.62
+N20 1998  8   313.11
+N20 1998  9   313.09
+N20 1998 10   313.61
+N20 1998 11   314.15
+N20 1998 12   314.37
+N20 1999  1   314.42
+N20 1999  2   314.43
+N20 1999  3   314.43
+N20 1999  4   314.52
+N20 1999  5   314.61
+N20 1999  6   314.54
+N20 1999  7   314.42
+N20 1999  8   314.53
+N20 1999  9   314.76
+N20 1999 10   314.92
+N20 1999 11   315.05
+N20 1999 12   315.21
+N20 2000  1   315.27
+N20 2000  2   315.30
+N20 2000  3   315.47
+N20 2000  4   315.73
+N20 2000  5   315.84
+N20 2000  6   315.84
+N20 2000  7   315.89
+N20 2000  8   315.99
+N20 2000  9   316.06
+N20 2000 10   316.18
+N20 2000 11   316.40
+N20 2000 12   316.61
+N20 2002  3   317.45
+N20 2002  4   317.46
+N20 2002  5   317.37
+N20 2002  6   317.27
+N20 2002  7   317.27
+N20 2002  8   317.30
+N20 2002  9   317.34
+N20 2002 10   317.39
+N20 2002 11   317.52
+N20 2002 12   317.81
+N20 2003  1   318.05
+N20 2003  2   318.01
+N20 2003  3   317.95
+N20 2003  4   318.04
+N20 2003  5   318.15
+N20 2003  6   318.12
+N20 2003  7   318.12
+N20 2003  8   318.26
+N20 2003  9   318.34
+N20 2003 10   318.35
+N20 2003 11   318.40
+N20 2003 12   318.45
+N20 2004  1   318.49
+N20 2004  2   318.51
+N20 2004  3   318.49
+N20 2004  4   318.52
+N20 2004  5   318.56
+N20 2004  6   318.56
+N20 2004  7   318.50
+N20 2004  8   318.31
+N20 2004  9   318.25
+N20 2004 10   318.58
+N20 2004 11   318.99
+N20 2004 12   319.23
+N20 2005  1   319.33
+N20 2005  2   319.43
+N20 2005  3   319.41
+N20 2005  4   319.32
+N20 2005  5   319.32
+N20 2005  6   319.22
+N20 2005  7   318.99
+N20 2005  8   318.91
+N20 2005  9   319.04
+N20 2005 10   319.38
+N20 2005 11   319.78
+N20 2005 12   320.05
+N20 2006  1   320.00
+N20 2006  2   319.95
+N20 2006  3   319.97
+N20 2006  4   319.82
+N20 2006  5   319.78
+N20 2006  6   320.11
+N20 2006  7   320.35
+N20 2006  8   320.22
+N20 2006  9   320.23
+N20 2006 10   320.56
+N20 2006 11   320.80
+N20 2006 12   320.73
+N20 2007  1   320.76
+N20 2007  2   320.97
+N20 2007  3   320.94
+N20 2007  4   320.66
+N20 2007  5   320.67
+N20 2007  6   320.82
+N20 2007  7   320.76
+N20 2007  8   320.74
+N20 2007  9   321.03
+N20 2007 10   321.36
+N20 2007 11   321.71
+N20 2007 12   322.12
+N20 2008  1   322.30
+N20 2008  2   322.14
+N20 2008  3   322.02
+N20 2008  4   322.05
+N20 2008  5   322.06
+N20 2008  6   322.05
+N20 2008  7   321.87
+N20 2008  8   321.63
+N20 2008  9   321.84
+N20 2008 10   322.18
+N20 2008 11   322.20
+N20 2008 12   322.34
+N20 2009  1   322.66
+N20 2009  2   322.79
+N20 2009  3   322.93
+N20 2009  4   322.92
+N20 2009  5   322.52
+N20 2009  6   322.31
+N20 2009  7   322.51
+N20 2009  8   322.64
+N20 2009  9   322.65
+N20 2009 10   322.84
+N20 2009 11   323.18
+N20 2009 12   323.44
+N20 2010  1   323.62
+N20 2010  2   323.73
+N20 2010  3   323.76
+N20 2010  4   323.64
+N20 2010  5   323.57
+N20 2010  6   323.70
+N20 2010  7   323.71
+N20 2010  8   323.48
+N20 2010  9   323.55
+N20 2010 10   323.98
+N20 2010 11   324.26
+N20 2010 12   324.26
+N20 2011  1   324.13
+N20 2011  2   324.14
+N20 2011  3   324.33
+N20 2011  4   324.46
+N20 2011  5   324.44
+N20 2011  6   324.42
+N20 2011  7   324.48
+N20 2011  8   324.58
+N20 2011  9   324.63
+N20 2011 10   324.57
+N20 2011 11   324.55
+N20 2011 12   324.78
+N20 2012  1   325.08
+N20 2014 11   328.22
+N20 2014 12   328.18
+N20 2015  1   328.32
+N20 2015  2   328.51
+N20 2015  3   328.44
+N20 2015  4   328.29
+N20 2015  5   328.35
+N20 2015  6   328.49
+N20 2015  7   328.56
+N20 2015  8   328.67
+N20 2015  9   328.85
+N20 2015 10   328.98
+N20 2015 11   328.96
+N20 2015 12   329.03
+N20 2016  1   329.29
+N20 2016  2   329.48
+N20 2016  3   329.61
+N20 2016  4   329.66
+N20 2016  5   329.63
+N20 2016  6   329.54
+N20 2016  7   329.48
+N20 2016  8   329.45
+N20 2016  9   329.47
+N20 2016 10   329.63
+N20 2016 11   329.83
+N20 2016 12   329.96
+N20 2017  1   329.98
+N20 2017  2   330.02
+N20 2017  3   330.00
+N20 2017  4   329.82
+N20 2017  5   329.88
+N20 2017  6   330.26
+N20 2017  7   330.41

@@ -1,0 +1,391 @@
+# NEEM-2011-S1 Ice Core 1800 Year Continuous Methane Data
+#----------------------------------------------------------------------- 
+#                World Data Center for Paleoclimatology, Boulder 
+#                                  and 
+#                     NOAA Paleoclimatology Program 
+#----------------------------------------------------------------------- 
+# NOTE: Please cite original reference when using these data,
+# plus the Online Resource and date accessed.
+#
+# Online_Resource: http://hurricane.ncdc.noaa.gov/pls/paleox/f?p=519:1:::::P1_STUDY_ID:14173
+#
+# Original_Source_URL:  ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/greenland/neem/neem2011s1-ch4-5yr.txt
+# 
+# Description/Documentation lines begin with #
+# Data lines have no #
+#
+# Archive: Ice Cores
+#--------------------
+# Contribution_Date
+#	Date: 2013-04-04
+#--------------------
+# Title
+#	Study_Name: NEEM-2011-S1 Ice Core 1800 Year Continuous Methane Data
+#--------------------
+# Investigators
+#       Investigators: Rhodes, R.H.; Faïn, X.; Stowasser, C.; Blunier, T.; Chappellaz, J.; McConnell, J.R.; Romanini, D.; Mitchell, L.E.; Brook, E.J.
+#--------------------
+# Description_and_Notes
+# Description: Methane concentration from the Greenland NEEM-2011-S1 Ice Core from 71 to 408m depth (~270-1961AD). 
+# Methane concentrations analysed online by laser spectrometer (SARA, Spectroscopy by Amplified Resonant Absorption, 
+# developed at Laboratoire Interdisciplinaire de Physique, Grenoble, France) on gas extracted from an ice core 
+# processed using a continuous melter system (Desert Research Institute). Methane data have a 5 second integration time 
+# (raw data acquisition rate 0.6 Hz).  Analytical precision, from Allan Variance test, is 0.9 ppb (2 sigma).  
+# Long-term reproducibility is 2.6% (2 sigma).  Gaps in the record are due to problems during online analysis. 
+# Online analysis conducted August-September 2011.
+# Note: Lat-Long provided is for main NEEM borehole.  The NEEM-2011-S1 core was drilled 200 m distance away in 2011 to 410 m depth.
+#
+# Four data series are presented, as follows: 
+# 1: neem2011s1-ch4.txt = entire dataset 
+# 2: neem2011s1-ch4-outliers-removed.txt = Data minus data points exceeding cut-off value.  
+#    Cut-off value is 2*median absolute deviation (MAD)> 15 yr running median.  
+#    Different MAD values used for 250-1000 AD and 1100-1835 AD sections of record.
+# 3: neem2011s1-ch4-outliers.txt = Data points removed from dataset according to specified cut-off value.
+#    Please refer to Rhodes et al. (2013) for full discussion of origins outlying data points.  
+#    Briefly, these high frequency features are not artifacts of the continuous method 
+#    and have been replicated by traditional discrete analyses.  Comparison to chemistry 
+#    measurements suggests they are related to biological in situ production of methane. 
+# 4: neem2011s1-ch4-5yr.txt = Median CH4 concentrations for 5 year time slices of Data_outliers_removed.
+#    This can be utilised as a time series of atmospheric methane concentration because the 
+#    influence of outliers and other high frequency features (that could not survive firn 
+#    smoothing processes (see Spahni et al., 2003) is removed. 
+#
+# Methane concentrations are reported on NOAA2004 scale (instrument calibrated on dry synthetic air standards).
+#
+# A correction factor of 1.079 has been applied to all data to correct for methane dissolution in melted ice core sample 
+# prior to gas extraction.  Correction factor calculated using empirical data (concentrations not aligned/tied to existing 
+# discrete methane measurements).
+#
+# Additional methods description provided in:
+# Stowasser, C., Buizert, C., Gkinis, V., Chappellaz, J., Schupbach, S., Bigler, M., Fain, X., Sperlich, P., Baumgartner, M., 
+# Schilt, A., Blunier, T., 2012. Continuous measurements of methane mixing ratios from ice cores. Atmos. Meas. Tech. 5, 999-1013.
+# 
+# Morville, J., Kassi, S., Chenevier, M., Romanini, D., 2005. 
+# Fast, low-noise, mode bymode, cavity-enhanced absorption spectroscopy by diode-laser self-locking. Appl. Phys. B Lasers Opt. 80, 1027-01038.
+#
+# NEEM (North Greenland Eemian Ice Drilling) project information http://neem.dk/
+#
+#--------------------
+# Publication 
+#       Authors: Rachael H. Rhodes, Xavier Faïn, Christopher Stowasser, Thomas Blunier, Jérôme Chappellaz, Joseph R. McConnell, Daniele Romanini, Logan E. Mitchell, Edward J. Brook
+#       Published_Date_or_Year:  2013-04-15     
+#       Published_Title: Continuous methane measurements from a late Holocene Greenland ice core: Atmospheric and in-situ signals
+#       Journal_Name: Earth and Planetary Science Letters
+#       Volume: 368
+#       Issue: 
+#       Pages: 9-19
+#       DOI: 10.1016/j.epsl.2013.02.034
+#       Abstract: Ancient air trapped inside bubbles in ice cores can now be analysed for methane concentration utilising a laser spectrometer coupled to a continuous melter system. We present a new ultra-high resolution record of atmospheric methane variability over the last 1800 yr obtained from continuous analysis of a shallow ice core from the North Greenland Eemian project (NEEM-2011-S1) during a 4-week laboratory-based measurement campaign. Our record faithfully replicates the form and amplitudes of multi-decadal oscillations previously observed in other ice cores and demonstrates the detailed depth resolution (5.3 cm), rapid acquisition time (30 m day-1) and good long-term reproducibility (2.6%, 2sigma) of the continuous measurement technique.
+
+In addition, we report the detection of high frequency ice core methane signals of non-atmospheric origin. Firstly, measurements of air from the firn-ice transition region and an interval of ice core dating from 1546-1560 AD (gas age) resolve apparently quasi-annual scale methane oscillations. Traditional gas chromatography measurements on discrete ice samples confirm these signals and indicate peak-to-peak amplitudes of ca. 22 parts per billion (ppb). We hypothesise that these oscillations result from staggered bubble close-off between seasonal layers of contrasting density during time periods of sustained multi-year atmospheric methane change. Secondly, we report the detection of abrupt (20-100 cm depth interval), high amplitude (35-80 ppb excess) methane spikes in the NEEM ice that are reproduced by discrete measurements. We show for the first time that methane spikes present in thin and infrequent layers in polar, glacial ice are accompanied by elevated concentrations of carbon- and nitrogen-based chemical impurities, and suggest that biological in-situ production may be responsible.
+#------------------
+# Funding_Agency 
+#       Funding_Agency_Name: US National Science Foundation 
+#       Grant: 0944552, 0909541, 0968391
+#------------------
+# Funding_Agency 
+#       Funding_Agency_Name: ANR France 
+#       Grant: ANR-10-RPDOC-002-01, ANR-07-VULN-09-001
+#------------------
+# Funding_Agency 
+#       Funding_Agency_Name: European Research Council
+#       Grant: FP7/2007-2013 Grant Agreement 291062 
+#------------------
+# Site_Information 
+#       Site_Name: NEEM 
+#       Location: North America>Greenland
+#	Country: 
+#	Northernmost_Latitude: 77.451
+# 	Southernmost_Latitude: 77.451
+# 	Easternmost_Longitude: -51.061
+# 	Westernmost_Longitude: -51.061
+# 	Elevation: 2450 m  
+#------------------
+# Data_Collection   
+#	Collection_Name: NEEM-2011-S1-CH4-5yr
+#	Earliest_Year: 273
+#	Most_Recent_Year: 1942
+#	Time_Unit: AD
+#	Core_Length: 408 m
+#	Notes: 
+#------------------
+# Chronology: 
+#
+# Gas age scale constructed from annual-layer-counted ice age (Sigl et al., 
+# in press, Journal of Geophysical Research, doi:10.1029/2012JD018603) 
+# and constant delta age of 190.1 yr.  Time span of record is 270-1961 AD.
+# 	
+#----------------	
+# Variables 
+#
+# Data variables follow (have no #)
+# Data line variables format:  Variables list, one per line, shortname-tab-longname-tab-longname components (9 components: what, material, error, units, seasonality, archive, detail, method, C or N for Character or Numeric data) 
+
+age_AD	age, , , AD, , , , ,N
+ch4_ppb	CH4 concentration, , , ppb, , , , ,N 
+
+#----------------
+# Data:
+# Data lines follow (have no #)
+# Data line format - tab-delimited text, variable short name as header
+# Missing Values:  
+
+age_AD	ch4_ppb
+273	712.3
+278	702.75
+283	705.6
+287	693.4
+292	699.35
+300	690.9
+305	689.5
+310	694.35
+315	693.9
+320	693.35
+325	693.6
+330	694.7
+335	697
+339	693.3
+352	689.5
+358	687.6
+363	679.8
+366	682.15
+373	682.2
+378	676.9
+381	675.45
+391	672.35
+395	671.7
+403	681.1
+407	682.6
+411	677.8
+417	681.3
+422	687.6
+429	689.15
+434	691.85
+439	688.3
+444	681.6
+449	680.8
+453	679.2
+458	678.35
+516	669.5
+520	675.25
+527	676.8
+532	678.75
+537	682.95
+542	684.6
+547	682.7
+551	693.2
+559	698.4
+564	697.9
+568	691.2
+574	691.5
+581	695
+586	692.2
+590	685.8
+596	684.1
+603	684.2
+610	682.45
+615	682.6
+620	679.3
+623	680.4
+634	683.8
+638	686.8
+645	691.3
+652	687.2
+654	686.35
+662	683.4
+667	680.2
+672	683.05
+677	683.3
+681	689.7
+688	695.1
+694	694.4
+702	688.8
+708	691.7
+711	709.75
+737	700.1
+745	688
+751	679.9
+756	684.1
+761	680.7
+766	675
+770	673.8
+777	673.1
+782	674.2
+786	674.9
+791	672.45
+796	684.35
+801	689.6
+806	689.2
+816	689.2
+821	696.75
+826	690.2
+834	686
+840	685.3
+845	696.2
+850	694.8
+855	700.2
+859	698.45
+865	701.1
+869	697.1
+875	694.1
+879	693.7
+885	695.2
+895	702.8
+901	715.3
+905	703.5
+910	698.8
+914	697.6
+931	700.5
+936	704.75
+941	706.3
+946	708.2
+949	710.1
+961	713.2
+966	710.7
+972	717.6
+976	714.4
+982	717.4
+986	713.05
+991	720
+995	725
+1000	725
+1122	736.4
+1127	739.55
+1132	743.65
+1137	744.6
+1142	748.45
+1146	749.4
+1152	747.4
+1157	749.3
+1161	741.85
+1167	742.6
+1172	742.9
+1177	744
+1182	740.5
+1186	740.3
+1194	734.4
+1199	737.8
+1232	723.45
+1236	726.5
+1241	725.4
+1246	725.2
+1251	727.4
+1256	726.35
+1261	730.1
+1265	734.5
+1274	726.35
+1279	731.25
+1284	731
+1289	734.9
+1294	736.8
+1300	740.4
+1305	742.1
+1310	735.8
+1315	735.45
+1319	729.3
+1325	728.6
+1330	725.8
+1335	727.3
+1340	728.3
+1344	728.7
+1350	724.6
+1354	731.05
+1361	733.35
+1366	733.6
+1371	734.8
+1376	732.2
+1381	730.4
+1386	730.2
+1393	726.1
+1399	721.3
+1405	719.4
+1410	723.35
+1415	725.1
+1420	728.3
+1424	729.6
+1431	722.8
+1436	726.7
+1440	725.9
+1445	726.7
+1450	727
+1456	727.55
+1459	727.35
+1469	728.9
+1474	735.5
+1479	739.5
+1484	739.35
+1488	752.4
+1495	748.3
+1499	753.4
+1506	759.5
+1511	760.95
+1516	762.7
+1521	763.85
+1526	769.5
+1531	772.1
+1537	768.65
+1541	768.3
+1546	762.1
+1551	759.9
+1556	744.9
+1561	738.1
+1566	733.9
+1571	730
+1576	729.9
+1581	730.3
+1586	729
+1591	729.4
+1595	735.7
+1617	739.2
+1622	736.6
+1627	735.7
+1632	735
+1637	739.5
+1642	731.8
+1647	736.4
+1652	740
+1655	741.35
+1661	742
+1699	730.1
+1704	733.55
+1709	737.35
+1714	739.7
+1719	741.9
+1724	744.3
+1729	747.3
+1734	756.3
+1741	753.4
+1746	761.9
+1751	760.05
+1756	767.1
+1761	769.7
+1767	776
+1771	776.6
+1777	783.2
+1782	782.5
+1787	782.65
+1792	786.35
+1797	789
+1802	794.5
+1807	801.1
+1812	809.95
+1817	819.15
+1822	824.8
+1827	829.2
+1833	833.85
+1835	837.2
+1868	889.9
+1873	897.3
+1878	909.95
+1887	944.9
+1892	966.55
+1897	982.2
+1902	1008.5
+1907	1040.85
+1912	1061.9
+1917	1080.85
+1922	1112
+1927	1125.5
+1932	1149.7
+1937	1172.15
+1942	1235.4

@@ -1,0 +1,195 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Science Foundation [NSF]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: drp
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:04:53
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+DRP 2006  3   378.46
+DRP 2006  4   378.11
+DRP 2006  5   378.40
+DRP 2006  6   378.49
+DRP 2006  7   378.87
+DRP 2006  8   379.57
+DRP 2006  9   379.69
+DRP 2006 10   379.66
+DRP 2006 11   379.77
+DRP 2006 12   379.53
+DRP 2007  1   378.92
+DRP 2007  2   378.97
+DRP 2007  3   379.55
+DRP 2007  4   379.83
+DRP 2007  5   380.20
+DRP 2007  6   381.42
+DRP 2007  9   381.98
+DRP 2007 10   381.94
+DRP 2007 11   381.80
+DRP 2007 12   381.48
+DRP 2008  1   381.37
+DRP 2008  2   381.57
+DRP 2008  3   381.86
+DRP 2008  4   381.98
+DRP 2008  5   382.12
+DRP 2008  6   382.49
+DRP 2008  7   383.05
+DRP 2008  8   383.47
+DRP 2008  9   383.71
+DRP 2008 10   383.74
+DRP 2009  1   383.09
+DRP 2009  2   383.23
+DRP 2009  3   383.36
+DRP 2009  4   383.36
+DRP 2009  5   383.55
+DRP 2009  6   383.92
+DRP 2009 10   385.32
+DRP 2009 11   385.27
+DRP 2009 12   384.88
+DRP 2010  1   384.23
+DRP 2010  2   384.12
+DRP 2010  3   384.61
+DRP 2010  4   385.01
+DRP 2010  5   385.40
+DRP 2010  6   385.98
+DRP 2010  7   386.64
+DRP 2010  8   387.32
+DRP 2010  9   387.61
+DRP 2010 10   387.49
+DRP 2010 11   387.38
+DRP 2010 12   387.29
+DRP 2011  1   386.83
+DRP 2011  2   386.70
+DRP 2011  3   386.87
+DRP 2011  4   386.97
+DRP 2011  5   387.33
+DRP 2011  6   387.72
+DRP 2011  7   388.09
+DRP 2011  8   388.65
+DRP 2011  9   388.85
+DRP 2011 10   388.77
+DRP 2011 11   388.85
+DRP 2011 12   388.71
+DRP 2012  1   388.53
+DRP 2012  2   388.70
+DRP 2012  3   388.96
+DRP 2012  4   389.19
+DRP 2012  5   389.48
+DRP 2012  6   389.83
+DRP 2012  7   390.54
+DRP 2012  8   391.29
+DRP 2012  9   391.32
+DRP 2012 10   391.04
+DRP 2012 11   391.15
+DRP 2012 12   391.01
+DRP 2013  1   390.82
+DRP 2013  2   391.15
+DRP 2013  3   391.49
+DRP 2013  4   391.88
+DRP 2013  5   392.51
+DRP 2013  6   393.02
+DRP 2013  7   393.50
+DRP 2013  8   393.87
+DRP 2013  9   393.85
+DRP 2013 10   393.82
+DRP 2013 11   393.92
+DRP 2013 12   393.66
+DRP 2014  1   393.47
+DRP 2014  2   393.66
+DRP 2014  3   393.77
+DRP 2014  4   394.24
+DRP 2014  5   394.79
+DRP 2014  6   394.92
+DRP 2014  7   395.17
+DRP 2014  8   395.65
+DRP 2014  9   396.00
+DRP 2014 10   395.98
+DRP 2014 11   395.80
+DRP 2014 12   395.47
+DRP 2015  1   395.26
+DRP 2015  2   395.55
+DRP 2015  3   395.99
+DRP 2015  4   396.24
+DRP 2015  5   396.59
+DRP 2015  6   397.11
+DRP 2015 10   398.33
+DRP 2015 11   398.53
+DRP 2015 12   398.40
+DRP 2016  1   398.17
+DRP 2016  2   398.41
+DRP 2016  3   398.91
+DRP 2016  4   399.30
+DRP 2016  5   399.77
+DRP 2016  6   400.51
+DRP 2016  7   401.19
+DRP 2016  8   401.57
+DRP 2016  9   401.68
+DRP 2016 10   401.62
+DRP 2016 11   401.38
+DRP 2016 12   400.79
+DRP 2017  1   400.40
+DRP 2017  2   400.76
+DRP 2017  3   401.15
+DRP 2017  4   401.38
+DRP 2017  5   401.76
+DRP 2017  6   402.30
+DRP 2017  7   402.89

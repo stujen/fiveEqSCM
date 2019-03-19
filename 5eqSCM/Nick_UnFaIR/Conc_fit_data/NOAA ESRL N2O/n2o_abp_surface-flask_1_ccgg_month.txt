@@ -1,0 +1,105 @@
+# number_of_header_lines: 70
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Instituto de Pesquisas Energeticas e Nucleares,
+# collaborator_name: Centro de Quimica e Meio Ambiente, Laboratorio
+# collaborator_name: de Quimica Atmosferica [IPEN-CQMA]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: abp
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:11:30
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+ABP 2006 10   319.86
+ABP 2006 11   319.95
+ABP 2006 12   320.22
+ABP 2007  1   320.52
+ABP 2007  2   320.44
+ABP 2007  3   320.11
+ABP 2007  4   319.87
+ABP 2007  5   319.75
+ABP 2007  6   319.78
+ABP 2007  7   319.91
+ABP 2007  8   319.84
+ABP 2007  9   319.77
+ABP 2008  3   321.63
+ABP 2008  4   321.49
+ABP 2008  5   321.26
+ABP 2008  6   321.27
+ABP 2008  7   321.34
+ABP 2008  8   321.25
+ABP 2008  9   321.31
+ABP 2008 10   321.59
+ABP 2008 11   321.79
+ABP 2008 12   321.90
+ABP 2009  1   322.08
+ABP 2009  2   322.35
+ABP 2009  3   322.52
+ABP 2009  4   322.25
+ABP 2009  5   321.57
+ABP 2009  6   321.33
+ABP 2009  7   321.75
+ABP 2009  8   322.16
+ABP 2009  9   322.26
+ABP 2009 10   322.31
+ABP 2009 11   322.46
+ABP 2009 12   322.65
+ABP 2010  1   322.83

@@ -1,0 +1,135 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: University of Washington
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: opw
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:05:38
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+OPW 1984 11   346.69
+OPW 1984 12   348.42
+OPW 1985  1   349.54
+OPW 1985  2   350.24
+OPW 1985  3   349.34
+OPW 1985  4   350.03
+OPW 1985  5   350.65
+OPW 1985  6   346.63
+OPW 1985  7   342.20
+OPW 1985  8   341.19
+OPW 1985  9   341.10
+OPW 1985 10   343.60
+OPW 1985 11   347.26
+OPW 1985 12   348.70
+OPW 1986  1   350.36
+OPW 1986  2   351.47
+OPW 1986  3   350.56
+OPW 1986  4   351.22
+OPW 1986  5   353.36
+OPW 1986  6   349.85
+OPW 1986  7   344.87
+OPW 1986  8   344.71
+OPW 1986  9   343.77
+OPW 1986 10   345.79
+OPW 1986 11   349.83
+OPW 1986 12   351.35
+OPW 1987  1   352.01
+OPW 1987  2   351.89
+OPW 1987  3   350.51
+OPW 1987  4   351.90
+OPW 1987  5   354.13
+OPW 1987  6   350.78
+OPW 1987  7   345.10
+OPW 1987  8   343.25
+OPW 1987  9   342.37
+OPW 1987 10   344.87
+OPW 1987 11   349.63
+OPW 1987 12   351.97
+OPW 1988  1   353.29
+OPW 1988  2   354.12
+OPW 1988  3   354.16
+OPW 1988  4   356.70
+OPW 1988  5   357.96
+OPW 1988  6   353.89
+OPW 1988  7   348.69
+OPW 1988  8   345.79
+OPW 1988  9   346.85
+OPW 1988 10   349.68
+OPW 1988 11   353.59
+OPW 1988 12   356.41
+OPW 1989  1   358.26
+OPW 1989  2   357.68
+OPW 1989  3   356.11
+OPW 1989  4   359.12
+OPW 1989  5   359.92
+OPW 1989  6   352.11
+OPW 1989  7   348.33
+OPW 1989  8   349.86
+OPW 1989  9   351.76
+OPW 1989 10   354.58
+OPW 1989 11   357.45
+OPW 1989 12   358.63
+OPW 1990  1   359.08
+OPW 1990  2   360.82
+OPW 1990  3   360.37
+OPW 1990  4   358.64
+OPW 1990  5   358.96

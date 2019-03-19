@@ -1,0 +1,205 @@
+# number_of_header_lines: 61
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: pocs35
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:05:40
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+S35 1987  1   346.22
+S35 1987  2   346.24
+S35 1987  3   346.49
+S35 1987  4   346.95
+S35 1987  5   347.43
+S35 1987  6   347.80
+S35 1987  7   348.22
+S35 1987  8   348.70
+S35 1987  9   349.19
+S35 1987 10   349.65
+S35 1987 11   349.85
+S35 1987 12   349.74
+S35 1988  1   349.46
+S35 1988  2   349.22
+S35 1988  3   349.07
+S35 1988  4   349.03
+S35 1988  5   349.06
+S35 1988  6   349.18
+S35 1988  7   349.42
+S35 1988  8   349.78
+S35 1988  9   350.29
+S35 1988 10   350.77
+S35 1988 11   351.05
+S35 1988 12   351.17
+S35 1989  1   351.17
+S35 1989  2   351.17
+S35 1989  3   351.22
+S35 1989  4   351.26
+S35 1989  5   351.25
+S35 1989  6   351.18
+S35 1989  7   351.17
+S35 1989  8   351.32
+S35 1989  9   351.59
+S35 1989 10   351.79
+S35 1989 11   351.84
+S35 1989 12   351.70
+S35 1990  1   351.56
+S35 1990  2   351.55
+S35 1990  3   351.73
+S35 1990  4   352.02
+S35 1990  5   352.27
+S35 1990  6   352.42
+S35 1990  7   352.53
+S35 1990  8   352.69
+S35 1990  9   352.88
+S35 1990 10   352.99
+S35 1990 11   353.00
+S35 1990 12   352.94
+S35 1991  1   352.99
+S35 1991  2   353.24
+S35 1991  3   353.61
+S35 1991  4   353.96
+S35 1991  5   354.20
+S35 1991  6   354.26
+S35 1991  7   354.25
+S35 1991  8   354.27
+S35 1991  9   354.33
+S35 1991 10   354.31
+S35 1991 11   354.13
+S35 1991 12   353.85
+S35 1992  1   353.62
+S35 1992  2   353.64
+S35 1992  3   353.92
+S35 1992  4   354.37
+S35 1992  5   354.78
+S35 1992  6   355.00
+S35 1992  7   355.14
+S35 1992  8   355.27
+S35 1992  9   355.43
+S35 1992 10   355.60
+S35 1992 11   355.68
+S35 1992 12   355.61
+S35 1993  1   355.50
+S35 1993  2   355.45
+S35 1993  3   355.49
+S35 1993  4   355.57
+S35 1993  5   355.60
+S35 1993  6   355.59
+S35 1993  7   355.62
+S35 1993  8   355.82
+S35 1993  9   356.15
+S35 1993 10   356.44
+S35 1993 11   356.50
+S35 1993 12   356.32
+S35 1994  1   356.07
+S35 1994  2   355.98
+S35 1994 12   358.10
+S35 1995  1   358.01
+S35 1995  6   358.89
+S35 1995  7   358.95
+S35 1995  8   359.05
+S35 1995  9   359.26
+S35 1995 10   359.49
+S35 1995 11   359.67
+S35 1995 12   359.65
+S35 1996  1   359.51
+S35 1996  2   359.38
+S35 1996  3   359.44
+S35 1996  4   359.71
+S35 1996  5   360.17
+S35 1996  6   360.65
+S35 1996  7   360.95
+S35 1996  8   361.07
+S35 1996  9   360.93
+S35 1996 10   360.62
+S35 1996 11   360.30
+S35 1996 12   360.17
+S35 1997  1   360.33
+S35 1997  2   360.77
+S35 1997  3   361.22
+S35 1997  4   361.55
+S35 1997  5   361.65
+S35 1997  6   361.53
+S35 1997  7   361.42
+S35 1997  8   361.49
+S35 1997  9   361.71
+S35 1997 10   362.00
+S35 1998  4   363.62
+S35 1998  5   364.18
+S35 1998  6   364.47
+S35 1998  7   364.64
+S35 1998  8   364.77
+S35 1998  9   364.96
+S35 1998 10   365.20
+S35 1998 11   365.34
+S35 1998 12   365.29
+S35 1999  1   365.18
+S35 1999  2   365.18
+S35 1999  3   365.35
+S35 1999  4   365.68
+S35 1999  5   365.97
+S35 1999  6   366.10
+S35 1999  7   366.18
+S35 1999  8   366.36
+S35 1999  9   366.81
+S35 1999 10   367.37
+S35 1999 11   367.76
+S35 1999 12   367.84
+S35 2000  1   367.61
+S35 2000  2   367.34
+S35 2000  3   367.19
+S35 2000  4   367.22
+S35 2000  5   367.27
+S35 2000  6   367.23

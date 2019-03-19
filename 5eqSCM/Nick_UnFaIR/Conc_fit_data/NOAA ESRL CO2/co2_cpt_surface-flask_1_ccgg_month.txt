@@ -1,0 +1,131 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: South African Weather Service [SAWS]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: cpt
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:04:51
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+CPT 2012 10   390.86
+CPT 2012 11   390.97
+CPT 2012 12   391.16
+CPT 2013  1   391.62
+CPT 2013  2   391.62
+CPT 2013  3   391.57
+CPT 2013  4   392.01
+CPT 2013  5   392.23
+CPT 2013  6   392.62
+CPT 2013  7   393.26
+CPT 2013  8   393.58
+CPT 2013  9   393.64
+CPT 2013 10   393.68
+CPT 2013 11   393.64
+CPT 2013 12   393.72
+CPT 2014  1   393.74
+CPT 2014  2   393.76
+CPT 2014  3   393.91
+CPT 2014  4   393.74
+CPT 2014  5   394.03
+CPT 2014  6   394.65
+CPT 2014  7   395.12
+CPT 2014  8   395.38
+CPT 2014  9   395.37
+CPT 2014 10   395.47
+CPT 2014 11   395.75
+CPT 2014 12   395.81
+CPT 2015  1   395.60
+CPT 2015  2   395.59
+CPT 2015  3   395.82
+CPT 2015  4   396.44
+CPT 2015  5   397.22
+CPT 2015  6   397.26
+CPT 2015  7   397.36
+CPT 2015  8   397.96
+CPT 2015  9   398.11
+CPT 2015 10   398.33
+CPT 2015 11   398.43
+CPT 2015 12   398.25
+CPT 2016  1   398.55
+CPT 2016  2   399.00
+CPT 2016  3   399.17
+CPT 2016  4   399.37
+CPT 2016  5   399.81
+CPT 2016  6   400.08
+CPT 2016  7   400.49
+CPT 2016  8   401.13
+CPT 2016  9   401.15
+CPT 2016 10   400.94
+CPT 2016 11   401.09
+CPT 2016 12   401.18
+CPT 2017  1   401.25
+CPT 2017  2   401.42
+CPT 2017  3   401.48
+CPT 2017  4   401.56
+CPT 2017  5   401.85
+CPT 2017  6   402.44
+CPT 2017  7   402.99
+CPT 2017  8   403.03
+CPT 2017  9   402.86
+CPT 2017 10   402.88
+CPT 2017 11   403.19
+CPT 2017 12   403.47

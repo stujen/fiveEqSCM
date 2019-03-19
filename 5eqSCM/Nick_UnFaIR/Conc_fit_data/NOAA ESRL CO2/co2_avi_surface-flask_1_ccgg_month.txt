@@ -1,0 +1,198 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Fairleigh Dickinson University [FDU]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: avi
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:04:25
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+AVI 1979  3   339.37
+AVI 1979  4   340.65
+AVI 1979  5   340.60
+AVI 1979  6   338.81
+AVI 1979  7   334.66
+AVI 1979  8   332.47
+AVI 1979  9   333.34
+AVI 1979 10   334.75
+AVI 1979 11   336.24
+AVI 1979 12   337.67
+AVI 1980  9   335.53
+AVI 1980 10   335.93
+AVI 1980 11   338.18
+AVI 1980 12   340.08
+AVI 1981  1   341.20
+AVI 1981  2   342.30
+AVI 1981  3   343.29
+AVI 1981  4   343.97
+AVI 1981  5   343.33
+AVI 1981  6   342.23
+AVI 1981  7   340.87
+AVI 1981  8   338.10
+AVI 1981  9   336.46
+AVI 1981 10   337.09
+AVI 1981 11   338.52
+AVI 1981 12   340.12
+AVI 1982  1   342.16
+AVI 1982  2   343.13
+AVI 1982  3   343.33
+AVI 1982  4   343.77
+AVI 1982  5   343.95
+AVI 1982  6   343.23
+AVI 1982  7   340.61
+AVI 1982  8   337.08
+AVI 1982  9   336.22
+AVI 1982 10   337.73
+AVI 1982 11   339.59
+AVI 1982 12   341.22
+AVI 1983  1   342.16
+AVI 1983  2   343.19
+AVI 1983  3   344.81
+AVI 1983  4   345.00
+AVI 1983  5   344.35
+AVI 1983  6   344.87
+AVI 1983  7   342.64
+AVI 1983  8   339.34
+AVI 1983  9   339.86
+AVI 1983 10   340.08
+AVI 1983 11   339.12
+AVI 1983 12   340.89
+AVI 1984  1   343.62
+AVI 1984  2   344.75
+AVI 1984  3   345.76
+AVI 1984  4   347.31
+AVI 1984  5   348.08
+AVI 1984  6   346.99
+AVI 1984  7   343.58
+AVI 1984  8   340.16
+AVI 1984  9   338.72
+AVI 1984 10   339.73
+AVI 1984 11   341.12
+AVI 1984 12   343.44
+AVI 1985  1   345.65
+AVI 1985  2   346.01
+AVI 1985  3   346.52
+AVI 1985  4   347.84
+AVI 1985  5   348.69
+AVI 1985  6   348.33
+AVI 1985  7   345.94
+AVI 1985  8   343.40
+AVI 1985  9   342.39
+AVI 1985 10   342.53
+AVI 1985 11   344.35
+AVI 1985 12   346.03
+AVI 1986  1   346.55
+AVI 1986  2   347.52
+AVI 1986  3   348.97
+AVI 1986  4   349.41
+AVI 1986  5   349.60
+AVI 1986  6   349.22
+AVI 1986  7   347.09
+AVI 1986  8   344.28
+AVI 1986  9   343.18
+AVI 1986 10   343.94
+AVI 1986 11   345.87
+AVI 1986 12   347.30
+AVI 1987  1   348.07
+AVI 1987  2   349.46
+AVI 1987  3   350.92
+AVI 1987  4   351.72
+AVI 1987  5   351.03
+AVI 1987  6   349.68
+AVI 1987  7   348.44
+AVI 1987  8   347.02
+AVI 1987  9   345.77
+AVI 1987 10   345.75
+AVI 1987 11   347.49
+AVI 1987 12   349.24
+AVI 1988  1   350.69
+AVI 1988  2   351.93
+AVI 1988  3   353.16
+AVI 1988  4   354.31
+AVI 1988  5   354.88
+AVI 1988  6   354.03
+AVI 1988  7   351.20
+AVI 1988  8   348.94
+AVI 1988  9   348.52
+AVI 1988 10   349.31
+AVI 1988 11   350.88
+AVI 1988 12   352.38
+AVI 1989  1   353.60
+AVI 1989  2   354.27
+AVI 1989  3   354.91
+AVI 1989  4   356.14
+AVI 1989  5   356.95
+AVI 1989  6   355.98
+AVI 1989  7   353.67
+AVI 1989  8   351.56
+AVI 1989  9   350.63
+AVI 1989 10   351.01
+AVI 1989 11   352.28
+AVI 1989 12   354.04
+AVI 1990  1   354.87
+AVI 1990  2   355.73
+AVI 1990  3   356.87
+AVI 1990  4   357.64
+AVI 1990  5   357.90
+AVI 1990  6   357.24
+AVI 1990  7   354.65
+AVI 1990  8   351.90

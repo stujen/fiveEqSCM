@@ -1,0 +1,455 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Environment Canada [EC]
+# collaborator_url: http://www.ec.gc.ca/default.asp?lang=En&n=FD9B0E51-1
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: alt
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:58:12
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+ALT 1985  6  1728.47
+ALT 1985  7  1716.96
+ALT 1985  8  1715.50
+ALT 1985  9  1739.50
+ALT 1985 10  1760.59
+ALT 1985 11  1761.15
+ALT 1985 12  1771.33
+ALT 1986  1  1779.40
+ALT 1986  2  1781.93
+ALT 1986  3  1787.67
+ALT 1986  4  1779.15
+ALT 1986  5  1764.70
+ALT 1986  6  1745.51
+ALT 1986  7  1734.03
+ALT 1986  8  1738.32
+ALT 1986  9  1753.17
+ALT 1986 10  1774.13
+ALT 1986 11  1773.49
+ALT 1986 12  1762.30
+ALT 1987  1  1770.61
+ALT 1987  2  1777.60
+ALT 1987  3  1779.41
+ALT 1987  4  1776.88
+ALT 1987  5  1770.13
+ALT 1987  6  1756.42
+ALT 1987  7  1748.74
+ALT 1987  8  1756.47
+ALT 1987  9  1774.01
+ALT 1987 10  1786.83
+ALT 1987 11  1788.97
+ALT 1987 12  1789.63
+ALT 1988  1  1797.95
+ALT 1988  2  1798.75
+ALT 1988  3  1795.24
+ALT 1988  4  1795.49
+ALT 1988  5  1785.62
+ALT 1988  6  1769.29
+ALT 1988  7  1752.75
+ALT 1988  8  1754.81
+ALT 1988  9  1781.43
+ALT 1988 10  1802.75
+ALT 1988 11  1806.86
+ALT 1988 12  1805.09
+ALT 1989  1  1814.12
+ALT 1989  2  1821.55
+ALT 1989  3  1816.68
+ALT 1989  4  1804.35
+ALT 1989  5  1788.23
+ALT 1989  6  1778.53
+ALT 1989  7  1773.45
+ALT 1989  8  1777.08
+ALT 1989  9  1786.57
+ALT 1989 10  1793.52
+ALT 1989 11  1809.41
+ALT 1989 12  1828.73
+ALT 1990  1  1827.63
+ALT 1990  2  1822.74
+ALT 1990  3  1823.04
+ALT 1990  4  1813.56
+ALT 1990  5  1800.08
+ALT 1990  6  1787.48
+ALT 1990  7  1778.13
+ALT 1990  8  1776.97
+ALT 1990  9  1787.80
+ALT 1990 10  1809.16
+ALT 1990 11  1818.40
+ALT 1990 12  1825.75
+ALT 1991  1  1839.45
+ALT 1991  2  1836.23
+ALT 1991  3  1828.64
+ALT 1991  4  1822.49
+ALT 1991  5  1804.48
+ALT 1991  6  1787.90
+ALT 1991  7  1781.55
+ALT 1991  8  1794.04
+ALT 1991  9  1813.59
+ALT 1991 10  1820.19
+ALT 1991 11  1825.01
+ALT 1991 12  1844.63
+ALT 1992  1  1858.12
+ALT 1992  2  1854.36
+ALT 1992  3  1848.14
+ALT 1992  4  1835.33
+ALT 1992  5  1824.02
+ALT 1992  6  1809.88
+ALT 1992  7  1794.65
+ALT 1992  8  1795.64
+ALT 1992  9  1805.30
+ALT 1992 10  1812.94
+ALT 1992 11  1826.74
+ALT 1992 12  1842.84
+ALT 1993  1  1841.63
+ALT 1993  2  1834.74
+ALT 1993  3  1838.02
+ALT 1993  4  1836.67
+ALT 1993  5  1819.13
+ALT 1993  6  1796.50
+ALT 1993  7  1788.11
+ALT 1993  8  1800.16
+ALT 1993  9  1814.56
+ALT 1993 10  1820.60
+ALT 1993 11  1829.39
+ALT 1993 12  1840.09
+ALT 1994  1  1850.71
+ALT 1994  2  1862.52
+ALT 1994  3  1861.82
+ALT 1994  4  1843.27
+ALT 1994  5  1822.84
+ALT 1994  6  1811.98
+ALT 1994  7  1801.44
+ALT 1994  8  1800.82
+ALT 1994  9  1819.71
+ALT 1994 10  1831.54
+ALT 1994 11  1839.13
+ALT 1994 12  1848.00
+ALT 1995  1  1850.70
+ALT 1995  2  1856.48
+ALT 1995  3  1852.47
+ALT 1995  4  1837.72
+ALT 1995  5  1824.95
+ALT 1995  6  1811.08
+ALT 1995  7  1806.69
+ALT 1995  8  1816.44
+ALT 1995  9  1826.54
+ALT 1995 10  1833.28
+ALT 1995 11  1841.51
+ALT 1995 12  1854.88
+ALT 1996  1  1859.10
+ALT 1996  2  1856.84
+ALT 1996  3  1853.20
+ALT 1996  4  1840.51
+ALT 1996  5  1831.18
+ALT 1996  6  1822.73
+ALT 1996  7  1809.45
+ALT 1996  8  1810.31
+ALT 1996  9  1828.02
+ALT 1996 10  1838.71
+ALT 1996 11  1842.43
+ALT 1996 12  1848.75
+ALT 1997  1  1866.16
+ALT 1997  2  1872.08
+ALT 1997  3  1849.51
+ALT 1997  4  1837.05
+ALT 1997  5  1831.53
+ALT 1997  6  1814.92
+ALT 1997  7  1806.59
+ALT 1997  8  1810.20
+ALT 1997  9  1824.20
+ALT 1997 10  1836.62
+ALT 1997 11  1839.95
+ALT 1997 12  1850.60
+ALT 1998  1  1862.57
+ALT 1998  2  1866.37
+ALT 1998  3  1858.05
+ALT 1998  4  1845.19
+ALT 1998  5  1840.11
+ALT 1998  6  1827.51
+ALT 1998  7  1817.96
+ALT 1998  8  1826.04
+ALT 1998  9  1842.00
+ALT 1998 10  1857.73
+ALT 1998 11  1865.48
+ALT 1998 12  1873.67
+ALT 1999  1  1882.64
+ALT 1999  2  1881.82
+ALT 1999  3  1872.23
+ALT 1999  4  1865.93
+ALT 1999  5  1853.19
+ALT 1999  6  1835.40
+ALT 1999  7  1828.53
+ALT 1999  8  1825.42
+ALT 1999  9  1835.02
+ALT 1999 10  1847.13
+ALT 1999 11  1854.97
+ALT 1999 12  1864.97
+ALT 2000  1  1868.05
+ALT 2000  2  1869.08
+ALT 2000  3  1868.03
+ALT 2000  4  1863.01
+ALT 2000  5  1852.24
+ALT 2000  6  1836.07
+ALT 2000  7  1825.36
+ALT 2000  8  1829.37
+ALT 2000  9  1842.89
+ALT 2000 10  1850.62
+ALT 2000 11  1853.09
+ALT 2000 12  1859.91
+ALT 2001  1  1867.91
+ALT 2001  2  1869.17
+ALT 2001  3  1866.76
+ALT 2001  4  1865.61
+ALT 2001  5  1854.24
+ALT 2001  6  1836.07
+ALT 2001  7  1825.78
+ALT 2001  8  1828.06
+ALT 2001  9  1834.90
+ALT 2001 10  1850.61
+ALT 2001 11  1860.89
+ALT 2001 12  1863.17
+ALT 2002  1  1873.03
+ALT 2002  2  1873.97
+ALT 2002  3  1867.95
+ALT 2002  4  1860.05
+ALT 2002  5  1847.66
+ALT 2002  6  1833.32
+ALT 2002  7  1822.44
+ALT 2002  8  1828.91
+ALT 2002  9  1847.36
+ALT 2002 10  1857.09
+ALT 2002 11  1858.92
+ALT 2002 12  1859.03
+ALT 2003  1  1874.04
+ALT 2003  2  1892.61
+ALT 2003  3  1886.83
+ALT 2003  4  1870.15
+ALT 2003  5  1858.83
+ALT 2003  6  1844.28
+ALT 2003  7  1835.55
+ALT 2003  8  1840.16
+ALT 2003  9  1855.86
+ALT 2003 10  1868.45
+ALT 2003 11  1868.98
+ALT 2003 12  1871.79
+ALT 2004  1  1881.58
+ALT 2004  2  1880.27
+ALT 2004  3  1870.83
+ALT 2004  4  1864.83
+ALT 2004  5  1854.58
+ALT 2004  6  1839.81
+ALT 2004  7  1828.20
+ALT 2004  8  1830.23
+ALT 2004  9  1848.12
+ALT 2004 10  1857.46
+ALT 2005  4  1869.54
+ALT 2005  5  1855.10
+ALT 2005  6  1837.00
+ALT 2005  7  1824.31
+ALT 2005  8  1831.18
+ALT 2005  9  1848.86
+ALT 2005 10  1857.26
+ALT 2005 11  1864.99
+ALT 2005 12  1872.41
+ALT 2006  1  1869.04
+ALT 2006  2  1864.33
+ALT 2006  3  1865.22
+ALT 2006  4  1864.48
+ALT 2006  5  1857.28
+ALT 2006  6  1844.42
+ALT 2006  7  1829.67
+ALT 2006  8  1831.03
+ALT 2006  9  1845.35
+ALT 2006 10  1850.66
+ALT 2006 11  1856.31
+ALT 2006 12  1870.06
+ALT 2007  1  1880.49
+ALT 2007  2  1881.17
+ALT 2007  3  1878.81
+ALT 2007  4  1870.73
+ALT 2007  5  1858.16
+ALT 2007  6  1845.78
+ALT 2007  7  1839.15
+ALT 2007  8  1855.47
+ALT 2007  9  1876.70
+ALT 2007 10  1879.01
+ALT 2007 11  1874.90
+ALT 2007 12  1886.08
+ALT 2008  1  1890.25
+ALT 2008  2  1894.10
+ALT 2008  3  1893.60
+ALT 2008  4  1878.97
+ALT 2008  5  1866.29
+ALT 2008  6  1851.46
+ALT 2008  7  1839.84
+ALT 2008  8  1844.11
+ALT 2008  9  1861.85
+ALT 2008 10  1874.02
+ALT 2008 11  1882.36
+ALT 2008 12  1892.94
+ALT 2009  1  1899.99
+ALT 2009  2  1893.07
+ALT 2009  3  1889.84
+ALT 2009  4  1890.23
+ALT 2009  5  1878.36
+ALT 2009  6  1858.81
+ALT 2009  7  1844.56
+ALT 2009  8  1850.83
+ALT 2009  9  1873.79
+ALT 2009 10  1882.38
+ALT 2009 11  1877.25
+ALT 2009 12  1889.37
+ALT 2010  1  1898.46
+ALT 2010  2  1891.03
+ALT 2010  3  1885.68
+ALT 2010  4  1884.29
+ALT 2010  5  1876.80
+ALT 2010  6  1860.72
+ALT 2010  7  1849.44
+ALT 2010  8  1859.52
+ALT 2010  9  1874.49
+ALT 2010 10  1878.56
+ALT 2010 11  1881.71
+ALT 2010 12  1885.54
+ALT 2011  1  1893.51
+ALT 2011  2  1899.29
+ALT 2011  3  1896.59
+ALT 2011  4  1891.91
+ALT 2011  5  1880.92
+ALT 2011  6  1858.87
+ALT 2011  7  1849.75
+ALT 2011  8  1862.85
+ALT 2011  9  1876.33
+ALT 2011 10  1884.40
+ALT 2011 11  1893.88
+ALT 2011 12  1902.71
+ALT 2012  1  1903.98
+ALT 2012  2  1901.65
+ALT 2012  3  1905.15
+ALT 2012  4  1901.97
+ALT 2012  5  1885.47
+ALT 2012  6  1865.90
+ALT 2012  7  1861.34
+ALT 2012  8  1876.67
+ALT 2012  9  1884.22
+ALT 2012 10  1885.15
+ALT 2012 11  1894.34
+ALT 2012 12  1908.07
+ALT 2013  1  1915.62
+ALT 2013  2  1913.34
+ALT 2013  3  1903.70
+ALT 2013  4  1899.21
+ALT 2013  5  1895.81
+ALT 2013  6  1881.86
+ALT 2013  7  1867.41
+ALT 2013  8  1866.44
+ALT 2013  9  1878.78
+ALT 2013 10  1893.27
+ALT 2013 11  1904.29
+ALT 2013 12  1912.33
+ALT 2014  1  1913.15
+ALT 2014  2  1915.16
+ALT 2014  3  1918.57
+ALT 2014  4  1913.06
+ALT 2014  5  1902.31
+ALT 2014  6  1887.54
+ALT 2014  7  1875.53
+ALT 2014  8  1880.30
+ALT 2014  9  1903.05
+ALT 2014 10  1915.87
+ALT 2014 11  1920.05
+ALT 2014 12  1929.83
+ALT 2015  1  1933.01
+ALT 2015  2  1940.31
+ALT 2015  3  1940.06
+ALT 2015  4  1922.53
+ALT 2015  5  1911.21
+ALT 2015  6  1896.67
+ALT 2015  7  1882.67
+ALT 2015  8  1895.41
+ALT 2015  9  1918.53
+ALT 2015 10  1925.71
+ALT 2015 11  1929.62
+ALT 2015 12  1932.94
+ALT 2016  1  1938.04
+ALT 2016  2  1940.14
+ALT 2016  3  1936.73
+ALT 2016  4  1934.12
+ALT 2016  5  1920.69
+ALT 2016  6  1905.27
+ALT 2016  7  1901.65
+ALT 2016  8  1911.42
+ALT 2016  9  1926.99
+ALT 2016 10  1931.55
+ALT 2016 11  1933.55
+ALT 2016 12  1946.36
+ALT 2017  1  1956.84
+ALT 2017  2  1956.13
+ALT 2017  3  1955.38
+ALT 2017  4  1946.38
+ALT 2017  5  1929.63
+ALT 2017  6  1913.74
+ALT 2017  7  1903.14
+ALT 2017  8  1911.13
+ALT 2017  9  1926.49
+ALT 2017 10  1939.46
+ALT 2017 11  1943.64
+ALT 2017 12  1943.78

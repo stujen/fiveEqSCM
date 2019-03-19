@@ -1,0 +1,124 @@
+# number_of_header_lines: 61
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: scsn18
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:06:03
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+N18 1991  7   355.65
+N18 1991  8   354.58
+N18 1991  9   353.77
+N18 1991 10   355.96
+N18 1991 11   358.76
+N18 1991 12   359.20
+N18 1992  1   360.25
+N18 1992  2   360.69
+N18 1992  3   359.21
+N18 1992  4   359.55
+N18 1992  5   360.73
+N18 1992  6   359.52
+N18 1992  7   358.11
+N18 1992  8   356.73
+N18 1992  9   354.73
+N18 1992 10   355.61
+N18 1992 11   357.62
+N18 1992 12   358.98
+N18 1993  1   361.95
+N18 1993 11   358.77
+N18 1993 12   360.06
+N18 1994  1   362.27
+N18 1994  2   363.71
+N18 1994  7   358.74
+N18 1994  8   357.96
+N18 1994  9   357.15
+N18 1995  1   363.50
+N18 1995  2   365.00
+N18 1995  3   364.27
+N18 1995  4   364.57
+N18 1995 10   360.12
+N18 1995 11   363.31
+N18 1995 12   365.12
+N18 1996  1   368.06
+N18 1996  2   369.84
+N18 1996  3   368.64
+N18 1996  4   368.04
+N18 1996  5   367.37
+N18 1996  6   364.45
+N18 1996  7   362.72
+N18 1996  8   362.19
+N18 1996  9   361.65
+N18 1996 10   363.39
+N18 1996 11   365.22
+N18 1996 12   364.95
+N18 1997  1   365.96
+N18 1997  2   367.22
+N18 1997  3   366.88
+N18 1997  4   368.35
+N18 1997  5   370.05
+N18 1997  6   368.72
+N18 1997 11   364.96
+N18 1997 12   365.63
+N18 1998  1   367.97
+N18 1998  2   369.81
+N18 1998  3   369.51
+N18 1998  4   370.17
+N18 1998  5   370.92
+N18 1998  6   369.01
+N18 1998  7   367.13
+N18 1998  8   366.03
+N18 1998  9   364.84
+N18 1998 10   365.44

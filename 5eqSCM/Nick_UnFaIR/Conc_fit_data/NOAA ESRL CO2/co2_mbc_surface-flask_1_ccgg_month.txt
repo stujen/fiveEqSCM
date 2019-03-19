@@ -1,0 +1,274 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Environment Canada [EC]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: mbc
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:05:19
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+MBC 1980  4   344.42
+MBC 1980  5   344.04
+MBC 1980  6   343.21
+MBC 1980  7   338.81
+MBC 1980  8   333.51
+MBC 1980  9   333.30
+MBC 1980 10   337.01
+MBC 1980 11   340.20
+MBC 1980 12   342.77
+MBC 1981  1   344.24
+MBC 1981  2   345.00
+MBC 1981  3   345.67
+MBC 1981  4   346.04
+MBC 1981  5   346.85
+MBC 1981  6   345.80
+MBC 1981  7   338.72
+MBC 1981  8   332.74
+MBC 1981  9   334.02
+MBC 1981 10   338.50
+MBC 1981 11   341.49
+MBC 1981 12   344.17
+MBC 1982  1   346.06
+MBC 1982  2   346.83
+MBC 1982  3   347.02
+MBC 1982  4   347.18
+MBC 1982  5   347.52
+MBC 1982  6   345.81
+MBC 1982  7   340.05
+MBC 1982  8   334.17
+MBC 1982  9   333.79
+MBC 1982 10   337.37
+MBC 1982 11   341.36
+MBC 1982 12   344.75
+MBC 1983  1   346.74
+MBC 1983  2   347.24
+MBC 1983  3   347.74
+MBC 1983  4   348.04
+MBC 1983  5   348.07
+MBC 1983  6   346.45
+MBC 1983  7   340.90
+MBC 1983  8   334.73
+MBC 1983  9   335.14
+MBC 1983 10   339.77
+MBC 1983 11   344.55
+MBC 1983 12   347.62
+MBC 1984  1   349.61
+MBC 1984  2   350.32
+MBC 1984  3   349.98
+MBC 1984  4   349.88
+MBC 1984  5   350.32
+MBC 1984  6   348.33
+MBC 1984  7   341.94
+MBC 1984  8   336.56
+MBC 1984  9   337.15
+MBC 1984 10   341.29
+MBC 1984 11   344.97
+MBC 1984 12   347.94
+MBC 1985  1   349.40
+MBC 1985  2   349.52
+MBC 1985  3   350.54
+MBC 1985  4   351.64
+MBC 1985  5   352.10
+MBC 1985  6   350.13
+MBC 1985  7   343.70
+MBC 1985  8   338.15
+MBC 1985  9   338.52
+MBC 1985 10   342.98
+MBC 1985 11   347.03
+MBC 1985 12   349.65
+MBC 1986  1   351.69
+MBC 1986  2   352.76
+MBC 1986  3   353.22
+MBC 1986  4   353.34
+MBC 1986  5   353.57
+MBC 1986  6   352.43
+MBC 1986  7   347.03
+MBC 1986  8   340.70
+MBC 1986  9   340.29
+MBC 1986 10   344.84
+MBC 1986 11   348.56
+MBC 1986 12   351.78
+MBC 1987  1   353.44
+MBC 1987  2   353.24
+MBC 1987  3   354.10
+MBC 1987  4   354.79
+MBC 1987  5   354.78
+MBC 1987  6   353.02
+MBC 1987  7   347.44
+MBC 1987  8   341.80
+MBC 1987  9   341.26
+MBC 1987 10   346.18
+MBC 1987 11   349.96
+MBC 1987 12   352.95
+MBC 1988  1   355.74
+MBC 1988  2   356.40
+MBC 1988  3   356.95
+MBC 1988  4   357.75
+MBC 1988  5   357.43
+MBC 1988  6   355.26
+MBC 1988  7   349.56
+MBC 1988  8   343.90
+MBC 1988  9   345.41
+MBC 1988 10   350.08
+MBC 1988 11   355.31
+MBC 1988 12   360.24
+MBC 1989  1   361.17
+MBC 1989  2   360.06
+MBC 1989  3   359.81
+MBC 1989  4   359.80
+MBC 1989  5   359.53
+MBC 1989  6   357.88
+MBC 1989  7   352.63
+MBC 1989  8   345.95
+MBC 1989  9   346.31
+MBC 1989 10   351.66
+MBC 1989 11   356.27
+MBC 1989 12   359.22
+MBC 1990  1   360.10
+MBC 1990  2   360.97
+MBC 1990  3   362.10
+MBC 1990  4   361.47
+MBC 1990  5   360.67
+MBC 1990  6   358.19
+MBC 1990  7   351.61
+MBC 1990  8   346.52
+MBC 1990  9   347.43
+MBC 1990 10   352.12
+MBC 1990 11   355.58
+MBC 1990 12   358.79
+MBC 1991  1   362.62
+MBC 1991  2   362.47
+MBC 1991  3   361.97
+MBC 1991  4   362.37
+MBC 1991  5   361.93
+MBC 1991  6   360.20
+MBC 1991  7   353.99
+MBC 1991  8   347.55
+MBC 1991  9   348.10
+MBC 1991 10   353.46
+MBC 1991 11   358.07
+MBC 1991 12   361.08
+MBC 1992  1   362.26
+MBC 1992  2   362.05
+MBC 1992  3   362.20
+MBC 1992  4   362.54
+MBC 1992  5   362.87
+MBC 1992  6   360.50
+MBC 1992  7   353.22
+MBC 1992  8   347.54
+MBC 1992  9   348.01
+MBC 1992 10   352.54
+MBC 1992 11   356.68
+MBC 1992 12   361.16
+MBC 1993  1   362.94
+MBC 1993  2   362.29
+MBC 1993  3   362.96
+MBC 1993  4   363.38
+MBC 1993  5   363.13
+MBC 1993  6   361.10
+MBC 1993  7   353.85
+MBC 1993  8   347.91
+MBC 1993  9   348.93
+MBC 1993 10   353.16
+MBC 1993 11   357.77
+MBC 1993 12   360.05
+MBC 1994  1   361.69
+MBC 1994  2   363.80
+MBC 1994  3   364.87
+MBC 1994  4   364.45
+MBC 1994  5   364.19
+MBC 1994  6   362.41
+MBC 1994  7   356.87
+MBC 1994  8   350.69
+MBC 1994  9   350.97
+MBC 1994 10   355.67
+MBC 1994 11   360.61
+MBC 1994 12   363.37
+MBC 1995  1   364.76
+MBC 1995  2   366.29
+MBC 1995  3   366.95
+MBC 1995  4   366.55
+MBC 1995  5   365.52
+MBC 1995  6   363.49
+MBC 1995  7   358.39
+MBC 1995  8   352.85
+MBC 1995  9   353.62
+MBC 1995 10   358.32
+MBC 1995 11   363.63
+MBC 1995 12   366.80
+MBC 1996  1   367.10
+MBC 1996  2   366.74
+MBC 1996  3   367.17
+MBC 1996  4   367.95
+MBC 1996  5   368.72
+MBC 1996  6   367.53
+MBC 1996  7   361.89
+MBC 1996  8   355.45
+MBC 1996  9   354.34
+MBC 1996 10   359.09
+MBC 1996 11   364.11
+MBC 1996 12   366.34
+MBC 1997  1   367.97
+MBC 1997  2   368.88
+MBC 1997  3   368.95
+MBC 1997  4   369.03
+MBC 1997  5   369.30

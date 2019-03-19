@@ -1,0 +1,205 @@
+# number_of_header_lines: 70
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Max Planck Institute for Biogeochemistry
+# collaborator_name: [MPI-BGC]
+# collaborator_url: http://www.bgc-jena.mpg.de/english/index.html
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: oxk
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:59:21
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+OXK 2006  7  1871.16
+OXK 2006  8  1869.87
+OXK 2006  9  1865.55
+OXK 2006 10  1849.68
+OXK 2006 11  1859.47
+OXK 2006 12  1887.13
+OXK 2007  1  1902.50
+OXK 2007  2  1905.25
+OXK 2007  3  1892.54
+OXK 2007  4  1883.20
+OXK 2007  5  1889.78
+OXK 2007  6  1883.19
+OXK 2007  7  1883.12
+OXK 2007  8  1893.10
+OXK 2007  9  1922.72
+OXK 2007 10  1959.37
+OXK 2007 11  1902.55
+OXK 2007 12  1881.76
+OXK 2008  1  1940.62
+OXK 2008  2  1960.50
+OXK 2008  3  1992.89
+OXK 2008  4  1965.91
+OXK 2008  5  1943.20
+OXK 2008  6  2049.52
+OXK 2008 10  1886.27
+OXK 2008 11  1913.59
+OXK 2008 12  1931.53
+OXK 2009  1  1892.03
+OXK 2009  2  1911.90
+OXK 2009  3  1925.39
+OXK 2009  4  1900.20
+OXK 2009  5  1889.43
+OXK 2009  6  1883.94
+OXK 2009  7  1874.39
+OXK 2009  8  1890.05
+OXK 2009  9  1920.44
+OXK 2009 10  1930.42
+OXK 2009 11  1912.60
+OXK 2009 12  1906.49
+OXK 2010  1  1929.15
+OXK 2010  2  1926.91
+OXK 2010  3  1903.97
+OXK 2010  4  1905.06
+OXK 2010  5  1903.14
+OXK 2010  6  1893.06
+OXK 2010  7  1895.25
+OXK 2010  8  1894.07
+OXK 2010  9  1914.09
+OXK 2010 10  1927.94
+OXK 2010 11  1913.58
+OXK 2010 12  1903.50
+OXK 2011  1  1901.15
+OXK 2011  2  1903.01
+OXK 2011  3  1912.63
+OXK 2011  4  1905.60
+OXK 2011  5  1887.70
+OXK 2011  6  1883.07
+OXK 2011  7  1893.69
+OXK 2011  8  1893.54
+OXK 2011  9  1892.86
+OXK 2011 10  1886.75
+OXK 2011 11  1882.30
+OXK 2011 12  1892.12
+OXK 2012  1  1898.18
+OXK 2012  2  1898.62
+OXK 2012  3  1905.97
+OXK 2012  4  1913.35
+OXK 2012  5  1914.89
+OXK 2012  6  1908.24
+OXK 2012  7  1892.18
+OXK 2012  8  1905.58
+OXK 2012  9  1911.53
+OXK 2012 10  1902.85
+OXK 2012 11  1929.23
+OXK 2012 12  1932.12
+OXK 2013  1  1921.16
+OXK 2013  2  1944.74
+OXK 2013  3  1948.60
+OXK 2013  4  1929.39
+OXK 2013  5  1918.35
+OXK 2013  6  1915.57
+OXK 2013  7  1906.21
+OXK 2013  8  1902.35
+OXK 2013  9  1913.68
+OXK 2013 10  1924.87
+OXK 2013 11  1929.46
+OXK 2013 12  1920.91
+OXK 2014  1  1919.22
+OXK 2014  2  1937.08
+OXK 2014  3  1948.46
+OXK 2014  4  1940.41
+OXK 2014  5  1933.41
+OXK 2014  6  1930.74
+OXK 2014  7  1923.31
+OXK 2014  8  1929.53
+OXK 2014  9  1933.97
+OXK 2014 10  1949.06
+OXK 2014 11  1969.77
+OXK 2014 12  1960.42
+OXK 2015  1  1954.81
+OXK 2015  2  1956.98
+OXK 2015  3  1958.62
+OXK 2015  4  1945.42
+OXK 2015  5  1920.60
+OXK 2015  6  1916.76
+OXK 2015  7  1916.78
+OXK 2015  8  1929.47
+OXK 2015  9  1944.29
+OXK 2015 10  1936.98
+OXK 2015 11  1931.87
+OXK 2015 12  1945.25
+OXK 2016  1  1941.87
+OXK 2016  2  1950.89
+OXK 2016  3  1957.83
+OXK 2016  4  1943.01
+OXK 2016  5  1945.28
+OXK 2016  6  1939.81
+OXK 2016  7  1940.34
+OXK 2016  8  1957.34
+OXK 2016  9  1971.97
+OXK 2016 10  1983.17
+OXK 2016 11  1958.21
+OXK 2016 12  1949.76
+OXK 2017  1  1981.31
+OXK 2017  2  1970.45
+OXK 2017  3  1960.31
+OXK 2017  4  1955.65
+OXK 2017  5  1937.95
+OXK 2017  6  1934.35
+OXK 2017  7  1931.81
+OXK 2017  8  1960.96
+OXK 2017  9  1985.13
+OXK 2017 10  1956.50
+OXK 2017 11  1954.57
+OXK 2017 12  1960.05

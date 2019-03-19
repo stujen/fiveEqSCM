@@ -1,0 +1,375 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Dive Kiribati
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: chr
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:58:38
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+CHR 1984  3  1649.68
+CHR 1984  4  1654.02
+CHR 1984  5  1634.83
+CHR 1984  6  1614.58
+CHR 1984  7  1617.22
+CHR 1984  8  1618.00
+CHR 1984  9  1616.36
+CHR 1984 10  1617.43
+CHR 1984 11  1620.85
+CHR 1984 12  1638.09
+CHR 1985  1  1640.32
+CHR 1985  2  1638.60
+CHR 1985  3  1645.87
+CHR 1985  4  1641.06
+CHR 1985  5  1633.04
+CHR 1985  6  1630.16
+CHR 1985  7  1626.89
+CHR 1985  8  1627.89
+CHR 1985  9  1631.07
+CHR 1985 10  1631.92
+CHR 1985 11  1632.86
+CHR 1985 12  1640.69
+CHR 1986  1  1647.37
+CHR 1986  2  1647.77
+CHR 1986  3  1661.99
+CHR 1986  4  1668.90
+CHR 1986  5  1648.12
+CHR 1986  6  1638.32
+CHR 1986  7  1640.89
+CHR 1986  8  1642.35
+CHR 1986  9  1641.40
+CHR 1986 10  1637.00
+CHR 1986 11  1642.31
+CHR 1986 12  1651.79
+CHR 1987  1  1652.66
+CHR 1987  2  1655.38
+CHR 1987  3  1671.20
+CHR 1987  4  1676.28
+CHR 1987  5  1662.85
+CHR 1987  6  1655.03
+CHR 1987  7  1654.60
+CHR 1987  8  1652.81
+CHR 1987  9  1649.58
+CHR 1987 10  1654.73
+CHR 1987 11  1659.71
+CHR 1987 12  1660.64
+CHR 1988  1  1674.39
+CHR 1988  2  1685.16
+CHR 1988  3  1679.01
+CHR 1988  4  1664.46
+CHR 1988  5  1656.70
+CHR 1988  6  1655.83
+CHR 1988  7  1663.12
+CHR 1988  8  1667.27
+CHR 1988  9  1664.00
+CHR 1988 10  1666.01
+CHR 1988 11  1671.18
+CHR 1988 12  1675.97
+CHR 1989  1  1682.77
+CHR 1989  2  1693.96
+CHR 1989  3  1701.93
+CHR 1989  4  1694.60
+CHR 1989  5  1680.76
+CHR 1989  6  1673.21
+CHR 1989  7  1675.31
+CHR 1989  8  1676.68
+CHR 1989  9  1673.37
+CHR 1989 10  1675.73
+CHR 1989 11  1682.25
+CHR 1989 12  1681.52
+CHR 1990  1  1687.39
+CHR 1990  2  1704.11
+CHR 1990  3  1705.58
+CHR 1990  4  1684.33
+CHR 1990  5  1676.44
+CHR 1990  6  1680.60
+CHR 1990  7  1684.18
+CHR 1990  8  1687.20
+CHR 1990  9  1685.85
+CHR 1990 10  1684.18
+CHR 1990 11  1687.94
+CHR 1990 12  1695.36
+CHR 1991  1  1699.35
+CHR 1991  2  1699.58
+CHR 1991  3  1695.80
+CHR 1991  4  1692.71
+CHR 1991  5  1693.65
+CHR 1991  6  1692.44
+CHR 1991  7  1694.32
+CHR 1991  8  1701.22
+CHR 1991  9  1698.79
+CHR 1991 10  1697.75
+CHR 1991 11  1705.10
+CHR 1991 12  1713.09
+CHR 1992  1  1728.69
+CHR 1992  2  1731.49
+CHR 1992  3  1721.55
+CHR 1992  4  1722.40
+CHR 1992  5  1718.12
+CHR 1992  6  1704.85
+CHR 1992  7  1703.32
+CHR 1992  8  1708.18
+CHR 1992  9  1705.92
+CHR 1992 10  1706.63
+CHR 1992 11  1705.28
+CHR 1992 12  1704.22
+CHR 1993  1  1717.59
+CHR 1993  2  1723.70
+CHR 1993  3  1722.77
+CHR 1993  4  1729.86
+CHR 1993  5  1718.49
+CHR 1993  6  1701.92
+CHR 1993  7  1704.69
+CHR 1993  8  1708.41
+CHR 1993  9  1706.84
+CHR 1993 10  1710.37
+CHR 1994  1  1726.63
+CHR 1994  2  1729.40
+CHR 1994  3  1728.65
+CHR 1994  4  1727.44
+CHR 1994  5  1720.64
+CHR 1998 11  1741.56
+CHR 1998 12  1746.03
+CHR 1999  1  1757.90
+CHR 1999  2  1771.35
+CHR 1999  3  1780.99
+CHR 1999  4  1781.73
+CHR 1999  5  1762.57
+CHR 1999  6  1746.02
+CHR 1999  7  1745.04
+CHR 1999  8  1746.94
+CHR 1999  9  1735.99
+CHR 1999 10  1740.55
+CHR 1999 11  1758.79
+CHR 1999 12  1759.09
+CHR 2000  1  1758.50
+CHR 2000  2  1772.36
+CHR 2000  3  1776.30
+CHR 2000  4  1777.08
+CHR 2000  5  1770.99
+CHR 2000  6  1746.86
+CHR 2000  7  1740.47
+CHR 2000  8  1748.77
+CHR 2000  9  1747.55
+CHR 2000 10  1746.04
+CHR 2000 11  1749.02
+CHR 2000 12  1754.04
+CHR 2001  1  1755.76
+CHR 2001  2  1759.15
+CHR 2001 12  1763.53
+CHR 2002  1  1752.10
+CHR 2002  2  1751.68
+CHR 2002  3  1763.05
+CHR 2002  4  1762.17
+CHR 2002  5  1751.11
+CHR 2002  6  1746.84
+CHR 2002  7  1747.44
+CHR 2002  8  1746.63
+CHR 2002  9  1742.12
+CHR 2002 10  1740.07
+CHR 2002 11  1745.97
+CHR 2002 12  1751.73
+CHR 2003  1  1752.31
+CHR 2003  2  1752.10
+CHR 2003  3  1750.72
+CHR 2003  4  1750.65
+CHR 2003  5  1750.24
+CHR 2003  6  1748.22
+CHR 2003  7  1750.68
+CHR 2003  8  1748.14
+CHR 2003  9  1745.03
+CHR 2003 10  1747.78
+CHR 2003 11  1750.28
+CHR 2003 12  1756.91
+CHR 2004  1  1761.09
+CHR 2004  2  1761.38
+CHR 2004  3  1776.76
+CHR 2004  4  1777.82
+CHR 2004  5  1755.80
+CHR 2004  6  1748.52
+CHR 2004  7  1750.44
+CHR 2004  8  1751.68
+CHR 2004  9  1746.87
+CHR 2004 10  1743.24
+CHR 2004 11  1748.69
+CHR 2004 12  1753.97
+CHR 2005  1  1757.41
+CHR 2005  2  1763.21
+CHR 2005  3  1754.28
+CHR 2005  4  1742.95
+CHR 2005  5  1742.74
+CHR 2005  6  1742.99
+CHR 2005  7  1747.30
+CHR 2005  8  1749.54
+CHR 2005  9  1743.03
+CHR 2005 10  1743.32
+CHR 2005 11  1754.54
+CHR 2005 12  1762.52
+CHR 2006  1  1762.36
+CHR 2006  2  1762.45
+CHR 2006  3  1770.24
+CHR 2006  4  1769.30
+CHR 2006  5  1751.59
+CHR 2006  6  1739.75
+CHR 2006  7  1744.36
+CHR 2006  8  1747.70
+CHR 2006  9  1746.42
+CHR 2006 10  1743.47
+CHR 2006 11  1744.30
+CHR 2006 12  1753.76
+CHR 2007  1  1756.21
+CHR 2007  2  1755.29
+CHR 2007  3  1767.45
+CHR 2007  4  1762.87
+CHR 2007  5  1749.16
+CHR 2007  6  1754.42
+CHR 2007  7  1754.83
+CHR 2007  8  1753.24
+CHR 2007  9  1754.83
+CHR 2007 10  1757.48
+CHR 2007 11  1763.93
+CHR 2007 12  1766.52
+CHR 2008  1  1768.78
+CHR 2008  2  1760.98
+CHR 2008  3  1757.93
+CHR 2008  4  1766.40
+CHR 2008  5  1760.31
+CHR 2008  6  1754.10
+CHR 2008  7  1761.02
+CHR 2008  8  1762.41
+CHR 2008  9  1758.60
+CHR 2008 10  1760.52
+CHR 2008 11  1770.76
+CHR 2008 12  1771.58
+CHR 2009  1  1770.69
+CHR 2009  2  1792.17
+CHR 2009  3  1801.20
+CHR 2009  4  1788.80
+CHR 2009  5  1776.22
+CHR 2009  6  1765.55
+CHR 2009 10  1757.18
+CHR 2009 11  1763.98
+CHR 2009 12  1769.24
+CHR 2010  1  1786.95
+CHR 2010  2  1802.36
+CHR 2010  3  1792.22
+CHR 2010  4  1771.91
+CHR 2010  5  1764.16
+CHR 2010  6  1764.57
+CHR 2010  7  1770.17
+CHR 2010  8  1772.43
+CHR 2010  9  1772.31
+CHR 2010 10  1777.83
+CHR 2010 11  1780.83
+CHR 2010 12  1775.41
+CHR 2011  1  1767.82
+CHR 2011  2  1771.49
+CHR 2011  3  1780.50
+CHR 2011  4  1780.57
+CHR 2011  5  1780.98
+CHR 2011  6  1783.16
+CHR 2011  7  1782.79
+CHR 2011  8  1782.19
+CHR 2011  9  1779.68
+CHR 2011 10  1780.11
+CHR 2011 11  1782.15
+CHR 2011 12  1784.80
+CHR 2012  1  1789.89
+CHR 2012  2  1803.21
+CHR 2012  3  1808.09
+CHR 2012  4  1787.07
+CHR 2012  5  1769.33
+CHR 2012  6  1770.13
+CHR 2012  7  1777.70
+CHR 2012  8  1781.28
+CHR 2012  9  1783.23
+CHR 2012 10  1791.61
+CHR 2012 11  1800.81
+CHR 2012 12  1804.05
+CHR 2013  6  1792.30
+CHR 2013  7  1790.68
+CHR 2013  8  1791.06
+CHR 2013  9  1788.70
+CHR 2013 10  1787.65
+CHR 2013 11  1789.44
+CHR 2013 12  1792.46
+CHR 2014  1  1797.36
+CHR 2014  2  1791.30
+CHR 2014  3  1785.47
+CHR 2014  4  1795.91
+CHR 2014  5  1798.03
+CHR 2014  6  1793.49
+CHR 2014  7  1796.34
+CHR 2014  8  1796.50
+CHR 2014  9  1795.25
+CHR 2014 10  1795.76
+CHR 2016  4  1831.80
+CHR 2016  5  1821.08
+CHR 2016  6  1815.60
+CHR 2016  7  1815.35
+CHR 2016  8  1816.40
+CHR 2016  9  1817.06
+CHR 2016 10  1820.02
+CHR 2017  9  1822.27
+CHR 2017 10  1821.90
+CHR 2017 11  1826.88
+CHR 2017 12  1831.41
