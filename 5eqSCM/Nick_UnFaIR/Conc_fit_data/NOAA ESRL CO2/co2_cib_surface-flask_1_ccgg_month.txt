@@ -1,0 +1,173 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Centro de Investigacion de la Baja Atmosfera,
+# collaborator_name: Univ. of Valladolid [CIBA]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: cib
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:04:49
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+CIB 2009  5   387.93
+CIB 2009  6   389.21
+CIB 2009  7   387.51
+CIB 2009  8   383.47
+CIB 2009  9   384.02
+CIB 2009 10   388.29
+CIB 2009 11   391.85
+CIB 2009 12   395.21
+CIB 2010  1   395.59
+CIB 2010  2   395.84
+CIB 2010  3   396.37
+CIB 2010  4   391.83
+CIB 2010  5   388.15
+CIB 2010  6   389.23
+CIB 2010  7   387.86
+CIB 2010  8   385.56
+CIB 2010  9   387.01
+CIB 2010 10   390.08
+CIB 2010 11   394.93
+CIB 2010 12   399.62
+CIB 2011  1   400.53
+CIB 2011  2   398.97
+CIB 2011  3   397.29
+CIB 2011  4   393.95
+CIB 2011  5   392.15
+CIB 2011  6   393.51
+CIB 2011  7   392.68
+CIB 2011  8   390.26
+CIB 2011  9   388.53
+CIB 2011 10   391.07
+CIB 2011 11   397.20
+CIB 2011 12   400.30
+CIB 2012  1   399.82
+CIB 2012  2   398.39
+CIB 2012  3   399.58
+CIB 2012  4   398.62
+CIB 2012  5   393.44
+CIB 2012  6   392.12
+CIB 2012  7   390.45
+CIB 2012  8   391.93
+CIB 2012  9   395.29
+CIB 2012 10   395.99
+CIB 2012 11   398.42
+CIB 2012 12   399.12
+CIB 2013  1   399.47
+CIB 2013  2   402.27
+CIB 2013  3   401.72
+CIB 2013  4   398.51
+CIB 2013  5   395.06
+CIB 2013  6   395.68
+CIB 2013  7   397.26
+CIB 2013  8   392.53
+CIB 2013  9   393.55
+CIB 2013 10   399.67
+CIB 2013 11   400.93
+CIB 2013 12   403.26
+CIB 2014  1   404.18
+CIB 2014  2   402.68
+CIB 2014  3   403.21
+CIB 2014  4   404.44
+CIB 2014  5   402.13
+CIB 2014  6   398.92
+CIB 2014  7   395.54
+CIB 2014  8   394.09
+CIB 2014  9   398.05
+CIB 2014 10   401.70
+CIB 2014 11   403.74
+CIB 2014 12   406.03
+CIB 2015  1   406.62
+CIB 2015  2   406.32
+CIB 2015  3   406.28
+CIB 2015  4   406.40
+CIB 2015  5   404.47
+CIB 2015  6   403.31
+CIB 2015  7   401.65
+CIB 2015  8   397.17
+CIB 2015  9   398.86
+CIB 2015 10   404.11
+CIB 2015 11   405.24
+CIB 2015 12   406.60
+CIB 2016  1   406.44
+CIB 2016  2   405.17
+CIB 2016  3   405.87
+CIB 2016  4   405.01
+CIB 2016  5   403.79
+CIB 2016  6   403.66
+CIB 2016  7   401.67
+CIB 2016  8   399.74
+CIB 2016  9   402.01
+CIB 2016 10   406.35
+CIB 2016 11   411.14
+CIB 2016 12   414.20
+CIB 2017  1   412.27
+CIB 2017  2   410.17
+CIB 2017  3   409.73
+CIB 2017  4   409.87
+CIB 2017  5   411.79
+CIB 2017  6   410.65
+CIB 2017  7   405.21
+CIB 2017  8   401.00
+CIB 2017  9   403.30
+CIB 2017 10   409.03
+CIB 2017 11   411.32
+CIB 2017 12   412.43

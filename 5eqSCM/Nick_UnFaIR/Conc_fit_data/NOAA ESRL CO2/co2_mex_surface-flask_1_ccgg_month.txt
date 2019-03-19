@@ -1,0 +1,178 @@
+# number_of_header_lines: 70
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Sistema Internacional de Monitoreo Ambiental
+# collaborator_name:  [SIMA]
+# collaborator_url: http://www.sima.com.mx/
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: mex
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:05:21
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+MEX 2009  1   386.71
+MEX 2009  2   387.65
+MEX 2009  3   387.60
+MEX 2009  4   388.75
+MEX 2009  5   391.08
+MEX 2009  6   389.17
+MEX 2009  7   385.28
+MEX 2009  8   383.23
+MEX 2009  9   382.16
+MEX 2009 10   382.03
+MEX 2009 11   384.59
+MEX 2009 12   387.16
+MEX 2010  1   388.76
+MEX 2010  2   389.75
+MEX 2010  3   390.45
+MEX 2010  4   391.63
+MEX 2010  5   392.06
+MEX 2010  6   391.36
+MEX 2010  7   389.59
+MEX 2010  8   387.40
+MEX 2010  9   386.24
+MEX 2010 10   386.59
+MEX 2010 11   388.41
+MEX 2010 12   389.51
+MEX 2011  1   390.29
+MEX 2011  2   391.53
+MEX 2011  3   392.29
+MEX 2011  4   393.96
+MEX 2011  5   395.57
+MEX 2011  6   393.78
+MEX 2011  7   390.77
+MEX 2011  8   387.91
+MEX 2011  9   385.88
+MEX 2011 10   387.15
+MEX 2011 11   389.19
+MEX 2011 12   391.17
+MEX 2012  1   392.41
+MEX 2012  2   393.06
+MEX 2012  3   394.10
+MEX 2012  4   395.32
+MEX 2012  5   396.28
+MEX 2012  6   394.92
+MEX 2012  7   391.07
+MEX 2012  8   388.59
+MEX 2012  9   388.98
+MEX 2012 10   390.29
+MEX 2012 11   391.67
+MEX 2012 12   393.72
+MEX 2013  1   395.18
+MEX 2013  2   395.58
+MEX 2013  3   396.50
+MEX 2013  4   398.83
+MEX 2013  5   400.03
+MEX 2013  6   397.36
+MEX 2013  7   394.77
+MEX 2013  8   393.86
+MEX 2013  9   392.48
+MEX 2013 10   391.36
+MEX 2013 11   393.60
+MEX 2013 12   396.44
+MEX 2014  1   397.13
+MEX 2014  2   397.60
+MEX 2014  3   398.38
+MEX 2014  4   400.22
+MEX 2014  5   401.59
+MEX 2014  6   399.62
+MEX 2014  7   397.61
+MEX 2014  8   396.27
+MEX 2014  9   394.13
+MEX 2014 10   394.12
+MEX 2014 11   396.36
+MEX 2014 12   397.60
+MEX 2015  1   398.11
+MEX 2015  2   399.49
+MEX 2015  3   400.96
+MEX 2015  4   401.47
+MEX 2015  5   402.16
+MEX 2015  6   401.61
+MEX 2015  7   399.34
+MEX 2015  8   397.88
+MEX 2015  9   397.08
+MEX 2015 10   397.30
+MEX 2015 11   398.63
+MEX 2015 12   400.55
+MEX 2016  1   402.30
+MEX 2016  2   402.88
+MEX 2016  3   403.90
+MEX 2016  4   405.54
+MEX 2016  5   406.97
+MEX 2016  6   406.46
+MEX 2016  7   403.43
+MEX 2016  8   400.43
+MEX 2016  9   399.23
+MEX 2016 10   401.28
+MEX 2016 11   404.51
+MEX 2016 12   405.16
+MEX 2017  1   404.62
+MEX 2017  2   405.72
+MEX 2017  3   407.29
+MEX 2017  4   408.60
+MEX 2017  5   409.03
+MEX 2017  6   408.17
+MEX 2017  7   405.85
+MEX 2017  8   403.37
+MEX 2017  9   402.40
+MEX 2017 10   402.52
+MEX 2017 11   403.56
+MEX 2017 12   405.49

@@ -1,0 +1,555 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Science Foundation [NSF]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: spo
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:06:17
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+SPO 1975  7   329.39
+SPO 1975  8   329.86
+SPO 1975  9   330.05
+SPO 1975 10   330.27
+SPO 1975 11   330.47
+SPO 1975 12   330.08
+SPO 1976  1   329.46
+SPO 1976  2   329.22
+SPO 1976  3   329.18
+SPO 1976  4   329.37
+SPO 1976  5   329.61
+SPO 1976  6   329.78
+SPO 1976  7   330.16
+SPO 1976  8   330.69
+SPO 1976  9   331.16
+SPO 1976 10   331.52
+SPO 1976 11   331.48
+SPO 1976 12   331.07
+SPO 1977  1   330.85
+SPO 1977  2   330.86
+SPO 1977  3   330.71
+SPO 1977  4   330.52
+SPO 1977  5   330.66
+SPO 1977  6   331.00
+SPO 1977  7   331.55
+SPO 1977  8   332.48
+SPO 1977  9   333.00
+SPO 1977 10   332.81
+SPO 1977 11   332.48
+SPO 1977 12   332.38
+SPO 1978  1   332.46
+SPO 1978  2   332.34
+SPO 1978  3   332.27
+SPO 1978  4   332.60
+SPO 1978  5   333.14
+SPO 1978  6   333.48
+SPO 1978  7   333.85
+SPO 1978  8   334.38
+SPO 1978  9   334.84
+SPO 1978 10   335.33
+SPO 1978 11   335.28
+SPO 1978 12   334.81
+SPO 1979  1   334.36
+SPO 1979  2   333.89
+SPO 1979  3   333.64
+SPO 1979  4   333.82
+SPO 1979  5   334.21
+SPO 1979  6   334.43
+SPO 1979  7   334.98
+SPO 1979  8   335.56
+SPO 1979  9   335.60
+SPO 1979 10   335.59
+SPO 1979 11   335.64
+SPO 1979 12   335.80
+SPO 1981  7   339.10
+SPO 1981  8   339.45
+SPO 1981  9   339.45
+SPO 1981 10   339.39
+SPO 1981 11   339.31
+SPO 1981 12   339.03
+SPO 1982  1   338.83
+SPO 1982  2   338.70
+SPO 1982  3   338.65
+SPO 1982  4   338.93
+SPO 1982  5   339.15
+SPO 1982  6   339.25
+SPO 1982  7   339.56
+SPO 1982  8   340.02
+SPO 1982  9   340.32
+SPO 1982 10   340.37
+SPO 1982 11   340.20
+SPO 1982 12   339.98
+SPO 1983  1   339.87
+SPO 1983  2   339.72
+SPO 1983  3   339.70
+SPO 1983  4   340.14
+SPO 1983  5   340.62
+SPO 1983  6   340.84
+SPO 1983  7   341.17
+SPO 1983  8   341.72
+SPO 1983  9   342.01
+SPO 1983 10   342.04
+SPO 1983 11   341.99
+SPO 1983 12   341.87
+SPO 1984  1   341.75
+SPO 1984  2   341.69
+SPO 1984  3   341.62
+SPO 1984  4   341.60
+SPO 1984  5   341.72
+SPO 1984  6   341.95
+SPO 1984  7   342.37
+SPO 1984  8   342.86
+SPO 1984  9   343.16
+SPO 1984 10   343.23
+SPO 1984 11   343.12
+SPO 1984 12   343.01
+SPO 1985  1   342.99
+SPO 1985  2   343.07
+SPO 1985  3   342.97
+SPO 1985  4   342.98
+SPO 1985  5   343.26
+SPO 1985  6   343.50
+SPO 1985  7   344.01
+SPO 1985  8   344.55
+SPO 1985  9   344.72
+SPO 1985 10   344.79
+SPO 1985 11   344.77
+SPO 1985 12   344.66
+SPO 1986  1   344.56
+SPO 1986  2   344.34
+SPO 1986  3   344.27
+SPO 1986  4   344.41
+SPO 1986  5   344.61
+SPO 1986  6   344.87
+SPO 1986  7   345.22
+SPO 1986  8   345.74
+SPO 1986  9   346.07
+SPO 1986 10   346.05
+SPO 1986 11   345.97
+SPO 1986 12   345.92
+SPO 1987  1   345.90
+SPO 1987  2   345.90
+SPO 1987  3   346.00
+SPO 1987  4   346.19
+SPO 1987  5   346.35
+SPO 1987  6   346.80
+SPO 1987  7   347.32
+SPO 1987  8   347.75
+SPO 1987  9   348.22
+SPO 1987 10   348.42
+SPO 1987 11   348.44
+SPO 1987 12   348.46
+SPO 1988  1   348.35
+SPO 1988  2   348.15
+SPO 1988  3   348.25
+SPO 1988  4   348.51
+SPO 1988  5   348.66
+SPO 1988  6   348.96
+SPO 1988  7   349.36
+SPO 1988  8   349.79
+SPO 1988  9   350.06
+SPO 1988 10   350.17
+SPO 1988 11   350.16
+SPO 1988 12   350.09
+SPO 1989  1   350.16
+SPO 1989  2   350.09
+SPO 1989  3   350.05
+SPO 1989  4   350.14
+SPO 1989  5   350.27
+SPO 1989  6   350.54
+SPO 1989  7   350.97
+SPO 1989  8   351.43
+SPO 1989  9   351.63
+SPO 1989 10   351.77
+SPO 1989 11   352.04
+SPO 1989 12   351.88
+SPO 1990  1   351.34
+SPO 1990  2   351.03
+SPO 1990  3   350.93
+SPO 1990  4   351.16
+SPO 1990  5   351.64
+SPO 1990  6   351.86
+SPO 1990  7   352.19
+SPO 1990  8   352.60
+SPO 1990  9   352.79
+SPO 1990 10   352.93
+SPO 1990 11   352.90
+SPO 1990 12   352.79
+SPO 1991  1   352.73
+SPO 1991  2   352.47
+SPO 1991  3   352.43
+SPO 1991  4   352.75
+SPO 1991  5   352.87
+SPO 1991  6   353.08
+SPO 1991  7   353.63
+SPO 1991  8   353.97
+SPO 1991  9   354.05
+SPO 1991 10   354.00
+SPO 1991 11   353.96
+SPO 1991 12   353.98
+SPO 1992  1   353.72
+SPO 1992  2   353.33
+SPO 1992  3   353.18
+SPO 1992  4   353.40
+SPO 1992  5   353.73
+SPO 1992  6   354.19
+SPO 1992  7   354.74
+SPO 1992  8   355.10
+SPO 1992  9   355.29
+SPO 1992 10   355.27
+SPO 1992 11   355.20
+SPO 1992 12   355.05
+SPO 1993  1   354.78
+SPO 1993  2   354.59
+SPO 1993  3   354.44
+SPO 1993  4   354.38
+SPO 1993  5   354.48
+SPO 1993  6   354.82
+SPO 1993  7   355.34
+SPO 1993  8   355.72
+SPO 1993  9   355.86
+SPO 1993 10   355.86
+SPO 1993 11   355.74
+SPO 1993 12   355.58
+SPO 1994  1   355.48
+SPO 1994  2   355.44
+SPO 1994  3   355.50
+SPO 1994  4   355.56
+SPO 1994  5   355.61
+SPO 1994  6   355.99
+SPO 1994  7   356.44
+SPO 1994  8   356.94
+SPO 1994  9   357.41
+SPO 1994 10   357.51
+SPO 1994 11   357.47
+SPO 1994 12   357.45
+SPO 1995  1   357.34
+SPO 1995  2   357.21
+SPO 1995  3   357.24
+SPO 1995  4   357.50
+SPO 1995  5   357.69
+SPO 1995  6   357.88
+SPO 1995  7   358.29
+SPO 1995  8   358.67
+SPO 1995  9   358.91
+SPO 1995 10   359.30
+SPO 1995 11   359.46
+SPO 1995 12   359.26
+SPO 1996  1   359.19
+SPO 1996  2   359.16
+SPO 1996  3   359.16
+SPO 1996  4   359.15
+SPO 1996  5   359.18
+SPO 1996  6   359.38
+SPO 1996  7   359.86
+SPO 1996  8   360.37
+SPO 1996  9   360.55
+SPO 1996 10   360.52
+SPO 1996 11   360.43
+SPO 1996 12   360.51
+SPO 1997  1   360.53
+SPO 1997  2   360.44
+SPO 1997  3   360.38
+SPO 1997  4   360.49
+SPO 1997  5   360.82
+SPO 1997  6   361.09
+SPO 1997  7   361.33
+SPO 1997  8   361.70
+SPO 1997  9   362.03
+SPO 1997 10   362.15
+SPO 1997 11   362.25
+SPO 1997 12   362.26
+SPO 1998  1   362.24
+SPO 1998  2   362.32
+SPO 1998  3   362.49
+SPO 1998  4   362.75
+SPO 1998  5   363.11
+SPO 1998  6   363.57
+SPO 1998  7   364.15
+SPO 1998  8   364.69
+SPO 1998  9   365.02
+SPO 1998 10   365.12
+SPO 1998 11   365.10
+SPO 1998 12   365.13
+SPO 1999  1   365.08
+SPO 1999  2   364.92
+SPO 1999  3   364.90
+SPO 1999  4   365.03
+SPO 1999  5   365.23
+SPO 1999  6   365.49
+SPO 1999  7   365.74
+SPO 1999  8   366.13
+SPO 1999  9   366.47
+SPO 1999 10   366.61
+SPO 1999 11   366.70
+SPO 1999 12   366.65
+SPO 2000  1   366.49
+SPO 2000  2   366.23
+SPO 2000  3   366.06
+SPO 2000  4   366.12
+SPO 2000  5   366.30
+SPO 2000  6   366.53
+SPO 2000  7   366.89
+SPO 2000  8   367.37
+SPO 2000  9   367.61
+SPO 2000 10   367.71
+SPO 2000 11   367.80
+SPO 2000 12   367.81
+SPO 2001  1   367.74
+SPO 2001  7   368.70
+SPO 2001  8   369.12
+SPO 2001  9   369.47
+SPO 2001 10   369.80
+SPO 2001 11   369.83
+SPO 2001 12   369.62
+SPO 2002  1   369.34
+SPO 2002  2   369.19
+SPO 2002  3   369.30
+SPO 2002  4   369.49
+SPO 2002  5   369.80
+SPO 2002  6   370.21
+SPO 2002  7   370.76
+SPO 2002  8   371.32
+SPO 2002  9   371.70
+SPO 2002 10   371.96
+SPO 2002 11   371.94
+SPO 2002 12   371.85
+SPO 2003  1   371.94
+SPO 2003  2   371.94
+SPO 2003  3   371.94
+SPO 2003  4   372.09
+SPO 2003  5   372.43
+SPO 2003  6   372.79
+SPO 2003  7   373.15
+SPO 2003  8   373.62
+SPO 2003  9   373.99
+SPO 2003 10   373.98
+SPO 2003 11   373.91
+SPO 2003 12   373.96
+SPO 2004  1   373.86
+SPO 2004  2   373.64
+SPO 2004  3   373.61
+SPO 2004  4   373.81
+SPO 2004  5   374.10
+SPO 2004  6   374.49
+SPO 2004  7   374.95
+SPO 2004  8   375.46
+SPO 2004  9   375.74
+SPO 2004 10   375.77
+SPO 2004 11   375.65
+SPO 2004 12   375.60
+SPO 2005  1   375.51
+SPO 2005  2   375.21
+SPO 2005  3   375.18
+SPO 2005  4   375.52
+SPO 2005  5   375.95
+SPO 2005  6   376.52
+SPO 2005  7   377.03
+SPO 2005  8   377.48
+SPO 2005  9   377.82
+SPO 2005 10   377.94
+SPO 2005 11   377.88
+SPO 2005 12   377.89
+SPO 2006  1   377.78
+SPO 2006  2   377.58
+SPO 2006  3   377.66
+SPO 2006  4   377.90
+SPO 2006  5   378.15
+SPO 2006  6   378.42
+SPO 2006  7   378.80
+SPO 2006  8   379.23
+SPO 2006  9   379.48
+SPO 2006 10   379.61
+SPO 2006 11   379.62
+SPO 2006 12   379.59
+SPO 2007  1   379.56
+SPO 2007  2   379.47
+SPO 2007  3   379.47
+SPO 2007  4   379.72
+SPO 2007  5   380.11
+SPO 2007  6   380.49
+SPO 2007  7   380.92
+SPO 2007  8   381.40
+SPO 2007  9   381.74
+SPO 2007 10   381.85
+SPO 2007 11   381.88
+SPO 2007 12   381.90
+SPO 2008  1   381.78
+SPO 2008  2   381.71
+SPO 2008  3   381.81
+SPO 2008  4   381.93
+SPO 2008  5   382.04
+SPO 2008  6   382.31
+SPO 2008  7   382.84
+SPO 2008  8   383.31
+SPO 2008  9   383.57
+SPO 2008 10   383.71
+SPO 2008 11   383.66
+SPO 2008 12   383.62
+SPO 2009  1   383.51
+SPO 2009  2   383.19
+SPO 2009  3   383.16
+SPO 2009  4   383.37
+SPO 2009  5   383.53
+SPO 2009  6   383.84
+SPO 2009  7   384.30
+SPO 2009  8   384.65
+SPO 2009  9   384.95
+SPO 2009 10   385.21
+SPO 2009 11   385.24
+SPO 2009 12   385.19
+SPO 2010  1   385.07
+SPO 2010  2   384.78
+SPO 2010  3   384.66
+SPO 2010  4   384.78
+SPO 2010  5   385.06
+SPO 2010  6   385.61
+SPO 2010  7   386.30
+SPO 2010  8   386.99
+SPO 2010  9   387.35
+SPO 2010 10   387.43
+SPO 2010 11   387.46
+SPO 2010 12   387.37
+SPO 2011  1   387.19
+SPO 2011  2   386.94
+SPO 2011  3   386.81
+SPO 2011  4   386.95
+SPO 2011  5   387.16
+SPO 2011  6   387.47
+SPO 2011  7   387.92
+SPO 2011  8   388.46
+SPO 2011  9   388.83
+SPO 2011 10   389.02
+SPO 2011 11   389.15
+SPO 2011 12   389.20
+SPO 2012  1   388.78
+SPO 2012  2   388.31
+SPO 2012  3   388.44
+SPO 2012  4   388.78
+SPO 2012  5   389.05
+SPO 2012  6   389.46
+SPO 2012  7   390.17
+SPO 2012  8   390.86
+SPO 2012  9   391.18
+SPO 2012 10   391.27
+SPO 2012 11   391.32
+SPO 2012 12   391.33
+SPO 2013  1   391.24
+SPO 2013  2   391.11
+SPO 2013  3   391.16
+SPO 2013  4   391.55
+SPO 2013  5   392.07
+SPO 2013  6   392.51
+SPO 2013  7   393.09
+SPO 2013  8   393.66
+SPO 2013  9   393.97
+SPO 2013 10   393.99
+SPO 2013 11   393.94
+SPO 2013 12   393.97
+SPO 2014  1   393.88
+SPO 2014  2   393.64
+SPO 2014  3   393.50
+SPO 2014  4   393.66
+SPO 2014  5   394.06
+SPO 2014  6   394.47
+SPO 2014  7   394.93
+SPO 2014  8   395.43
+SPO 2014  9   395.79
+SPO 2014 10   395.92
+SPO 2014 11   395.88
+SPO 2014 12   395.82
+SPO 2015  1   395.78
+SPO 2015  2   395.64
+SPO 2015  3   395.66
+SPO 2015  4   396.04
+SPO 2015  5   396.48
+SPO 2015  6   396.89
+SPO 2015  7   397.35
+SPO 2015  8   397.95
+SPO 2015  9   398.42
+SPO 2015 10   398.52
+SPO 2015 11   398.55
+SPO 2015 12   398.56
+SPO 2016  1   398.56
+SPO 2016  2   398.71
+SPO 2016  3   398.87
+SPO 2016  4   399.20
+SPO 2016  5   399.84
+SPO 2016  6   400.36
+SPO 2016  7   400.87
+SPO 2016  8   401.35
+SPO 2016  9   401.60
+SPO 2016 10   401.70
+SPO 2016 11   401.51
+SPO 2016 12   401.26
+SPO 2017  1   401.13
+SPO 2017  2   401.04
+SPO 2017  3   400.97
+SPO 2017  4   401.10
+SPO 2017  5   401.55
+SPO 2017  6   401.98
+SPO 2017  7   402.47
+SPO 2017  8   403.14
+SPO 2017  9   403.55
+SPO 2017 10   403.65
+SPO 2017 11   403.65
+SPO 2017 12   403.67

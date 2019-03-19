@@ -1,0 +1,208 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Kazakh Scientific Institute of Environmental
+# collaborator_name: Monitoring and Climate
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: kzm
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:12:12
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+KZM 1997 10   313.44
+KZM 1997 11   313.54
+KZM 1997 12   313.71
+KZM 1998  1   313.89
+KZM 1998  2   314.02
+KZM 1998  3   314.05
+KZM 1998  4   314.11
+KZM 1998  5   314.30
+KZM 1998  6   314.26
+KZM 1998  7   313.99
+KZM 1998  8   313.95
+KZM 1998  9   314.14
+KZM 1998 10   314.26
+KZM 1998 11   314.41
+KZM 1998 12   314.59
+KZM 1999  1   314.66
+KZM 1999  2   314.66
+KZM 1999  3   314.70
+KZM 1999  4   314.76
+KZM 1999  5   314.70
+KZM 1999  6   314.51
+KZM 1999  7   314.49
+KZM 1999  8   314.75
+KZM 1999  9   315.20
+KZM 1999 10   315.61
+KZM 1999 11   315.85
+KZM 1999 12   316.02
+KZM 2000  1   316.22
+KZM 2000  2   316.30
+KZM 2000  3   316.22
+KZM 2000  4   316.17
+KZM 2000  5   316.20
+KZM 2000  6   316.18
+KZM 2000  7   316.22
+KZM 2000  8   316.44
+KZM 2000  9   316.61
+KZM 2000 10   316.61
+KZM 2000 11   316.67
+KZM 2000 12   316.88
+KZM 2001  1   316.99
+KZM 2001  2   316.98
+KZM 2001  3   317.05
+KZM 2001  4   317.10
+KZM 2001  5   316.94
+KZM 2001  6   316.78
+KZM 2001  7   316.76
+KZM 2001  8   316.83
+KZM 2001  9   317.09
+KZM 2001 10   317.33
+KZM 2001 11   317.30
+KZM 2001 12   317.30
+KZM 2002  1   317.53
+KZM 2002  2   317.71
+KZM 2002  3   317.76
+KZM 2002  4   317.72
+KZM 2002  5   317.55
+KZM 2002  6   317.46
+KZM 2002  7   317.58
+KZM 2002  8   317.72
+KZM 2002  9   317.73
+KZM 2002 10   317.77
+KZM 2002 11   317.98
+KZM 2002 12   318.09
+KZM 2003  1   318.00
+KZM 2003  2   318.11
+KZM 2003  3   318.40
+KZM 2003  4   318.42
+KZM 2003  5   318.26
+KZM 2003  6   318.30
+KZM 2003  7   318.51
+KZM 2003  8   318.60
+KZM 2003  9   318.57
+KZM 2003 10   318.56
+KZM 2003 11   318.57
+KZM 2003 12   318.66
+KZM 2004  1   318.81
+KZM 2004  2   318.82
+KZM 2004  3   318.74
+KZM 2004  4   318.78
+KZM 2004  5   318.79
+KZM 2004  6   318.67
+KZM 2004  7   318.63
+KZM 2004  8   318.71
+KZM 2004  9   318.78
+KZM 2004 10   318.88
+KZM 2005  3   319.84
+KZM 2005  4   319.92
+KZM 2005  5   319.88
+KZM 2005  6   319.70
+KZM 2005  7   319.63
+KZM 2005  8   319.82
+KZM 2005  9   319.97
+KZM 2005 10   319.92
+KZM 2005 11   319.94
+KZM 2005 12   320.17
+KZM 2006  1   320.32
+KZM 2006  2   320.36
+KZM 2006  3   320.45
+KZM 2006  4   320.51
+KZM 2006  5   320.38
+KZM 2006  6   320.36
+KZM 2006  7   320.49
+KZM 2006  8   320.53
+KZM 2006  9   320.62
+KZM 2006 10   320.90
+KZM 2006 11   321.10
+KZM 2006 12   321.01
+KZM 2007  1   321.06
+KZM 2007  2   321.31
+KZM 2007  3   321.38
+KZM 2007  4   321.38
+KZM 2007  5   321.44
+KZM 2007  6   321.21
+KZM 2007  7   320.92
+KZM 2007  8   321.10
+KZM 2007  9   321.44
+KZM 2007 10   321.49
+KZM 2007 11   321.64
+KZM 2007 12   321.87
+KZM 2008  1   321.92
+KZM 2008  2   321.84
+KZM 2008  3   321.91
+KZM 2008  4   322.11
+KZM 2008  5   322.19
+KZM 2008  6   322.07
+KZM 2008  7   321.97
+KZM 2008  8   322.05
+KZM 2008  9   322.19
+KZM 2008 10   322.33
+KZM 2008 11   322.53
+KZM 2008 12   322.74
+KZM 2009  1   322.84
+KZM 2009  2   322.86
+KZM 2009  3   322.90
+KZM 2009  4   322.83
+KZM 2009  5   322.56
+KZM 2009  6   322.43
+KZM 2009  7   322.55
+KZM 2009  8   322.65

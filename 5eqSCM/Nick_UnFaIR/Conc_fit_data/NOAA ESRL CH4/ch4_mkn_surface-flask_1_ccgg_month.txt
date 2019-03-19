@@ -1,0 +1,153 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Kenya Meteorological Department [KMD]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: mkn
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:59:13
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+MKN 2003 12  1805.77
+MKN 2004  1  1803.92
+MKN 2004  2  1812.01
+MKN 2004  3  1790.87
+MKN 2004  4  1762.55
+MKN 2004  5  1767.71
+MKN 2004  6  1766.55
+MKN 2004  7  1768.50
+MKN 2004  8  1783.36
+MKN 2004  9  1771.85
+MKN 2004 10  1755.56
+MKN 2005  2  1785.44
+MKN 2005  3  1780.18
+MKN 2005  4  1760.70
+MKN 2005  5  1762.72
+MKN 2005  6  1778.68
+MKN 2005  7  1773.33
+MKN 2005  8  1771.19
+MKN 2005 12  1797.85
+MKN 2006  1  1788.74
+MKN 2006  2  1793.98
+MKN 2006  3  1779.09
+MKN 2006  4  1750.55
+MKN 2006  5  1757.63
+MKN 2006  6  1773.28
+MKN 2006  7  1770.08
+MKN 2006  8  1773.90
+MKN 2006  9  1770.34
+MKN 2006 10  1765.00
+MKN 2006 11  1787.00
+MKN 2006 12  1799.33
+MKN 2007  1  1790.49
+MKN 2007  2  1788.10
+MKN 2007  3  1775.87
+MKN 2007  4  1754.73
+MKN 2007  5  1760.48
+MKN 2007  6  1774.05
+MKN 2007  7  1771.27
+MKN 2007  8  1775.20
+MKN 2007  9  1772.03
+MKN 2007 10  1766.45
+MKN 2007 11  1788.04
+MKN 2007 12  1801.57
+MKN 2008  1  1793.20
+MKN 2008  2  1790.93
+MKN 2008  3  1779.82
+MKN 2008  4  1757.91
+MKN 2008  5  1765.21
+MKN 2008  6  1777.78
+MKN 2008  7  1775.28
+MKN 2008  8  1779.93
+MKN 2008  9  1773.67
+MKN 2008 10  1766.04
+MKN 2008 11  1795.30
+MKN 2008 12  1816.95
+MKN 2009  1  1814.12
+MKN 2009  2  1795.49
+MKN 2009  3  1740.43
+MKN 2009  4  1729.49
+MKN 2009  5  1769.09
+MKN 2009  6  1791.97
+MKN 2009  7  1788.06
+MKN 2009  8  1790.97
+MKN 2009  9  1788.80
+MKN 2009 10  1793.08
+MKN 2009 11  1814.14
+MKN 2009 12  1817.93
+MKN 2010  1  1815.36
+MKN 2010  2  1817.46
+MKN 2010  3  1805.06
+MKN 2010  4  1779.12
+MKN 2010  5  1782.95
+MKN 2010  6  1803.15
+MKN 2010  7  1793.98
+MKN 2010  8  1801.66
+MKN 2010  9  1809.41
+MKN 2010 10  1795.97
+MKN 2010 11  1811.37
+MKN 2010 12  1830.87
+MKN 2011  1  1820.65
+MKN 2011  2  1812.18
+MKN 2011  3  1812.26
+MKN 2011  4  1797.48
+MKN 2011  5  1796.21
+MKN 2011  6  1811.28

@@ -1,0 +1,287 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Morski Instytut Rybacki [MIR]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: bal
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:04:28
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BAL 1992  9   353.07
+BAL 1992 10   359.88
+BAL 1992 11   361.09
+BAL 1992 12   360.35
+BAL 1993  1   362.57
+BAL 1993  2   365.48
+BAL 1993  3   365.95
+BAL 1993  4   363.28
+BAL 1993  5   358.22
+BAL 1993  6   355.42
+BAL 1993  7   355.71
+BAL 1993  8   352.80
+BAL 1993  9   351.51
+BAL 1993 10   358.77
+BAL 1993 11   366.29
+BAL 1993 12   367.39
+BAL 1994  1   368.42
+BAL 1994  2   371.04
+BAL 1994  3   368.12
+BAL 1994  4   364.52
+BAL 1994  5   362.51
+BAL 1994  6   358.35
+BAL 1994  7   353.73
+BAL 1994  8   351.75
+BAL 1994  9   354.11
+BAL 1994 10   361.00
+BAL 1994 11   365.23
+BAL 1994 12   367.16
+BAL 1995  1   369.36
+BAL 1995  2   369.02
+BAL 1995  3   369.93
+BAL 1995  4   370.08
+BAL 1995  5   367.75
+BAL 1995  6   365.03
+BAL 1995  7   359.02
+BAL 1995  8   354.59
+BAL 1995  9   358.80
+BAL 1995 10   364.40
+BAL 1995 11   367.44
+BAL 1995 12   367.77
+BAL 1996  1   368.78
+BAL 1996  2   372.05
+BAL 1996  3   373.34
+BAL 1996  4   372.71
+BAL 1996  5   370.50
+BAL 1996  6   366.29
+BAL 1996  7   361.54
+BAL 1996  8   357.54
+BAL 1996  9   357.25
+BAL 1996 10   363.08
+BAL 1996 11   371.03
+BAL 1996 12   375.85
+BAL 1997  1   377.11
+BAL 1997  2   373.44
+BAL 1997  3   370.54
+BAL 1997  4   369.91
+BAL 1997  5   364.59
+BAL 1997  6   353.12
+BAL 1997  7   350.99
+BAL 1997  8   356.30
+BAL 1997  9   359.18
+BAL 1997 10   365.43
+BAL 1997 11   378.19
+BAL 1997 12   383.35
+BAL 1998  1   376.51
+BAL 1998  2   372.10
+BAL 1998  3   372.72
+BAL 1998  4   372.64
+BAL 1998  5   370.73
+BAL 1998  6   367.66
+BAL 1998  7   362.15
+BAL 1998  8   358.46
+BAL 1998  9   362.10
+BAL 1998 10   369.83
+BAL 1998 11   375.57
+BAL 1998 12   378.51
+BAL 1999  1   377.97
+BAL 1999  2   377.72
+BAL 1999  3   379.20
+BAL 1999  4   377.39
+BAL 1999  5   373.36
+BAL 1999  6   368.32
+BAL 1999  7   363.13
+BAL 1999  8   361.29
+BAL 1999  9   363.41
+BAL 1999 10   368.97
+BAL 1999 11   373.72
+BAL 1999 12   377.69
+BAL 2000  1   378.68
+BAL 2000  2   377.60
+BAL 2000  3   378.07
+BAL 2000  4   377.35
+BAL 2000  5   373.38
+BAL 2000  6   370.10
+BAL 2000  7   368.26
+BAL 2000  8   364.20
+BAL 2000  9   366.17
+BAL 2000 10   377.39
+BAL 2000 11   384.47
+BAL 2000 12   381.32
+BAL 2001  1   379.17
+BAL 2001  2   380.72
+BAL 2001  3   379.78
+BAL 2001  4   375.76
+BAL 2001  5   373.39
+BAL 2001  6   371.00
+BAL 2001  7   366.49
+BAL 2001  8   364.64
+BAL 2001  9   370.20
+BAL 2001 10   375.62
+BAL 2001 11   376.19
+BAL 2002  4   383.51
+BAL 2002  5   381.86
+BAL 2002  6   378.53
+BAL 2002  7   373.45
+BAL 2002  8   369.11
+BAL 2002  9   370.08
+BAL 2002 10   377.16
+BAL 2002 11   386.98
+BAL 2002 12   388.97
+BAL 2003  1   388.37
+BAL 2003  2   388.22
+BAL 2003  3   388.55
+BAL 2003  4   389.01
+BAL 2003  5   383.69
+BAL 2003  6   380.02
+BAL 2003  7   377.78
+BAL 2003  8   373.69
+BAL 2003  9   372.79
+BAL 2003 10   380.55
+BAL 2003 11   393.16
+BAL 2003 12   392.77
+BAL 2004  1   387.82
+BAL 2004  2   389.09
+BAL 2004  3   389.18
+BAL 2004  4   385.19
+BAL 2004  5   382.93
+BAL 2004  6   386.04
+BAL 2004  7   381.24
+BAL 2004  8   372.68
+BAL 2004  9   378.42
+BAL 2004 10   383.46
+BAL 2004 11   383.26
+BAL 2004 12   385.58
+BAL 2005  1   390.09
+BAL 2005  2   391.81
+BAL 2005  6   381.23
+BAL 2005  7   373.69
+BAL 2005  8   370.70
+BAL 2005  9   376.33
+BAL 2005 10   385.96
+BAL 2005 11   391.06
+BAL 2005 12   394.16
+BAL 2006  1   395.50
+BAL 2006  2   393.41
+BAL 2006  3   392.66
+BAL 2006  4   392.86
+BAL 2006  5   389.23
+BAL 2006  6   382.23
+BAL 2006  7   376.26
+BAL 2006  8   375.93
+BAL 2006  9   381.85
+BAL 2006 10   385.47
+BAL 2006 11   390.67
+BAL 2006 12   393.94
+BAL 2007  1   391.22
+BAL 2007  2   393.42
+BAL 2007  3   394.17
+BAL 2007  4   390.13
+BAL 2007  5   388.57
+BAL 2007  6   386.54
+BAL 2007  7   383.41
+BAL 2007  8   380.04
+BAL 2007  9   381.62
+BAL 2007 10   385.71
+BAL 2007 11   389.85
+BAL 2007 12   394.77
+BAL 2008  1   396.02
+BAL 2008  2   394.56
+BAL 2008  3   394.70
+BAL 2008  4   395.22
+BAL 2008  5   392.40
+BAL 2008  6   388.19
+BAL 2008  7   382.03
+BAL 2008  8   377.57
+BAL 2008  9   379.14
+BAL 2008 10   385.92
+BAL 2008 11   392.57
+BAL 2008 12   393.50
+BAL 2009  1   395.81
+BAL 2009  2   399.72
+BAL 2009  3   398.86
+BAL 2009  4   395.47
+BAL 2009  5   391.17
+BAL 2009  6   386.88
+BAL 2009  7   382.85
+BAL 2009  8   378.83
+BAL 2009  9   380.10
+BAL 2009 10   390.67
+BAL 2009 11   399.94
+BAL 2009 12   399.90
+BAL 2010  1   399.02
+BAL 2010  2   400.30
+BAL 2010  3   399.83
+BAL 2010  4   397.49
+BAL 2010  5   394.61
+BAL 2010  6   390.11
+BAL 2010  7   386.96
+BAL 2010  8   385.73
+BAL 2010  9   385.20
+BAL 2010 10   392.50
+BAL 2010 11   400.89
+BAL 2010 12   402.34
+BAL 2011  1   399.42
+BAL 2011  2   399.85
+BAL 2011  3   401.12
+BAL 2011  4   397.77
+BAL 2011  5   396.18
+BAL 2011  6   395.30

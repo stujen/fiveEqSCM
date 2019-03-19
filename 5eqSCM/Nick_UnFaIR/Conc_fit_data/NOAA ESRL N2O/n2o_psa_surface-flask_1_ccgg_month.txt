@@ -1,0 +1,318 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National Science Foundation [NSF]
+# collaborator_url: www.nsf.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: psa
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:12:37
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+PSA 1997  4   311.61
+PSA 1997  5   311.56
+PSA 1997  6   311.64
+PSA 1997  7   311.89
+PSA 1997  8   312.13
+PSA 1997  9   312.39
+PSA 1997 10   312.65
+PSA 1997 11   312.69
+PSA 1997 12   312.63
+PSA 1998  1   312.76
+PSA 1998  2   312.82
+PSA 1998  3   312.51
+PSA 1998  4   312.16
+PSA 1998  5   312.18
+PSA 1998  6   312.44
+PSA 1998  7   312.67
+PSA 1998  8   312.82
+PSA 1998  9   312.98
+PSA 1998 10   313.13
+PSA 1998 11   313.29
+PSA 1998 12   313.53
+PSA 1999  1   313.67
+PSA 1999  2   313.64
+PSA 1999  3   313.52
+PSA 1999  4   313.34
+PSA 1999  5   313.17
+PSA 1999  6   313.12
+PSA 1999  7   313.29
+PSA 1999  8   313.64
+PSA 1999  9   313.97
+PSA 1999 10   314.23
+PSA 1999 11   314.52
+PSA 1999 12   314.74
+PSA 2000  1   314.83
+PSA 2000  2   314.79
+PSA 2000  3   314.59
+PSA 2000  4   314.43
+PSA 2000  5   314.38
+PSA 2000  6   314.47
+PSA 2000  7   314.71
+PSA 2000  8   314.96
+PSA 2000  9   315.02
+PSA 2000 10   315.14
+PSA 2000 11   315.38
+PSA 2000 12   315.51
+PSA 2001  1   315.52
+PSA 2001  2   315.32
+PSA 2001  3   315.05
+PSA 2001  4   314.92
+PSA 2001  5   314.94
+PSA 2001  6   315.11
+PSA 2001  7   315.49
+PSA 2001  8   315.84
+PSA 2001  9   315.99
+PSA 2001 10   316.12
+PSA 2001 11   316.23
+PSA 2001 12   316.29
+PSA 2002  1   316.39
+PSA 2002  2   316.37
+PSA 2002  3   316.18
+PSA 2002  4   315.98
+PSA 2002  5   315.92
+PSA 2002  6   315.90
+PSA 2002  7   315.92
+PSA 2002  8   316.06
+PSA 2002  9   316.23
+PSA 2002 10   316.33
+PSA 2002 11   316.36
+PSA 2002 12   316.37
+PSA 2003  1   316.31
+PSA 2003  2   316.18
+PSA 2003  3   316.13
+PSA 2003  4   316.24
+PSA 2003  5   316.38
+PSA 2003  6   316.47
+PSA 2003  7   316.61
+PSA 2003  8   316.85
+PSA 2003  9   317.10
+PSA 2003 10   317.30
+PSA 2003 11   317.37
+PSA 2003 12   317.44
+PSA 2004  1   317.56
+PSA 2004  2   317.58
+PSA 2004  3   317.37
+PSA 2004  4   317.07
+PSA 2004  5   316.93
+PSA 2004  6   317.09
+PSA 2004  7   317.43
+PSA 2004  8   317.69
+PSA 2004  9   317.82
+PSA 2004 10   317.87
+PSA 2004 11   317.94
+PSA 2004 12   318.12
+PSA 2005  1   318.26
+PSA 2005  2   318.26
+PSA 2005  3   317.97
+PSA 2005  4   317.47
+PSA 2005  5   317.28
+PSA 2005  6   317.50
+PSA 2005  7   317.74
+PSA 2005  8   318.02
+PSA 2005  9   318.43
+PSA 2005 10   318.75
+PSA 2005 11   318.93
+PSA 2005 12   319.05
+PSA 2006  1   319.10
+PSA 2006  2   318.97
+PSA 2006  3   318.71
+PSA 2006  4   318.49
+PSA 2006  5   318.49
+PSA 2006  6   318.58
+PSA 2006  7   318.70
+PSA 2006  8   319.03
+PSA 2006  9   319.27
+PSA 2006 10   319.35
+PSA 2006 11   319.59
+PSA 2006 12   319.79
+PSA 2007  1   319.83
+PSA 2007  2   319.73
+PSA 2007  3   319.48
+PSA 2007  4   319.19
+PSA 2007  5   319.11
+PSA 2007  6   319.25
+PSA 2007  7   319.37
+PSA 2007  8   319.50
+PSA 2007  9   319.69
+PSA 2007 10   319.90
+PSA 2007 11   320.19
+PSA 2007 12   320.45
+PSA 2008  1   320.44
+PSA 2008  2   320.27
+PSA 2008  3   320.21
+PSA 2008  4   320.20
+PSA 2008  5   320.12
+PSA 2008  6   320.04
+PSA 2008  7   320.10
+PSA 2008  8   320.40
+PSA 2008  9   320.86
+PSA 2008 10   321.26
+PSA 2008 11   321.53
+PSA 2008 12   321.72
+PSA 2009  1   321.63
+PSA 2009  2   321.25
+PSA 2009  3   320.84
+PSA 2009  4   320.64
+PSA 2009  5   320.67
+PSA 2009  6   320.98
+PSA 2009  7   321.37
+PSA 2009  8   321.57
+PSA 2009  9   321.64
+PSA 2009 10   321.72
+PSA 2009 11   321.91
+PSA 2009 12   322.19
+PSA 2010  1   322.30
+PSA 2010  2   322.19
+PSA 2010  3   321.96
+PSA 2010  4   321.79
+PSA 2010  5   321.77
+PSA 2010  6   321.92
+PSA 2010  7   322.17
+PSA 2010  8   322.41
+PSA 2010  9   322.65
+PSA 2010 10   322.92
+PSA 2010 11   323.25
+PSA 2010 12   323.51
+PSA 2011  1   323.51
+PSA 2011  2   323.29
+PSA 2011  3   323.05
+PSA 2011  4   323.00
+PSA 2011  5   323.07
+PSA 2011  6   323.14
+PSA 2011  7   323.20
+PSA 2011  8   323.35
+PSA 2011  9   323.61
+PSA 2011 10   323.82
+PSA 2011 11   323.92
+PSA 2011 12   324.01
+PSA 2012  1   324.20
+PSA 2012  2   324.23
+PSA 2012  3   324.04
+PSA 2012  4   323.91
+PSA 2012  5   323.92
+PSA 2012  6   323.99
+PSA 2012  7   324.20
+PSA 2012  8   324.52
+PSA 2012  9   324.69
+PSA 2012 10   324.76
+PSA 2012 11   324.76
+PSA 2012 12   324.70
+PSA 2013  1   324.78
+PSA 2013  2   324.92
+PSA 2013  3   324.79
+PSA 2013  4   324.57
+PSA 2013  5   324.64
+PSA 2013  6   324.88
+PSA 2013  7   325.17
+PSA 2013  8   325.40
+PSA 2013  9   325.52
+PSA 2013 10   325.63
+PSA 2013 11   325.79
+PSA 2013 12   325.84
+PSA 2014  1   325.77
+PSA 2014  2   325.67
+PSA 2014  3   325.57
+PSA 2014  4   325.50
+PSA 2014  5   325.63
+PSA 2014  6   325.87
+PSA 2014  7   326.12
+PSA 2014  8   326.39
+PSA 2014  9   326.66
+PSA 2014 10   326.82
+PSA 2014 11   326.97
+PSA 2014 12   327.19
+PSA 2015  1   327.24
+PSA 2015  2   327.08
+PSA 2015  3   326.94
+PSA 2015  4   326.97
+PSA 2015  5   327.08
+PSA 2015  6   327.22
+PSA 2015  7   327.39
+PSA 2015  8   327.52
+PSA 2015  9   327.71
+PSA 2015 10   327.91
+PSA 2015 11   328.02
+PSA 2015 12   328.14
+PSA 2016  1   328.32
+PSA 2016  2   328.38
+PSA 2016  3   328.10
+PSA 2016  4   327.60
+PSA 2016  5   327.28
+PSA 2016  6   327.39
+PSA 2016  7   327.66
+PSA 2016  8   327.93
+PSA 2016  9   328.20
+PSA 2016 10   328.37
+PSA 2016 11   328.43
+PSA 2016 12   328.45
+PSA 2017  1   328.39
+PSA 2017  2   328.27
+PSA 2017  3   328.26
+PSA 2017  4   328.23
+PSA 2017  5   327.97
+PSA 2017  6   327.91
+PSA 2017  7   328.39
+PSA 2017  8   329.16
+PSA 2017  9   329.55
+PSA 2017 10   329.49
+PSA 2017 11   329.47
+PSA 2017 12   329.65

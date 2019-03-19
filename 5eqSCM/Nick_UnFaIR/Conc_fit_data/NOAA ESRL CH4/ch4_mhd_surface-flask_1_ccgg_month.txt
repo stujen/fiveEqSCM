@@ -1,0 +1,387 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: National University of Ireland, Galway [NUI]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: mhd
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:59:10
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+MHD 1991  6  1791.90
+MHD 1991  7  1787.63
+MHD 1991  8  1793.90
+MHD 1991  9  1795.75
+MHD 1991 10  1804.16
+MHD 1991 11  1814.00
+MHD 1991 12  1808.89
+MHD 1992  1  1803.63
+MHD 1992  2  1803.40
+MHD 1992  3  1803.37
+MHD 1992  4  1811.35
+MHD 1992  5  1810.28
+MHD 1992  6  1799.97
+MHD 1992  7  1794.35
+MHD 1992  8  1794.78
+MHD 1992  9  1801.58
+MHD 1992 10  1808.66
+MHD 1992 11  1812.37
+MHD 1992 12  1814.70
+MHD 1993  1  1808.45
+MHD 1993  2  1802.14
+MHD 1993  3  1810.96
+MHD 1993  4  1823.03
+MHD 1993  5  1812.81
+MHD 1993  6  1785.20
+MHD 1993  7  1783.65
+MHD 1993  8  1801.37
+MHD 1993  9  1819.25
+MHD 1993 10  1828.38
+MHD 1993 11  1815.42
+MHD 1993 12  1809.87
+MHD 1994  1  1811.23
+MHD 1994  2  1811.27
+MHD 1994  3  1819.28
+MHD 1994  4  1825.23
+MHD 1994  5  1822.82
+MHD 1994  6  1808.95
+MHD 1994  7  1800.44
+MHD 1994  8  1804.43
+MHD 1994  9  1817.95
+MHD 1994 10  1824.56
+MHD 1994 11  1818.93
+MHD 1994 12  1819.80
+MHD 1995  1  1824.73
+MHD 1995  2  1822.61
+MHD 1995  3  1822.74
+MHD 1995  4  1821.99
+MHD 1995  5  1813.18
+MHD 1995  6  1796.61
+MHD 1995  7  1796.65
+MHD 1995  8  1802.89
+MHD 1995  9  1804.59
+MHD 1995 10  1818.43
+MHD 1995 11  1826.53
+MHD 1995 12  1828.09
+MHD 1996  1  1833.46
+MHD 1996  2  1841.19
+MHD 1996  3  1844.60
+MHD 1996  4  1836.04
+MHD 1996  5  1825.03
+MHD 1996  6  1814.84
+MHD 1996  7  1807.22
+MHD 1996  8  1816.58
+MHD 1996  9  1828.17
+MHD 1996 10  1826.71
+MHD 1996 11  1833.75
+MHD 1996 12  1850.85
+MHD 1997  1  1837.96
+MHD 1997  2  1825.40
+MHD 1997  3  1830.96
+MHD 1997  4  1834.64
+MHD 1997  5  1830.10
+MHD 1997  6  1814.61
+MHD 1997  7  1804.52
+MHD 1997  8  1806.87
+MHD 1997  9  1813.32
+MHD 1997 10  1830.60
+MHD 1997 11  1840.25
+MHD 1997 12  1841.50
+MHD 1998  1  1848.37
+MHD 1998  2  1835.79
+MHD 1998  3  1826.56
+MHD 1998  4  1842.11
+MHD 1998  5  1836.77
+MHD 1998  6  1815.08
+MHD 1998  7  1816.41
+MHD 1998  8  1827.72
+MHD 1998  9  1835.11
+MHD 1998 10  1842.35
+MHD 1998 11  1845.25
+MHD 1998 12  1849.03
+MHD 1999  1  1847.65
+MHD 1999  2  1836.45
+MHD 1999  3  1843.83
+MHD 1999  4  1865.04
+MHD 1999  5  1853.65
+MHD 1999  6  1830.85
+MHD 1999  7  1823.06
+MHD 1999  8  1822.50
+MHD 1999  9  1832.16
+MHD 1999 10  1846.82
+MHD 1999 11  1854.50
+MHD 1999 12  1853.52
+MHD 2000  1  1847.93
+MHD 2000  2  1840.51
+MHD 2000  3  1852.57
+MHD 2000  4  1870.19
+MHD 2000  5  1855.23
+MHD 2000  6  1823.48
+MHD 2000  7  1814.89
+MHD 2000  8  1823.83
+MHD 2000  9  1837.65
+MHD 2000 10  1843.82
+MHD 2000 11  1848.41
+MHD 2000 12  1852.49
+MHD 2001  1  1849.52
+MHD 2001  2  1855.85
+MHD 2001  3  1859.90
+MHD 2001  4  1851.90
+MHD 2001  5  1838.94
+MHD 2001  6  1825.63
+MHD 2001  7  1821.21
+MHD 2001  8  1831.47
+MHD 2001  9  1839.88
+MHD 2001 10  1840.69
+MHD 2001 11  1851.17
+MHD 2001 12  1867.17
+MHD 2002  1  1856.80
+MHD 2002  2  1846.45
+MHD 2002  3  1853.75
+MHD 2002  4  1854.56
+MHD 2002  5  1845.13
+MHD 2002  6  1832.89
+MHD 2002  7  1824.09
+MHD 2002  8  1827.69
+MHD 2002  9  1839.95
+MHD 2002 10  1847.41
+MHD 2002 11  1850.02
+MHD 2002 12  1855.04
+MHD 2003  1  1852.52
+MHD 2003  2  1849.38
+MHD 2003  3  1859.72
+MHD 2003  4  1867.30
+MHD 2003  5  1853.16
+MHD 2003  6  1841.59
+MHD 2003  7  1830.65
+MHD 2003  8  1827.81
+MHD 2003  9  1850.46
+MHD 2003 10  1858.96
+MHD 2003 11  1853.21
+MHD 2003 12  1852.42
+MHD 2004  1  1856.58
+MHD 2004  2  1860.56
+MHD 2004  3  1856.40
+MHD 2004  4  1852.32
+MHD 2004  5  1844.43
+MHD 2004  6  1837.31
+MHD 2004  7  1830.14
+MHD 2004  8  1831.57
+MHD 2004  9  1837.22
+MHD 2004 10  1837.41
+MHD 2004 11  1840.14
+MHD 2004 12  1846.39
+MHD 2005  1  1840.94
+MHD 2005  2  1831.34
+MHD 2005  3  1837.88
+MHD 2005  4  1849.21
+MHD 2005  5  1847.47
+MHD 2005  6  1832.74
+MHD 2005  7  1823.86
+MHD 2005  8  1822.34
+MHD 2005  9  1839.13
+MHD 2005 10  1850.26
+MHD 2005 11  1845.85
+MHD 2005 12  1850.49
+MHD 2006  1  1857.68
+MHD 2006  2  1855.95
+MHD 2006  3  1852.08
+MHD 2006  4  1850.70
+MHD 2006  5  1848.96
+MHD 2006  6  1836.11
+MHD 2006  7  1824.97
+MHD 2006  8  1823.52
+MHD 2006  9  1830.62
+MHD 2006 10  1844.03
+MHD 2006 11  1846.25
+MHD 2006 12  1850.53
+MHD 2007  1  1854.84
+MHD 2007  2  1850.98
+MHD 2007  3  1851.02
+MHD 2007  4  1850.77
+MHD 2007  5  1854.21
+MHD 2007  6  1849.43
+MHD 2007  7  1837.39
+MHD 2007  8  1843.04
+MHD 2007  9  1857.22
+MHD 2007 10  1858.37
+MHD 2007 11  1853.02
+MHD 2007 12  1863.15
+MHD 2008  1  1873.13
+MHD 2008  2  1873.39
+MHD 2008  3  1872.78
+MHD 2008  4  1883.89
+MHD 2008  5  1875.25
+MHD 2008  6  1843.64
+MHD 2008  7  1837.87
+MHD 2008  8  1849.51
+MHD 2008  9  1864.17
+MHD 2008 10  1868.08
+MHD 2008 11  1864.61
+MHD 2008 12  1868.89
+MHD 2009  1  1872.56
+MHD 2009  2  1871.97
+MHD 2009  3  1871.71
+MHD 2009  4  1875.37
+MHD 2009  5  1875.88
+MHD 2009  6  1857.90
+MHD 2009  7  1847.21
+MHD 2009  8  1855.01
+MHD 2009  9  1863.47
+MHD 2009 10  1872.02
+MHD 2009 11  1873.86
+MHD 2009 12  1866.37
+MHD 2010  1  1866.58
+MHD 2010  2  1876.53
+MHD 2010  3  1883.39
+MHD 2010  4  1876.33
+MHD 2010  5  1870.41
+MHD 2010  6  1862.26
+MHD 2010  7  1848.66
+MHD 2010  8  1854.57
+MHD 2010  9  1865.28
+MHD 2010 10  1863.83
+MHD 2010 11  1869.96
+MHD 2010 12  1873.59
+MHD 2011  1  1873.06
+MHD 2011  2  1880.51
+MHD 2011  3  1881.77
+MHD 2011  4  1880.16
+MHD 2011  5  1874.42
+MHD 2011  6  1859.14
+MHD 2011  7  1852.86
+MHD 2011  8  1858.09
+MHD 2011  9  1856.78
+MHD 2011 10  1862.19
+MHD 2011 11  1883.94
+MHD 2011 12  1891.40
+MHD 2012  1  1878.02
+MHD 2012  2  1871.13
+MHD 2012  3  1887.12
+MHD 2012  4  1898.36
+MHD 2012  5  1883.50
+MHD 2012  6  1866.62
+MHD 2012  7  1862.44
+MHD 2012  8  1868.44
+MHD 2012  9  1878.60
+MHD 2012 10  1886.27
+MHD 2012 11  1887.36
+MHD 2012 12  1890.02
+MHD 2013  1  1887.39
+MHD 2013  2  1881.58
+MHD 2013  3  1891.53
+MHD 2013  4  1897.75
+MHD 2013  5  1887.94
+MHD 2013  6  1872.37
+MHD 2013  7  1860.39
+MHD 2013  8  1868.18
+MHD 2013  9  1876.54
+MHD 2013 10  1883.53
+MHD 2013 11  1890.50
+MHD 2013 12  1896.77
+MHD 2014  1  1899.59
+MHD 2014  2  1896.42
+MHD 2014  3  1901.30
+MHD 2014  4  1908.78
+MHD 2014  5  1900.11
+MHD 2014  6  1881.56
+MHD 2014  7  1875.43
+MHD 2014  8  1883.19
+MHD 2014  9  1898.03
+MHD 2014 10  1907.05
+MHD 2014 11  1906.47
+MHD 2014 12  1914.99
+MHD 2015  1  1919.68
+MHD 2015  2  1914.86
+MHD 2015  3  1914.14
+MHD 2015  4  1911.84
+MHD 2015  5  1905.48
+MHD 2015  6  1893.68
+MHD 2015  7  1885.68
+MHD 2015  8  1893.80
+MHD 2015  9  1911.32
+MHD 2015 10  1917.01
+MHD 2015 11  1908.88
+MHD 2015 12  1917.10
+MHD 2016  1  1927.95
+MHD 2016  2  1920.02
+MHD 2016  3  1913.95
+MHD 2016  4  1920.32
+MHD 2016  5  1924.09
+MHD 2016  6  1907.30
+MHD 2016  7  1894.77
+MHD 2016  8  1904.99
+MHD 2016  9  1920.05
+MHD 2016 10  1927.49
+MHD 2016 11  1927.29
+MHD 2016 12  1930.79
+MHD 2017  1  1929.79
+MHD 2017  2  1924.92
+MHD 2017  3  1928.54
+MHD 2017  4  1928.02
+MHD 2017  5  1918.20
+MHD 2017  6  1912.43
+MHD 2017  7  1910.91
+MHD 2017  8  1914.14
+MHD 2017  9  1928.22
+MHD 2017 10  1932.53
+MHD 2017 11  1924.04
+MHD 2017 12  1924.97

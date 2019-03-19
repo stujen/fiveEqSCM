@@ -1,0 +1,407 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Bermuda Institute of Ocean Sciences [BIOS]
+# collaborator_url: http://www.bios.edu/
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: bmw
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:58:27
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BMW 1989  5  1768.23
+BMW 1989  6  1747.82
+BMW 1989  7  1732.66
+BMW 1989  8  1729.54
+BMW 1989  9  1736.13
+BMW 1989 10  1746.03
+BMW 1989 11  1765.96
+BMW 1989 12  1785.56
+BMW 1990  1  1776.22
+BMW 1990  2  1776.01
+BMW 1990  3  1798.83
+BMW 1990  4  1790.18
+BMW 1990  5  1756.72
+BMW 1990  6  1742.94
+BMW 1990  7  1734.86
+BMW 1990  8  1738.86
+BMW 1990  9  1762.70
+BMW 1990 10  1769.92
+BMW 1990 11  1772.38
+BMW 1990 12  1784.04
+BMW 1991  1  1796.24
+BMW 1991  2  1786.30
+BMW 1991  3  1792.14
+BMW 1991  4  1811.66
+BMW 1991  5  1792.19
+BMW 1991  6  1742.37
+BMW 1991  7  1727.47
+BMW 1991  8  1757.09
+BMW 1991  9  1789.46
+BMW 1991 10  1798.25
+BMW 1991 11  1792.56
+BMW 1991 12  1797.76
+BMW 1992  1  1808.79
+BMW 1992  2  1810.34
+BMW 1992  3  1810.21
+BMW 1992  4  1799.20
+BMW 1992  5  1774.32
+BMW 1992  6  1746.83
+BMW 1992  7  1731.76
+BMW 1992  8  1746.52
+BMW 1992  9  1775.17
+BMW 1992 10  1790.79
+BMW 1992 11  1794.17
+BMW 1992 12  1800.34
+BMW 1993  1  1804.66
+BMW 1993  2  1819.09
+BMW 1993  3  1819.05
+BMW 1993  4  1804.90
+BMW 1993  5  1800.29
+BMW 1993  6  1787.60
+BMW 1993  7  1760.19
+BMW 1993  8  1752.02
+BMW 1993  9  1787.62
+BMW 1993 10  1811.01
+BMW 1993 11  1800.96
+BMW 1993 12  1801.54
+BMW 1994  1  1804.17
+BMW 1994  2  1806.70
+BMW 1994  3  1812.20
+BMW 1994  4  1802.86
+BMW 1994  5  1783.60
+BMW 1994  6  1760.64
+BMW 1994  7  1746.23
+BMW 1994  8  1745.58
+BMW 1994  9  1779.53
+BMW 1994 10  1800.16
+BMW 1994 11  1794.98
+BMW 1994 12  1809.35
+BMW 1995  1  1823.81
+BMW 1995  2  1820.75
+BMW 1995  3  1815.08
+BMW 1995  4  1807.83
+BMW 1995  5  1784.20
+BMW 1995  6  1759.21
+BMW 1995  7  1763.46
+BMW 1995  8  1762.09
+BMW 1995  9  1767.55
+BMW 1995 10  1800.09
+BMW 1995 11  1812.67
+BMW 1995 12  1803.66
+BMW 1996  1  1816.16
+BMW 1996  2  1820.58
+BMW 1996  3  1812.02
+BMW 1996  4  1816.09
+BMW 1996  5  1810.51
+BMW 1996  6  1782.76
+BMW 1996  7  1757.83
+BMW 1996  8  1758.42
+BMW 1996  9  1783.68
+BMW 1996 10  1809.04
+BMW 1996 11  1818.57
+BMW 1996 12  1816.59
+BMW 1997  1  1810.29
+BMW 1997  2  1806.33
+BMW 1997  3  1814.22
+BMW 1997  4  1822.72
+BMW 1997  5  1805.27
+BMW 1997  6  1778.23
+BMW 1997  7  1763.32
+BMW 1997  8  1762.85
+BMW 1997  9  1778.76
+BMW 1997 10  1807.79
+BMW 1997 11  1827.46
+BMW 1997 12  1822.42
+BMW 1998  1  1819.75
+BMW 1998  2  1836.97
+BMW 1998  3  1839.99
+BMW 1998  4  1826.19
+BMW 1998  5  1820.57
+BMW 1998  6  1802.25
+BMW 1998  7  1776.38
+BMW 1998 11  1823.60
+BMW 1998 12  1831.60
+BMW 1999  1  1835.13
+BMW 1999  2  1844.80
+BMW 1999  3  1849.27
+BMW 1999  4  1833.17
+BMW 1999  5  1805.53
+BMW 1999  6  1791.46
+BMW 1999  7  1775.02
+BMW 1999  8  1776.07
+BMW 1999  9  1800.64
+BMW 1999 10  1827.47
+BMW 1999 11  1843.39
+BMW 1999 12  1839.85
+BMW 2000  1  1843.68
+BMW 2000  2  1858.01
+BMW 2000  3  1850.29
+BMW 2000  4  1838.78
+BMW 2000  5  1830.34
+BMW 2000  6  1805.92
+BMW 2000  7  1788.11
+BMW 2000  8  1795.05
+BMW 2000  9  1811.54
+BMW 2000 10  1827.50
+BMW 2000 11  1847.10
+BMW 2000 12  1850.13
+BMW 2001  1  1842.22
+BMW 2001  2  1843.70
+BMW 2001  3  1851.44
+BMW 2001  4  1848.80
+BMW 2001  5  1821.10
+BMW 2001  6  1794.81
+BMW 2001  7  1781.46
+BMW 2001  8  1779.51
+BMW 2001  9  1798.54
+BMW 2001 10  1819.55
+BMW 2001 11  1830.49
+BMW 2001 12  1833.78
+BMW 2002  1  1844.80
+BMW 2002  2  1840.66
+BMW 2002  3  1827.62
+BMW 2002  4  1819.56
+BMW 2002  5  1812.31
+BMW 2002  6  1795.20
+BMW 2002  7  1785.26
+BMW 2002  8  1784.71
+BMW 2002  9  1783.61
+BMW 2002 10  1790.21
+BMW 2002 11  1818.04
+BMW 2002 12  1845.33
+BMW 2003  1  1842.29
+BMW 2003  2  1823.16
+BMW 2003  3  1833.68
+BMW 2003  4  1841.37
+BMW 2003  5  1811.85
+BMW 2003  6  1791.05
+BMW 2003  7  1780.16
+BMW 2003  8  1799.16
+BMW 2003  9  1840.08
+BMW 2003 10  1853.16
+BMW 2003 11  1856.95
+BMW 2003 12  1865.44
+BMW 2004  1  1859.07
+BMW 2004  2  1871.01
+BMW 2004  3  1875.10
+BMW 2004  4  1850.69
+BMW 2004  5  1818.97
+BMW 2004  6  1803.20
+BMW 2004  7  1801.57
+BMW 2004  8  1795.13
+BMW 2004  9  1813.30
+BMW 2004 10  1839.84
+BMW 2004 11  1843.57
+BMW 2004 12  1841.91
+BMW 2005  1  1838.53
+BMW 2005  2  1843.23
+BMW 2005  3  1861.87
+BMW 2005  4  1858.99
+BMW 2005  5  1838.47
+BMW 2005  6  1812.94
+BMW 2005  7  1799.28
+BMW 2005  8  1806.61
+BMW 2005  9  1816.69
+BMW 2005 10  1832.05
+BMW 2005 11  1845.47
+BMW 2005 12  1853.07
+BMW 2006  1  1861.64
+BMW 2006  2  1861.30
+BMW 2006  3  1851.72
+BMW 2006  4  1844.56
+BMW 2006  5  1834.30
+BMW 2006  6  1803.89
+BMW 2006  7  1782.12
+BMW 2006  8  1778.87
+BMW 2006  9  1786.29
+BMW 2006 10  1815.47
+BMW 2006 11  1840.88
+BMW 2006 12  1833.04
+BMW 2007  1  1838.73
+BMW 2007  2  1854.37
+BMW 2007  3  1857.01
+BMW 2007  4  1869.58
+BMW 2007  5  1861.98
+BMW 2007  6  1824.16
+BMW 2007  7  1791.11
+BMW 2007  8  1782.58
+BMW 2007  9  1806.28
+BMW 2007 10  1835.13
+BMW 2007 11  1856.14
+BMW 2007 12  1844.13
+BMW 2008  1  1838.04
+BMW 2008  2  1863.73
+BMW 2008  3  1864.00
+BMW 2008  4  1846.38
+BMW 2008  5  1831.85
+BMW 2008  6  1802.61
+BMW 2008  7  1780.98
+BMW 2008  8  1783.59
+BMW 2008  9  1804.44
+BMW 2008 10  1846.90
+BMW 2008 11  1868.58
+BMW 2008 12  1864.27
+BMW 2009  1  1866.37
+BMW 2009  2  1871.41
+BMW 2009  3  1863.97
+BMW 2009  4  1867.59
+BMW 2009  5  1852.67
+BMW 2009  6  1810.42
+BMW 2009  7  1793.88
+BMW 2009  8  1809.61
+BMW 2009  9  1822.61
+BMW 2009 10  1830.71
+BMW 2009 11  1848.27
+BMW 2009 12  1860.13
+BMW 2010  1  1860.82
+BMW 2010  2  1874.59
+BMW 2010  3  1880.76
+BMW 2010  4  1871.52
+BMW 2010  5  1859.21
+BMW 2010  6  1838.96
+BMW 2010  7  1816.78
+BMW 2010  8  1822.67
+BMW 2010  9  1848.15
+BMW 2010 10  1875.87
+BMW 2010 11  1880.77
+BMW 2010 12  1865.71
+BMW 2011  1  1871.08
+BMW 2011  2  1874.19
+BMW 2011  3  1868.87
+BMW 2011  4  1875.70
+BMW 2011  5  1878.66
+BMW 2011  6  1843.40
+BMW 2011  7  1824.68
+BMW 2011  8  1825.76
+BMW 2011  9  1818.87
+BMW 2011 10  1848.22
+BMW 2011 11  1874.55
+BMW 2012  3  1879.69
+BMW 2012  4  1870.43
+BMW 2012  5  1868.51
+BMW 2012  6  1843.18
+BMW 2012  7  1812.47
+BMW 2012  8  1818.29
+BMW 2012  9  1841.54
+BMW 2012 10  1863.20
+BMW 2012 11  1878.92
+BMW 2012 12  1868.09
+BMW 2013  1  1875.01
+BMW 2013  2  1896.13
+BMW 2013  3  1886.02
+BMW 2013  4  1875.19
+BMW 2013  5  1870.75
+BMW 2013  6  1838.32
+BMW 2013  7  1814.17
+BMW 2013  8  1827.38
+BMW 2013  9  1852.55
+BMW 2013 10  1868.97
+BMW 2013 11  1882.76
+BMW 2013 12  1884.35
+BMW 2014  1  1872.85
+BMW 2014  2  1887.64
+BMW 2014  3  1895.06
+BMW 2014  4  1888.90
+BMW 2014  5  1897.69
+BMW 2014  6  1872.08
+BMW 2014  7  1846.60
+BMW 2014  8  1854.45
+BMW 2014  9  1864.56
+BMW 2014 10  1882.40
+BMW 2014 11  1890.56
+BMW 2014 12  1901.67
+BMW 2015  1  1909.26
+BMW 2015  2  1905.04
+BMW 2015  3  1911.89
+BMW 2015  4  1912.17
+BMW 2015  5  1893.59
+BMW 2015  6  1864.72
+BMW 2015  7  1836.92
+BMW 2015  8  1839.69
+BMW 2015  9  1856.72
+BMW 2015 10  1887.76
+BMW 2015 11  1914.79
+BMW 2015 12  1914.51
+BMW 2016  1  1910.80
+BMW 2016  2  1915.41
+BMW 2016  3  1909.72
+BMW 2016  4  1905.39
+BMW 2016  5  1894.67
+BMW 2016  6  1860.03
+BMW 2016  7  1846.84
+BMW 2016  8  1850.32
+BMW 2016  9  1864.34
+BMW 2016 10  1904.63
+BMW 2016 11  1930.37
+BMW 2016 12  1921.04
+BMW 2017  1  1914.50
+BMW 2017  2  1925.98
+BMW 2017  3  1929.01
+BMW 2017  4  1921.29
+BMW 2017  5  1909.59
+BMW 2017  6  1874.60
+BMW 2017  7  1852.26
+BMW 2017  8  1868.81
+BMW 2017  9  1900.47
+BMW 2017 10  1917.45
+BMW 2017 11  1924.17
+BMW 2017 12  1929.41

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registryObjects xmlns="http://ands.org.au/standards/rif-cs/registryObjects" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ands.org.au/standards/rif-cs/registryObjects http://services.ands.org.au/home/orca/schemata/registryObjects.xsd">
+  <registryObject group="Commonwealth Scientific and Industrial Research Organisation">
+    <key>102.100.100/75754</key>
+    <originatingSource>https://data.csiro.au/dap/</originatingSource>
+    <collection type="dataset" dateAccessioned="2019-03-18T08:13:06+11:00">
+      <identifier type="local">102.100.100/75754</identifier>
+      <identifier type="doi">10.25919/5bfe29ff807fb</identifier>
+      <name type="primary">
+        <namePart>Law Dome Ice Core 2000-Year CO2, CH4, N2O and d13C-CO2</namePart>
+      </name>
+      <location>
+        <address>
+          <electronic type="url">
+            <value>http://hdl.handle.net/102.100.100/75754?index=1</value>
+          </electronic>
+        </address>
+      </location>
+      <coverage>
+        <temporal>
+          <date type="dateFrom" dateFormat="W3CDTF">1992-01-01</date>
+          <date type="dateTo" dateFormat="W3CDTF">2018-01-01</date>
+        </temporal>
+        <spatial type="dcmiPoint">north=-66.733333; east=112.833333; projection=WGS84</spatial>
+      </coverage>
+      <citationInfo>
+        <citationMetadata>
+          <identifier type="doi">10.25919/5bfe29ff807fb</identifier>
+          <title>Law Dome Ice Core 2000-Year CO2, CH4, N2O and d13C-CO2</title>
+          <version>v1</version>
+          <publisher>Commonwealth Scientific and Industrial Research Organisation (CSIRO)</publisher>
+          <contributor seq="1">
+            <namePart type="family">Rubino</namePart>
+            <namePart type="given">Mauro</namePart>
+          </contributor>
+          <contributor seq="2">
+            <namePart type="family">Etheridge</namePart>
+            <namePart type="given">David</namePart>
+          </contributor>
+          <contributor seq="3">
+            <namePart type="family">Thornton</namePart>
+            <namePart type="given">David</namePart>
+          </contributor>
+          <contributor seq="4">
+            <namePart type="family">Allison</namePart>
+            <namePart type="given">Colin</namePart>
+          </contributor>
+          <contributor seq="5">
+            <namePart type="family">Francey</namePart>
+            <namePart type="given">Roger</namePart>
+          </contributor>
+          <contributor seq="6">
+            <namePart type="family">Langenfelds</namePart>
+            <namePart type="given">Ray</namePart>
+          </contributor>
+          <contributor seq="7">
+            <namePart type="family">Steele</namePart>
+            <namePart type="given">Paul</namePart>
+          </contributor>
+          <contributor seq="8">
+            <namePart type="family">Trudinger</namePart>
+            <namePart type="given">Cathy</namePart>
+          </contributor>
+          <contributor seq="9">
+            <namePart type="family">Spencer</namePart>
+            <namePart type="given">Darren</namePart>
+          </contributor>
+          <contributor seq="10">
+            <namePart type="family">Curran</namePart>
+            <namePart type="given">Mark</namePart>
+          </contributor>
+          <contributor seq="11">
+            <namePart type="family">Van Ommen</namePart>
+            <namePart type="given">Tas</namePart>
+          </contributor>
+          <contributor seq="12">
+            <namePart type="family">Smith</namePart>
+            <namePart type="given">Andrew</namePart>
+          </contributor>
+          <date type="publicationDate">2018-11-28</date>
+        </citationMetadata>
+      </citationInfo>
+      <relatedObject>
+        <key>csiro:PartyGroup</key>
+        <relation type="isManagedBy" />
+      </relatedObject>
+      <subject type="local">greenhouse gases, ice cores, carbon cycle, nitrogen cycle, paleoclimate</subject>
+      <subject type="anzsrc-for">040605</subject>
+      <description type="brief">Law Dome ice core (DSS, DSS0506, DE08 and DE08-2) and firn air (DE08-2 and DSSW20K) records of CO2, CH4 and N2O concentrations for the past 2000 years and d13C-CO2 for the past 1000 years. Law Dome location: The dome summit is as follows, individual cores are within about 25 km (see publications), 66°44&amp;apos;S, 112°50&amp;apos;E, 1390m elevation.</description>
+      <description type="lineage">Details of data production are given in Rubino et al. Revised records of atmospheric trace gases CO2, CH4, N2O and d13C-CO2 over the last 2000 years from Law Dome, Antarctica, Earth System Science Data Discussions</description>
+      <rights>
+        <rightsStatement>All Rights (including copyright) CSIRO 2019.</rightsStatement>
+        <licence type="CSIRO Data Licence" rightsUri="https://confluence.csiro.au/display/daphelp/CSIRO+Data+Licence">CSIRO Data Licence</licence>
+        <accessRights type="open">Data is accessible online and may be reused in accordance with licence conditions</accessRights>
+      </rights>
+    </collection>
+  </registryObject>
+</registryObjects>
+

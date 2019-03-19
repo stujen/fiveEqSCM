@@ -1,0 +1,123 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: U.S. National Weather Service [NWS]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: stc
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:06:20
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+STC 1968 11   323.90
+STC 1968 12   324.78
+STC 1969  1   325.76
+STC 1969  2   326.46
+STC 1969  3   326.98
+STC 1969  4   327.88
+STC 1969  5   327.87
+STC 1969  6   324.70
+STC 1969  7   320.85
+STC 1969  8   318.06
+STC 1969  9   318.36
+STC 1969 10   321.05
+STC 1969 11   323.64
+STC 1969 12   325.77
+STC 1970  1   327.87
+STC 1970  2   329.16
+STC 1970  3   330.41
+STC 1970  4   330.83
+STC 1970  5   328.97
+STC 1970  6   326.06
+STC 1970  7   322.55
+STC 1970  8   319.84
+STC 1970  9   321.05
+STC 1970 10   324.79
+STC 1970 11   327.22
+STC 1970 12   327.69
+STC 1971  1   328.96
+STC 1971  2   331.12
+STC 1971  3   331.53
+STC 1971  4   331.16
+STC 1971  5   329.97
+STC 1971  6   326.90
+STC 1971  7   322.62
+STC 1971  8   319.02
+STC 1971  9   319.58
+STC 1971 10   324.16
+STC 1971 11   327.26
+STC 1971 12   329.42
+STC 1972  1   331.15
+STC 1972  2   330.98
+STC 1972  3   331.41
+STC 1972  4   333.15
+STC 1972  5   332.15
+STC 1972  6   325.93
+STC 1972  7   320.75
+STC 1972  8   319.30
+STC 1972  9   320.19
+STC 1972 10   324.97
+STC 1972 11   328.46
+STC 1972 12   329.97
+STC 1973  1   331.76
+STC 1973  2   332.72
+STC 1973  3   333.60
+STC 1973  4   334.79
+STC 1973  5   334.41

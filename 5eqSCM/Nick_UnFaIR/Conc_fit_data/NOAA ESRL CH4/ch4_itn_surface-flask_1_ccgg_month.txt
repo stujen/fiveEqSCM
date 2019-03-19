@@ -1,0 +1,151 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: WITN Television [WITN]
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: itn
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 09:58:54
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+ITN 1992  7  1823.18
+ITN 1992  8  1831.59
+ITN 1992  9  1839.36
+ITN 1992 10  1824.98
+ITN 1992 11  1813.68
+ITN 1992 12  1826.59
+ITN 1993  1  1834.17
+ITN 1993  2  1840.16
+ITN 1993  3  1828.32
+ITN 1993  4  1833.97
+ITN 1993  5  1856.28
+ITN 1993  6  1856.66
+ITN 1993  7  1842.45
+ITN 1993  8  1823.49
+ITN 1993  9  1834.03
+ITN 1993 10  1827.79
+ITN 1993 11  1821.26
+ITN 1993 12  1856.49
+ITN 1994  1  1844.22
+ITN 1994  2  1820.65
+ITN 1994  3  1836.31
+ITN 1994  4  1840.18
+ITN 1994  5  1830.42
+ITN 1994  6  1800.71
+ITN 1994  7  1793.98
+ITN 1994  8  1828.37
+ITN 1994  9  1865.15
+ITN 1994 10  1876.70
+ITN 1994 11  1873.87
+ITN 1994 12  1885.15
+ITN 1995  1  1883.49
+ITN 1995  2  1857.10
+ITN 1995  3  1846.24
+ITN 1995  4  1853.62
+ITN 1995  5  1842.32
+ITN 1995  6  1817.12
+ITN 1995  7  1817.60
+ITN 1995  8  1812.83
+ITN 1995  9  1796.82
+ITN 1995 10  1818.25
+ITN 1995 11  1874.53
+ITN 1995 12  1901.10
+ITN 1996  1  1872.91
+ITN 1996  2  1848.31
+ITN 1996  3  1867.20
+ITN 1996  4  1870.95
+ITN 1996  5  1847.72
+ITN 1996  6  1837.49
+ITN 1996  7  1846.80
+ITN 1996  8  1857.74
+ITN 1996  9  1854.49
+ITN 1996 10  1859.12
+ITN 1996 11  1875.91
+ITN 1996 12  1867.75
+ITN 1997  1  1852.29
+ITN 1997  2  1855.43
+ITN 1997  3  1858.54
+ITN 1997  4  1858.76
+ITN 1997  5  1844.35
+ITN 1997  6  1821.86
+ITN 1997  7  1841.14
+ITN 1997  8  1845.40
+ITN 1997  9  1852.62
+ITN 1997 10  1898.73
+ITN 1997 11  1884.25
+ITN 1997 12  1862.08
+ITN 1998  1  1863.84
+ITN 1998  2  1864.67
+ITN 1998  3  1865.79
+ITN 1998  4  1864.13
+ITN 1998  5  1873.71
+ITN 1998  6  1876.79
+ITN 1998  7  1877.59
+ITN 1998  8  1883.43
+ITN 1998  9  1875.90
+ITN 1998 10  1881.91
+ITN 1998 11  1902.20
+ITN 1998 12  1894.59
+ITN 1999  1  1891.20
+ITN 1999  2  1891.78
+ITN 1999  3  1887.29
+ITN 1999  4  1873.77
+ITN 1999  5  1858.25

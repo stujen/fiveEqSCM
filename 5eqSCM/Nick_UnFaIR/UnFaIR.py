@@ -125,8 +125,8 @@ def default_gas_params():
     gas_cycle_parameters.loc['a1':'a4'] = np.array([[0.2173,0.2240,0.2824,0.2763],[1,0,0.,0.],[1,0,0.,0.]]).T
     gas_cycle_parameters.loc['tau1':'tau4'] = np.array([[1000000,394.4,36.54,4.304],[9.15,1,1,1],[116.,1,1,1]]).T
     gas_cycle_parameters.loc['r0':'rA'] = np.array([[29.5,0.018,0.018*4.165/0.019,0.0],\
-                  [ 9.110000, 0, -0.2080000,  0.000259],\
-                  [ 62.8,  0, 0,  -0.000771]]).T
+                  [ 9.150000, 0, -0.2410000,  0.000263],\
+                  [ 61.0,  0, 0,  -0.000648]]).T
     gas_cycle_parameters.loc['PI_conc'] = np.array([278.0,700.0,276.0])
     gas_cycle_parameters.loc['emis2conc'] = 1/(5.148*10**18 / 1e18 * np.array([12.,16.,28.]) / 28.97)
 
@@ -445,3 +445,15 @@ def empty_emissions(start_year,end_year):
 ## Function that creates an empty emission dataframe
 
     return pd.DataFrame(index = np.arange(start_year,end_year+1),columns=['CO2','CH4','N2O']).fillna(0.0)
+
+def SLR_model(UnFaIR_output, T_0 = -0.41, a = 0.56, b = -4.9):
+
+    # Empirical sea level rise model based on Vermeer and Rahmstorf 2009
+
+    T = (UnFaIR_output['T']['Total'] - UnFaIR_output['T']['Total'].loc[1951:1980].mean()).values
+
+    dH_dt = a * ( T - T_0 ) + b * np.gradient(T)
+
+    H = sp.integrate.cumtrapz(dH_dt)
+
+    return pd.DataFrame(data = H, index = UnFaIR_output['T']['Total'].index[1:], columns = ['SLR'])

@@ -1,0 +1,138 @@
+# number_of_header_lines: 61
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: tik
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:12:56
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+TIK 2011  8   323.87
+TIK 2011  9   323.97
+TIK 2011 10   324.39
+TIK 2011 11   324.91
+TIK 2011 12   325.26
+TIK 2012  1   325.39
+TIK 2012  2   325.42
+TIK 2012  3   325.55
+TIK 2012  4   325.67
+TIK 2012  5   325.52
+TIK 2012  6   325.20
+TIK 2012  7   324.91
+TIK 2012  8   324.78
+TIK 2012  9   324.74
+TIK 2012 10   324.88
+TIK 2012 11   325.34
+TIK 2012 12   325.83
+TIK 2013  1   326.10
+TIK 2013  2   326.19
+TIK 2013  3   326.26
+TIK 2013  4   326.37
+TIK 2013  5   326.43
+TIK 2013  6   326.33
+TIK 2013  7   326.17
+TIK 2013  8   326.06
+TIK 2013  9   326.00
+TIK 2013 10   326.14
+TIK 2013 11   326.47
+TIK 2013 12   326.86
+TIK 2014  1   327.12
+TIK 2014  2   327.29
+TIK 2014  3   327.43
+TIK 2014  4   327.45
+TIK 2014  5   327.40
+TIK 2014  6   327.45
+TIK 2014  7   327.64
+TIK 2014  8   327.75
+TIK 2014  9   327.77
+TIK 2014 10   327.88
+TIK 2014 11   328.12
+TIK 2014 12   328.40
+TIK 2015  1   328.56
+TIK 2015  2   328.57
+TIK 2015  3   328.54
+TIK 2015  4   328.61
+TIK 2015  5   328.70
+TIK 2015  6   328.53
+TIK 2015  7   328.18
+TIK 2015  8   328.14
+TIK 2015  9   328.35
+TIK 2015 10   328.58
+TIK 2015 11   328.94
+TIK 2015 12   329.34
+TIK 2016  1   329.51
+TIK 2016  2   329.57
+TIK 2016  3   329.63
+TIK 2016  4   329.70
+TIK 2016  5   329.74
+TIK 2016  6   329.60
+TIK 2016  7   329.27
+TIK 2016  8   328.93
+TIK 2016  9   328.86
+TIK 2016 10   329.13
+TIK 2016 11   329.67
+TIK 2016 12   330.11
+TIK 2017  1   330.33
+TIK 2017  2   330.44
+TIK 2017  3   330.45
+TIK 2017  4   330.31
+TIK 2017  5   330.20
+TIK 2017  6   330.23
+TIK 2017  7   330.09
+TIK 2017  8   329.83
+TIK 2017  9   329.92
+TIK 2017 10   330.38
+TIK 2017 11   330.68
+TIK 2017 12   330.62

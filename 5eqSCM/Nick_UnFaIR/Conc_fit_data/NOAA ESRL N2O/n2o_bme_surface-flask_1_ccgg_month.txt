@@ -1,0 +1,197 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Bermuda Institute of Ocean Sciences [BIOS]
+# collaborator_url: http://www.bbsr.edu
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: bme
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:11:41
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BME 1997  5   313.45
+BME 1997  6   313.33
+BME 1997  7   313.23
+BME 1997  8   313.33
+BME 1997  9   313.37
+BME 1997 10   313.42
+BME 1997 11   313.64
+BME 1997 12   313.81
+BME 1998  1   313.87
+BME 1998  2   313.98
+BME 1998  3   314.11
+BME 1998  4   314.15
+BME 1998  5   314.17
+BME 1998  6   314.18
+BME 1998  7   314.08
+BME 1998  8   313.97
+BME 1998  9   314.00
+BME 1998 10   314.16
+BME 1998 11   314.37
+BME 1998 12   314.47
+BME 1999  1   314.56
+BME 1999  2   314.68
+BME 1999  3   314.70
+BME 1999  4   314.67
+BME 1999  5   314.60
+BME 1999  6   314.57
+BME 1999  7   314.61
+BME 1999  8   314.74
+BME 1999  9   314.97
+BME 1999 10   315.30
+BME 1999 11   315.58
+BME 1999 12   315.76
+BME 2000  1   315.93
+BME 2000  2   316.00
+BME 2000  3   315.92
+BME 2000  4   315.87
+BME 2000  5   316.02
+BME 2000  6   316.14
+BME 2000  7   316.10
+BME 2000  8   316.12
+BME 2000  9   316.30
+BME 2000 10   316.52
+BME 2000 11   316.65
+BME 2000 12   316.77
+BME 2001  1   316.92
+BME 2001  2   317.01
+BME 2001  3   317.00
+BME 2001  4   316.92
+BME 2001  5   316.94
+BME 2001  6   317.01
+BME 2001  7   316.97
+BME 2001  8   316.88
+BME 2001  9   316.90
+BME 2001 10   317.08
+BME 2001 11   317.33
+BME 2001 12   317.48
+BME 2002  1   317.41
+BME 2002  2   317.32
+BME 2002  3   317.39
+BME 2002  4   317.54
+BME 2002  5   317.59
+BME 2002  6   317.53
+BME 2002  7   317.46
+BME 2002  8   317.38
+BME 2002  9   317.33
+BME 2002 10   317.45
+BME 2002 11   317.65
+BME 2002 12   317.89
+BME 2003  1   318.06
+BME 2003  2   318.09
+BME 2003  3   318.07
+BME 2003  4   318.15
+BME 2003  5   318.25
+BME 2003  6   318.27
+BME 2003  7   318.20
+BME 2003  8   318.20
+BME 2003  9   318.43
+BME 2003 10   318.57
+BME 2003 11   318.47
+BME 2003 12   318.52
+BME 2004  1   318.79
+BME 2004  2   318.88
+BME 2004  3   318.71
+BME 2004  4   318.72
+BME 2004  5   319.01
+BME 2004  6   319.11
+BME 2004  7   318.77
+BME 2004  8   318.48
+BME 2004  9   318.64
+BME 2004 10   318.78
+BME 2004 11   318.89
+BME 2004 12   319.18
+BME 2005  1   319.39
+BME 2005  2   319.40
+BME 2005  3   319.54
+BME 2005  4   319.76
+BME 2005  5   319.71
+BME 2005  6   319.40
+BME 2005  7   319.24
+BME 2005  8   319.34
+BME 2005  9   319.49
+BME 2005 10   319.61
+BME 2005 11   319.80
+BME 2005 12   320.06
+BME 2006  1   320.28
+BME 2006  2   320.25
+BME 2006  3   320.17
+BME 2006  4   320.25
+BME 2006  5   320.37
+BME 2006  6   320.30
+BME 2006  7   320.07
+BME 2006  8   320.03
+BME 2006  9   320.37
+BME 2006 10   320.70
+BME 2006 11   320.69
+BME 2006 12   320.82
+BME 2007  1   321.18
+BME 2007  2   321.27
+BME 2007  3   321.15
+BME 2007  4   321.14
+BME 2007  5   321.30
+BME 2007  6   321.43
+BME 2007  7   321.30
+BME 2007  8   320.85
+BME 2007  9   320.72
+BME 2007 10   321.13
+BME 2007 11   321.40
+BME 2007 12   321.43

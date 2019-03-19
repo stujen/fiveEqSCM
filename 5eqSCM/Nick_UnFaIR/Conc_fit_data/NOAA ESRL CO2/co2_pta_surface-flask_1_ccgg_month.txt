@@ -1,0 +1,204 @@
+# number_of_header_lines: 68
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Point Arena Lighthouse Keepers, Inc.
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: pta
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:05:56
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+PTA 1999  1   374.75
+PTA 1999  2   373.24
+PTA 1999  3   373.80
+PTA 1999  4   376.62
+PTA 1999  5   376.04
+PTA 1999  6   370.30
+PTA 1999  7   363.52
+PTA 1999  8   362.51
+PTA 1999  9   367.04
+PTA 1999 10   370.01
+PTA 1999 11   371.12
+PTA 1999 12   374.47
+PTA 2000  1   377.40
+PTA 2000  6   372.57
+PTA 2000  7   369.12
+PTA 2000  8   369.01
+PTA 2000  9   371.01
+PTA 2000 10   374.37
+PTA 2001  2   380.05
+PTA 2001  3   377.12
+PTA 2001  7   370.60
+PTA 2001  8   375.37
+PTA 2001  9   376.90
+PTA 2001 10   375.42
+PTA 2001 11   376.89
+PTA 2001 12   379.51
+PTA 2002  1   379.97
+PTA 2002  2   377.88
+PTA 2002  3   378.89
+PTA 2002  4   379.31
+PTA 2002  5   379.00
+PTA 2002  6   377.28
+PTA 2002  7   371.39
+PTA 2002  8   369.11
+PTA 2002  9   372.21
+PTA 2002 10   377.98
+PTA 2002 11   380.22
+PTA 2002 12   380.67
+PTA 2003  1   385.97
+PTA 2003  2   386.55
+PTA 2003  3   382.43
+PTA 2003  4   383.98
+PTA 2003  5   385.08
+PTA 2003  6   379.24
+PTA 2003  7   375.20
+PTA 2003  8   378.10
+PTA 2003  9   379.06
+PTA 2003 10   377.82
+PTA 2003 11   378.79
+PTA 2003 12   381.01
+PTA 2004  3   381.93
+PTA 2004  4   382.85
+PTA 2004  5   381.96
+PTA 2004  6   379.33
+PTA 2004  7   374.50
+PTA 2004  8   373.78
+PTA 2004  9   378.80
+PTA 2004 10   379.78
+PTA 2004 11   381.12
+PTA 2004 12   385.36
+PTA 2005  1   385.31
+PTA 2005  2   383.13
+PTA 2005  3   384.20
+PTA 2005  4   388.66
+PTA 2005  5   390.08
+PTA 2005  6   385.78
+PTA 2005  7   378.62
+PTA 2005  8   375.23
+PTA 2005  9   379.97
+PTA 2005 10   382.35
+PTA 2005 11   380.66
+PTA 2006  1   386.14
+PTA 2006  2   387.64
+PTA 2006  3   387.33
+PTA 2006  4   388.34
+PTA 2006  5   389.11
+PTA 2006  6   389.13
+PTA 2006  7   384.81
+PTA 2006  8   377.67
+PTA 2006  9   381.31
+PTA 2006 10   388.02
+PTA 2006 11   385.57
+PTA 2006 12   386.28
+PTA 2007  1   391.62
+PTA 2007  2   390.48
+PTA 2007  3   390.33
+PTA 2007  4   395.69
+PTA 2007  5   395.80
+PTA 2007  6   387.71
+PTA 2007  7   381.90
+PTA 2007  8   379.59
+PTA 2007  9   382.00
+PTA 2007 10   391.04
+PTA 2007 11   396.14
+PTA 2007 12   394.35
+PTA 2008  1   394.39
+PTA 2008  2   393.22
+PTA 2008  3   393.86
+PTA 2008  4   395.71
+PTA 2008  5   394.32
+PTA 2008  6   391.78
+PTA 2008  7   386.51
+PTA 2008  8   382.97
+PTA 2008  9   384.73
+PTA 2008 10   390.44
+PTA 2008 11   395.02
+PTA 2008 12   395.28
+PTA 2009  1   395.95
+PTA 2009  2   394.97
+PTA 2009  3   394.11
+PTA 2009  4   396.18
+PTA 2009  5   394.63
+PTA 2009  6   388.94
+PTA 2009  7   384.27
+PTA 2009  8   382.52
+PTA 2009  9   383.75
+PTA 2009 10   389.19
+PTA 2009 11   393.62
+PTA 2009 12   396.85
+PTA 2010  1   397.89
+PTA 2010  2   395.33
+PTA 2010  3   395.24
+PTA 2010  4   396.57
+PTA 2010  5   395.37
+PTA 2010  6   393.03
+PTA 2010  7   387.40
+PTA 2010  8   386.48
+PTA 2010  9   392.13
+PTA 2010 10   395.97
+PTA 2010 11   398.60
+PTA 2010 12   398.12
+PTA 2011  1   396.32
+PTA 2011  2   396.01
+PTA 2011  3   397.16
+PTA 2011  4   400.90
+PTA 2011  5   401.00

@@ -1,0 +1,241 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CH4 CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: NOAA Earth System Research Laboratory, Global
+# collaborator_name: Monitoring Division
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: thd
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-01 10:00:05
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+THD 2002  4  1845.90
+THD 2002  5  1840.49
+THD 2002  6  1825.13
+THD 2002  7  1807.60
+THD 2002  8  1808.04
+THD 2002  9  1826.86
+THD 2002 10  1839.69
+THD 2003  9  1844.23
+THD 2003 10  1848.36
+THD 2003 11  1854.59
+THD 2003 12  1858.24
+THD 2004  1  1852.97
+THD 2004  2  1851.52
+THD 2004  3  1857.35
+THD 2004  4  1854.72
+THD 2004  5  1841.10
+THD 2004  6  1825.17
+THD 2004  7  1806.71
+THD 2004  8  1816.10
+THD 2004  9  1837.82
+THD 2004 10  1850.71
+THD 2004 11  1852.21
+THD 2004 12  1844.28
+THD 2005  1  1847.81
+THD 2005  2  1853.50
+THD 2005  3  1851.71
+THD 2005  4  1846.70
+THD 2005  5  1843.56
+THD 2005  6  1834.78
+THD 2005  7  1824.53
+THD 2005  8  1829.90
+THD 2005  9  1847.78
+THD 2005 10  1857.31
+THD 2005 11  1851.08
+THD 2005 12  1843.80
+THD 2006  1  1848.51
+THD 2006  2  1857.28
+THD 2006  3  1859.45
+THD 2006  4  1855.58
+THD 2006  5  1848.18
+THD 2006  6  1831.01
+THD 2006  7  1806.82
+THD 2006  8  1810.52
+THD 2006  9  1834.28
+THD 2006 10  1844.73
+THD 2006 11  1850.05
+THD 2006 12  1853.75
+THD 2007  1  1851.76
+THD 2007  2  1845.13
+THD 2007  3  1846.36
+THD 2007  4  1854.39
+THD 2007  5  1854.26
+THD 2007  6  1837.73
+THD 2007  7  1816.43
+THD 2007  8  1820.69
+THD 2007  9  1849.79
+THD 2007 10  1859.73
+THD 2007 11  1854.37
+THD 2007 12  1864.18
+THD 2008  1  1869.32
+THD 2008  2  1860.05
+THD 2008  3  1863.24
+THD 2008  4  1869.10
+THD 2008  5  1855.85
+THD 2008  6  1839.38
+THD 2008  7  1831.36
+THD 2008  8  1834.92
+THD 2008  9  1850.96
+THD 2008 10  1858.34
+THD 2008 11  1861.84
+THD 2008 12  1863.85
+THD 2009  1  1865.47
+THD 2009  2  1875.12
+THD 2009  3  1875.45
+THD 2009  4  1870.42
+THD 2009  5  1860.20
+THD 2009  6  1847.43
+THD 2009  7  1828.81
+THD 2009  8  1823.79
+THD 2009  9  1850.45
+THD 2009 10  1863.21
+THD 2009 11  1861.53
+THD 2009 12  1867.47
+THD 2010  1  1872.16
+THD 2010  2  1870.45
+THD 2010  3  1875.11
+THD 2010  4  1880.77
+THD 2010  5  1869.22
+THD 2010  6  1857.36
+THD 2010  7  1845.97
+THD 2010  8  1838.80
+THD 2010  9  1850.10
+THD 2010 10  1866.77
+THD 2010 11  1868.84
+THD 2010 12  1872.32
+THD 2011  1  1877.15
+THD 2011  2  1877.38
+THD 2011  3  1875.89
+THD 2011  4  1877.55
+THD 2011  5  1874.54
+THD 2011  6  1850.08
+THD 2011  7  1833.56
+THD 2011  8  1849.58
+THD 2011  9  1863.70
+THD 2011 10  1876.34
+THD 2011 11  1882.04
+THD 2011 12  1880.86
+THD 2012  1  1883.20
+THD 2012  2  1880.88
+THD 2012  3  1883.84
+THD 2012  4  1882.01
+THD 2012  5  1875.23
+THD 2012  6  1862.72
+THD 2012  7  1839.51
+THD 2012  8  1844.66
+THD 2012  9  1867.36
+THD 2012 10  1878.24
+THD 2012 11  1883.55
+THD 2012 12  1886.96
+THD 2013  1  1889.59
+THD 2013  2  1889.60
+THD 2013  3  1888.57
+THD 2013  4  1881.01
+THD 2013  5  1872.45
+THD 2013  6  1866.62
+THD 2013  7  1852.60
+THD 2013  8  1844.05
+THD 2013  9  1869.18
+THD 2013 10  1890.06
+THD 2013 11  1889.22
+THD 2013 12  1884.12
+THD 2014  1  1880.46
+THD 2014  2  1888.43
+THD 2014  3  1894.75
+THD 2014  4  1890.43
+THD 2014  5  1888.20
+THD 2014  6  1879.84
+THD 2014  7  1862.51
+THD 2014  8  1866.85
+THD 2014  9  1886.12
+THD 2014 10  1899.14
+THD 2014 11  1903.31
+THD 2014 12  1900.52
+THD 2015  1  1898.57
+THD 2015  2  1894.96
+THD 2015  3  1900.63
+THD 2015  4  1910.58
+THD 2015  5  1908.67
+THD 2015  6  1887.44
+THD 2015  7  1874.69
+THD 2015  8  1893.35
+THD 2015  9  1905.51
+THD 2015 10  1904.70
+THD 2015 11  1904.95
+THD 2015 12  1906.46
+THD 2016  1  1911.30
+THD 2016  2  1911.71
+THD 2016  3  1912.25
+THD 2016  4  1915.89
+THD 2016  5  1912.43
+THD 2016  6  1901.35
+THD 2016  7  1884.60
+THD 2016  8  1891.74
+THD 2016  9  1915.33
+THD 2016 10  1915.20
+THD 2016 11  1917.68
+THD 2016 12  1928.15
+THD 2017  1  1924.84
+THD 2017  2  1920.95
+THD 2017  3  1920.79
+THD 2017  4  1915.75
+THD 2017  5  1911.24

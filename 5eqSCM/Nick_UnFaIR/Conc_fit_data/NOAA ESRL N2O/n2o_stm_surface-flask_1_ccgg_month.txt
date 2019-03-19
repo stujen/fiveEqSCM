@@ -1,0 +1,218 @@
+# number_of_header_lines: 69
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: ensure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: N2O CCGG (Individual Flasks)
+# contact_name: Ed Dlugokencky
+# contact_telephone: (303) 497-6228
+# contact_email: Ed.Dlugokencky@noaa.gov
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: Norway Meteorological Institute [NMI]
+# collaborator_url: http://met.no/om/link.html
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: stm
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2018-08-02 13:12:50
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+STM 1997  7   313.13
+STM 1997  8   312.97
+STM 1997  9   313.06
+STM 1997 10   313.36
+STM 1997 11   313.70
+STM 1997 12   313.92
+STM 1998  1   313.99
+STM 1998  2   313.95
+STM 1998  3   313.96
+STM 1998  4   314.08
+STM 1998  5   314.08
+STM 1998  6   313.81
+STM 1998  7   313.53
+STM 1998  8   313.60
+STM 1998  9   313.91
+STM 1998 10   313.99
+STM 1998 11   314.03
+STM 1998 12   314.29
+STM 1999  1   314.50
+STM 1999  2   314.54
+STM 1999  3   314.65
+STM 1999  4   314.76
+STM 1999  5   314.67
+STM 1999  6   314.39
+STM 1999  7   314.13
+STM 1999  8   314.02
+STM 1999  9   314.15
+STM 1999 10   314.49
+STM 1999 11   314.92
+STM 1999 12   315.23
+STM 2000  1   315.42
+STM 2000  2   315.59
+STM 2000  3   315.80
+STM 2000  4   315.97
+STM 2000  5   316.00
+STM 2000  6   315.97
+STM 2000  7   315.92
+STM 2000  8   315.88
+STM 2000  9   315.97
+STM 2000 10   316.25
+STM 2000 11   316.50
+STM 2000 12   316.63
+STM 2001  1   316.78
+STM 2001  2   316.89
+STM 2001  3   316.93
+STM 2001  4   316.85
+STM 2001  5   316.71
+STM 2001  6   316.67
+STM 2001  7   316.58
+STM 2001  8   316.36
+STM 2001  9   316.43
+STM 2001 10   316.87
+STM 2001 11   317.21
+STM 2001 12   317.32
+STM 2002  1   317.34
+STM 2002  2   317.43
+STM 2002  3   317.62
+STM 2002  4   317.76
+STM 2002  5   317.75
+STM 2002  6   317.52
+STM 2002  7   317.17
+STM 2002  8   316.96
+STM 2002  9   316.92
+STM 2002 10   317.23
+STM 2002 11   317.71
+STM 2002 12   317.94
+STM 2003  1   317.91
+STM 2003  2   318.16
+STM 2003  3   318.48
+STM 2003  4   318.39
+STM 2003  5   318.25
+STM 2003  6   318.21
+STM 2003  7   317.96
+STM 2003  8   317.67
+STM 2003  9   317.71
+STM 2003 10   318.00
+STM 2003 11   318.35
+STM 2003 12   318.56
+STM 2004  1   318.56
+STM 2004  2   318.51
+STM 2004  3   318.66
+STM 2004  4   318.90
+STM 2004  5   318.84
+STM 2004  6   318.51
+STM 2004  7   318.33
+STM 2004  8   318.22
+STM 2004  9   318.21
+STM 2004 10   318.56
+STM 2004 11   319.05
+STM 2004 12   319.23
+STM 2005  1   319.28
+STM 2005  2   319.44
+STM 2005  3   319.54
+STM 2005  4   319.46
+STM 2005  5   319.29
+STM 2005  6   319.21
+STM 2005  7   319.11
+STM 2005  8   318.93
+STM 2005  9   318.88
+STM 2005 10   319.16
+STM 2005 11   319.62
+STM 2005 12   319.99
+STM 2006  1   320.19
+STM 2006  2   320.14
+STM 2006  3   320.15
+STM 2006  4   320.28
+STM 2006  5   320.23
+STM 2006  6   320.04
+STM 2006  7   319.87
+STM 2006  8   319.79
+STM 2006  9   319.83
+STM 2006 10   320.09
+STM 2006 11   320.45
+STM 2006 12   320.71
+STM 2007  1   320.76
+STM 2007  2   320.82
+STM 2007  3   320.95
+STM 2007  4   320.99
+STM 2007  5   320.94
+STM 2007  6   320.85
+STM 2007  7   320.65
+STM 2007  8   320.48
+STM 2007  9   320.54
+STM 2007 10   320.91
+STM 2007 11   321.39
+STM 2007 12   321.75
+STM 2008  1   321.87
+STM 2008  2   321.80
+STM 2008  3   321.69
+STM 2008  4   321.87
+STM 2008  5   322.14
+STM 2008  6   322.06
+STM 2008  7   321.70
+STM 2008  8   321.50
+STM 2008  9   321.57
+STM 2008 10   321.82
+STM 2008 11   322.08
+STM 2008 12   322.26
+STM 2009  1   322.55
+STM 2009  2   322.82
+STM 2009  3   322.82
+STM 2009  4   322.70
+STM 2009  5   322.57
+STM 2009  6   322.35
+STM 2009  7   322.32
+STM 2009  8   322.50
+STM 2009  9   322.63
+STM 2009 10   322.82
+STM 2009 11   323.10
