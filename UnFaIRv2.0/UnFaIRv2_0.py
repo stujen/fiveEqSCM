@@ -90,7 +90,7 @@ def default_gas_forcing_param_uncertainty():
 
 	gas_parameter_uncertainty.loc['a1':'a4'] = np.array([[0,0,0,0],[0,0,0,0],[0,0,0,0]]).T
 	gas_parameter_uncertainty.loc['tau1':'tau4'] = np.array([[0,0,0,0],[0,0,0,0],[0,0,0,0]]).T
-	gas_parameter_uncertainty.loc['r0':'rA'] = np.array([[0.13,0.13,0.13,0],[0.10,0,0.14,0.19],[0.18,0,0,0.20]]).T
+	gas_parameter_uncertainty.loc['r0':'rA'] = np.array([[0.13,0.13,0.13,0],[0.10,0,0.14,0.19],[0.18,0,0,0.19]]).T
 	gas_parameter_uncertainty.loc['PI_conc'] = np.array([0,0,0])
 	gas_parameter_uncertainty.loc['emis2conc'] = np.array([0,0,0])
 	gas_parameter_uncertainty.loc['f1':'f3'] = np.array([[0,0,0],[0,0,0],[0,0,0]]).T
@@ -247,6 +247,7 @@ def step_temperature(S,F,q,d):
 # Run modes:
 	# Full forward
 	# Concentration driven
+	# Forcing scenarios single emission scenario
 	# Set temperature response (gas cycle mode)
 # Checks on:
 	# timeseries length
@@ -304,7 +305,10 @@ def run_UnFaIR( emissions_in , \
 	elif type(forcing_in)==pd.core.frame.DataFrame:
 		if type(forcing_in.columns)==pd.core.indexes.multi.MultiIndex:
 			if forcing_in.index.equals(emissions_in.index):
-				ext_forcing = input_to_numpy(forcing_in)[:,np.newaxis,np.newaxis,...]
+				if forcing_in.columns.levels[0].equals(emissions_in.columns.levels[0]) or forcing_in.columns.levels[0].size == 1:
+					ext_forcing = input_to_numpy(forcing_in)[:,np.newaxis,np.newaxis,...]
+				else:
+					return "Multiple forcing scenarios given but differ from emissions scenarios"
 			else:
 				return "forcing timeseries length different to emission timeseries"
 		else:
@@ -349,6 +353,9 @@ def run_UnFaIR( emissions_in , \
 				'RF':pd.DataFrame(RF.T.swapaxes(1,-1).swapaxes(2,-2).reshape(n_year,(n_gas+1)*dim_scenario*dim_gas_param*dim_thermal_param),index = emissions_in.index,columns=pd.MultiIndex.from_product([scen_names,gas_set_names,thermal_set_names,['CO2','CH4','N2O','Total']],names=['Scenario','Gas cycle set','Thermal set','Gas name'])), \
 				'T':pd.DataFrame(T.T.swapaxes(1,-1).reshape(n_year,dim_scenario*dim_gas_param*dim_thermal_param),index = emissions_in.index,columns=pd.MultiIndex.from_product([scen_names,gas_set_names,thermal_set_names],names=['Scenario','Gas cycle set','Thermal set'])), \
 				'alpha':pd.DataFrame(alpha.T.swapaxes(1,-1).swapaxes(2,-2).reshape(n_year,n_gas*dim_scenario*dim_gas_param*dim_thermal_param),index = emissions_in.index,columns=pd.MultiIndex.from_product([scen_names,gas_set_names,thermal_set_names,['CO2','CH4','N2O']],names=['Scenario','Gas cycle set','Thermal set','Gas name'])), \
+				'Emissions':emissions_in , \
+				'gas_parameters':gas_parameters , \
+				'thermal parameters':thermal_parameters
 			   }
 
 	for axis in out_dict.keys():
