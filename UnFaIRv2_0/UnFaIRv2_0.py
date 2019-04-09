@@ -208,6 +208,28 @@ def tcr_ecs_to_q(input_parameters=True , F_2x=3.74 , help=False):
 
 		return output_params.loc[['d','q']]
 
+def q_to_tcr_ecs(input_parameters=True , F_2x=3.74 , help=False):
+
+	# converts a tcr / ecs / d dataframe into a d / q dataframe for use in UnFaIRv2
+
+	if help:
+		tcr_ecs_test = default_thermal_params()
+		tcr_ecs_test = pd.concat([tcr_ecs_test['default']]*2,keys=['default','1'],axis=1)
+		tcr_ecs_test.loc['q'] = [0.33,0.41,0.31,0.43]
+		tcr_ecs_test = tcr_ecs_test.loc[['d','q']]
+		print('Example input format:')
+		return tcr_ecs_test
+
+	if type(input_parameters.columns) != pd.core.indexes.multi.MultiIndex:
+		return 'input_parameters not in MultiIndex DataFrame. Set help=True for formatting of input.'
+	else:
+		output_params = input_parameters.copy()
+		param_arr = input_to_numpy(input_parameters)
+		k = 1.0 - (param_arr[:,:,0]/70.0)*(1.0 - np.exp(-70.0/param_arr[:,:,0]))
+		output_params.loc['tcr_ecs'] = F_2x * ( np.concatenate( ( np.sum( param_arr[:,:,1] * k , axis=1 )[:,np.newaxis] , np.sum( param_arr[:,:,1] , axis=1 )[:,np.newaxis] ),axis=1 ) ).flatten()
+
+		return output_params.loc[['d','tcr_ecs']]
+
 def calculate_alpha(G,G_A,T,r,g0,g1,iirf100_max = 97.0):
 
 	iirf100_val = r[...,0] + r[...,1] * (G-G_A) + r[...,2] * T + r[...,3] * G_A
